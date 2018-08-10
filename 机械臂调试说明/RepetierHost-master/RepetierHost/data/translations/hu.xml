@@ -1,0 +1,1729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translation revision="10" language="Magyar" languageInEnglish="Hungarian" author="Repetier">
+<t id="M_FILE" ver="1">Fájl</t>
+<t id="M_CONFIG" ver="1">Beállítás</t>
+<t id="M_SLICER" ver="1">Szeletelés</t>
+<t id="M_TEMPERATURE" ver="1">Hőmérséklet</t>
+<t id="M_PRINTER" ver="1">Nyomtató</t>
+<t id="M_HELP" ver="1">Segítség</t>
+<t id="M_LOAD_GCODE" ver="1">G-kód betöltés</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">Munka könyvtár megnyitás</t>
+<t id="M_LANGUAGE" ver="1">Nyelv</t>
+<t id="M_PRINTER_SETTINGS" ver="1">Nyomtató beállítások</t>
+<t id="M_EEPROM_SETTINGS" ver="1">Firmware EEPROM beállítások</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">3D nézet beállítások</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Repetier Általános beállítások</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">Próba szeletelési paraméterek</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">Hang beállítások</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">Extruder hőmérséklet mutatása</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">ágy hőmérséklet mutatása</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">Cél hőmérséklet mutatása</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">Átlag hőmérséklet mutatása</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">Fűtő teljesítmény mutatása</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">Folyamatos hőmérséklet nézet</t>
+<t id="M_TIMEPERIOD" ver="1">Időciklus</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">Nagyítás</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">Átlagban szerkeszt...</t>
+<t id="M_30_SECONDS" ver="1">30 másodperc</t>
+<t id="M_1_MINUTE" ver="1">1 Perc</t>
+<t id="M_2_MINUTES" ver="1">2 Perc</t>
+<t id="M_5_MINUTES" ver="1">5 Perc</t>
+<t id="M_10_MINUTES" ver="1">10 Perc</t>
+<t id="M_15_MINUTES" ver="1">15 Perc</t>
+<t id="M_30_MINUTES" ver="1">30 Perc</t>
+<t id="M_60_MINUTES" ver="1">60 Perc</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">Folyamatos figyelés</t>
+<t id="M_DISABLE" ver="1">Kikapcsolva</t>
+<t id="M_EXTRUDER_1" ver="1">Extruder 1</t>
+<t id="M_EXTRUDER_2" ver="1">Extruder 2</t>
+<t id="M_HEATED_BED" ver="1">Fűthető ágy</t>
+<t id="M_PRINTER_INFORMATION" ver="1">Nyomtató információ</t>
+<t id="M_JOB_STATUS" ver="1">Munka állapot</t>
+<t id="M_SD_CARD_MANAGER" ver="1">SD kártya kezelő</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">SD kártya kezelés</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">Próba előállítás</t>
+<t id="M_SEND_SCRIPT_1" ver="1">Script 1 küldés</t>
+<t id="M_SEND_SCRIPT_2" ver="1">Script 2 küldés</t>
+<t id="M_SEND_SCRIPT_3" ver="1">Script 3 küldés</t>
+<t id="M_SEND_SCRIPT_4" ver="1">Script 4 küldés</t>
+<t id="M_SEND_SCRIPT_5" ver="1">Script 5 küldés</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Repetier-Host weboldal</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Repetier-Host letöltés</t>
+<t id="M_MANUAL" ver="1">Repetier-Host kézikönyv</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Slic3r weboldal</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Skeinforge weboldal</t>
+<t id="M_REPRAP_WEBSITE" ver="1">RepRap weboldal</t>
+<t id="M_REPRAP_FORUM" ver="1">RepRap fórum</t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse új dolgok</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverse népszerű dolgok</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">Repetier-Host -ról</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">Frissítések ellenőrzése</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">Nyomtató leválasztása</t>
+<t id="L_CONNECT_PRINTER" ver="1">Nyomtató csatlakoztatása</t>
+<t id="M_DISCONNECT" ver="1">Leválasztva</t>
+<t id="M_CONNECT" ver="1">Csatlakoztatva</t>
+<t id="M_QUIT" ver="1">Kilép</t>
+<t id="TAB_3D_VIEW" ver="1">3D nézet</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">Hőmérséklet görbe</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">Objektum elhelyezése</t>
+<t id="TAB_SLICER" ver="1">Szeletelő</t>
+<t id="TAB_GCODE_EDITOR" ver="1">G-kód szerkesztő</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">Kézi vezérlés</t>
+<t id="M_EMERGENCY_STOP" ver="1">Vészleállítás</t>
+<t id="M_LOAD" ver="1">Betöltés</t>
+<t id="M_SAVE_JOB" ver="11">Nyomtatás mentése</t>
+<t id="M_RUN_JOB" ver="11">Nyomtatás elkezdése</t>
+<t id="M_PAUSE_JOB" ver="11">Nyomtatás felfüggesztése</t>
+<t id="M_KILL_JOB" ver="11">Nyomtatás megszakítása</t>
+<t id="M_SD_CARD" ver="1">SD kártya</t>
+<t id="M_TOGGLE_LOG" ver="1">Napló</t>
+<t id="M_SHOW_FILAMENT" ver="1">Szál</t>
+<t id="M_HIDE_FILAMENT" ver="1">Szál</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">Szál vizualizáció letiltása</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">Szál vizualizáció engedélyezése</t>
+<t id="L_LOAD_FILE" ver="1">Fájl betöltése</t>
+<t id="L_IMPORT_G_CODE" ver="1">G-kód importálása</t>
+<t id="L_SAVE_G_CODE" ver="1">G-kód mentése</t>
+<t id="L_ERROR" ver="1">Hiba</t>
+<t id="L_PAUSE_MSG" ver="1">Nyomj OK -t a folytatáshoz.
+Felfüggesztés hozzáadása a kódodba a 
+@pause -al. Mint ebben a szövegben.</t>
+<t id="L_DISCONNECTED" ver="1">Leválasztva</t>
+<t id="L_UPDATING..." ver="1">Frissítés ...</t>
+<t id="L_SLICE_WITH" ver="1">Szeletelés $1 -el</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">A nyomtató vészleállítással leállt. Nyomj resetet az újraindításhoz a nyomtatón!</t>
+<t id="L_TRANSLATION:" ver="1">Fordítás</t>
+<t id="L_SCALE:" ver="1">Skála</t>
+<t id="L_ROTATE:" ver="1">Forgatás</t>
+<t id="L_STL_OBJECTS" ver="9">Tárgyak</t>
+<t id="B_SAVE_AS_STL" ver="9">Export</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">Tárgy eltávolítása</t>
+<t id="B_ADD_STL_OBJECT" ver="1">Tárgy hozzáadása</t>
+<t id="B_AUTOPOSITION" ver="1">Autopozíció</t>
+<t id="B_DROP_OBJECT" ver="1">Tárgy elvetése</t>
+<t id="B_COPY_OBJECTS" ver="1">Tárgyak másolása)</t>
+<t id="B_CENTER_OBJECT" ver="1">Tárgy középre</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">Felbontás mértékének zárolása</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">Szeletelés állj</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">Beállítás</t>
+<t id="B_SETUP_SLIC3R" ver="1">Beállítás</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">Konfigurálás</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">Konfigurálás</t>
+<t id="B_ACTIVE" ver="1">Aktív</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">Szál beállítások:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">Nyomtató beállítások:</t>
+<t id="L_PRINT_SETTINGS" ver="1">Nyomtatás beállítások:</t>
+<t id="L_PROFILE" ver="1">Profil:</t>
+<t id="B_SEND" ver="1">Küld</t>
+<t id="B_SIMULATE_OK" ver="1">OK</t>
+<t id="B_STOP_MOTOR" ver="1">Továbbító motor ki</t>
+<t id="B_PARK" ver="1">Parkolás</t>
+<t id="B_RETRACT" ver="1">Visszahúzás</t>
+<t id="B_EXTRUDE" ver="1">Extrudálás</t>
+<t id="L_OUTPUT_PERCENT" ver="1">Kimenet $1%</t>
+<t id="B_POWER" ver="1">Erő</t>
+<t id="B_HEAT_EXTRUDER" ver="1">Extruder fűtés</t>
+<t id="B_HEAT_PRINTBED" ver="1">ágy fűtés</t>
+<t id="B_FAN" ver="1">Hűtés</t>
+<t id="B_DEBUG_ERRORS" ver="1">Hibák</t>
+<t id="B_DEBUG_ECHO" ver="1">Visszhang</t>
+<t id="B_DRY_RUN" ver="1">Száraz futás</t>
+<t id="B_DEBUG_INFO" ver="1">Információ</t>
+<t id="L_EXTRUDER" ver="1">Extruder</t>
+<t id="L_PRINTBED" ver="1">Ágy</t>
+<t id="L_SPEED_MULTIPLY" ver="1">Sebesség növekedés</t>
+<t id="L_EXTRUDE_MM" ver="1">Extrudálás [mm]</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">Sebesség [mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">Visszahúzás [mm]</t>
+<t id="L_TEMP" ver="1">Hőfok.</t>
+<t id="L_CONNECTED" ver="1">Csatlakoztatva</t>
+<t id="L_HEATING_BED" ver="1">Ágy fűtés</t>
+<t id="L_HEATING_EXTRUDER" ver="1">Extruder fűtés</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">Nyomtatás megszakítás</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">Nyomtatás felfüggesztés</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">Nyomtatás befejezése</t>
+<t id="L_UPLOADING..." ver="1">Feltöltés ... $1%</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">Nyomtatás ETA $1</t>
+<t id="L_IDLE" ver="1">Üresjárat</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">$1 parancsra vár</t>
+<t id="L_EXTRUDER:" ver="1">Extruder:</t>
+<t id="L_BED:" ver="1">Ágy:</t>
+<t id="L_OFF" ver="1">Ki</t>
+<t id="L_NOT_A_NUMBER" ver="1">Ez nem szám</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">Pozitív szám szükséges</t>
+<t id="L_NOT_AN_INTEGER" ver="1">Nem egész szám</t>
+<t id="L_RESET_OUTPUT" ver="1">Kimenet újraindítás. Hamarosan, újraindítok. $1</t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">Hibaüzenet érkezett. A kommunikáció leállt.</t>
+<t id="L_PRINTING..ETA" ver="1">Nyomtatás...ETA $1</t>
+<t id="L_LAYER_X/Y" ver="1">$1/$2 réteg</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">Hiba adatok küldése:</t>
+<t id="L_CONNECTION_ERROR" ver="1">Csatlakozási hiba</t>
+<t id="L_SERIAL_COM_ERROR" ver="1">Soros port hiba:</t>
+<t id="L_SHOW_IN_LOG" ver="1">Nézd a naplóba:</t>
+<t id="B_ACK" ver="1">ACK</t>
+<t id="B_AUTO_SCROLL" ver="1">Auto görgetés</t>
+<t id="B_COMMANDS" ver="1">Parancsok</t>
+<t id="B_LOG_ERRORS" ver="1">Hibák</t>
+<t id="B_LOG_INFO" ver="1">Információk</t>
+<t id="B_LOG_WARNINGS" ver="1">Figyelmeztetések</t>
+<t id="B_COPY" ver="1">Másol</t>
+<t id="B_CLEAR_LOG" ver="1">Napló törlés</t>
+<t id="L_COPY" ver="1">Másol</t>
+<t id="L_CUT" ver="1">Kivág</t>
+<t id="L_NEW_TEXT" ver="1">Új kód</t>
+<t id="L_SAVE" ver="1">Mentés</t>
+<t id="L_PASTE" ver="1">Beillesztés</t>
+<t id="L_UNDO" ver="1">Visszavonás</t>
+<t id="L_REDO" ver="1">Újra</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">Automatikus frissítés bemutatása</t>
+<t id="L_START_CODE" ver="1">Kód indítása</t>
+<t id="L_END_CODE" ver="1">Kód vége</t>
+<t id="L_RUN_ON_KILL" ver="1">Futás megállítva</t>
+<t id="L_RUN_ON_PAUSE" ver="1">Futás felfüggesztve</t>
+<t id="L_SCRIPT_X" ver="1">$1 szkript</t>
+<t id="L_LAYER_X" ver="1">$1 réteg</t>
+<t id="L_EXTRUDER_X" ver="1">Extruder $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">Felülírás</t>
+<t id="L_INSERT" ver="1">Beillesztés</t>
+<t id="L_SYNTAX" ver="1">Szintaxis</t>
+<t id="TAB_HELP" ver="1">Segítség</t>
+<t id="TAB_VISUALIZATION" ver="1">Vizualizáció</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">Teljes kód mutatása</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">Réteg távolság mutatása</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">Egy réteg mutatása</t>
+<t id="L_FIRST_LAYER" ver="1">Első réteg:</t>
+<t id="L_LAST_LAYER" ver="1">Utolsó réteg:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1">Valóban törölni szeretnéd $1 beállításait törölni?</t>
+<t id="L_SECURITY_QUESTION" ver="1">Biztonsági kérdés.</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">Nyomtatási idő hozzáadása</t>
+<t id="L_BAUD_RATE" ver="1">Baud ráta:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">Arduino 1 -től a fogadási cache 127 -ről 63 -om bájtra csökkent!</t>
+<t id="L_CHECK_EVERY_X" ver="1">Ellenőrzés minden $1 másodpercben.</t>
+<t id="L_CONNECTION_INFO" ver="1">A nyomtató beállítások mindig megfelelnek a felül kiválasztott printernek. Ezek tárolásra kerülnek minden OK vagy Alkalmaz esetén.
+ Egy új nyomtató létrehozásához csak add meg a nevét és nyomj Alkalmazt. Az új nyomtató indításakor az utolsó beállítások lesznek érvényesek.</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">Alapértelmezett Extruder hőmérséklet:</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">Alapértelmezett tárgyasztal hőmérséklet:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">Lerakási terület mélysége:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">Lerakási terület eleje:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">Lerakási terület bal oldala:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">Lerakási terület szélessége:</t>
+<t id="L_FILTER_INFO" ver="1">Futtathatsz egy szűrő programot minden egyes szeletelés után. A szűrő le fog futni a szeletelő által generált G-kódon.
+ Használd #in és #out a beszúráshoz a be és kimeneti fájlneveket mint paramétert.</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">Szűrő útvonal és paraméter:</t>
+<t id="L_PARITY" ver="1">Egyenlőség:</t>
+<t id="L_PARK_POSITION" ver="1">Parkolási pozíció:</t>
+<t id="L_PORT" ver="1">Port:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">Nyomtatás mélysége:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">Nyomtatás magassága:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">Nyomtatás szélessége:</t>
+<t id="L_PRINTER" ver="1">Nyomtató:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">Bemeneti cache méret:</t>
+<t id="L_STOPBITS" ver="1">Stop Bitek:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">Átviteli protokoll:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">Haladási előtolás:</t>
+<t id="L_ZFEED_RATE" ver="1">Z-tengely előtolás mértéke:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">Extruder kikapcsolása feladat/leállítás után.</t>
+<t id="L_DISABLE_MOTORS" ver="1">Motorok kikapcsolása feladat/leállítás után.</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">ágy fűtés kikapcsolása feladat/leállítás után.</t>
+<t id="L_GO_PARK_POSITION" ver="1">Parolási állásba állás feladat/leállítás után.</t>
+<t id="L_HAS_DUMP_AREA" ver="1">Van lerakási terület</t>
+<t id="L_HOME_X_MAX" ver="1">A kiinduló állás: X Max</t>
+<t id="L_HOME_Y_MAX" ver="1">A kiinduló állás: Y Max</t>
+<t id="L_HOME_Z_MAX" ver="1">A kiinduló állás: Z Max</t>
+<t id="L_PING_PONG_MODE" ver="1">Oda-vissza kommunikáció (Küldés csak ok után.)</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">Szűrő futtatás minden szelet után.</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">Extruder ellenőrzése &amp;&amp; ágy hőmérséklet</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">Hőmérséklet kérésének eltávolítása a naplóból</t>
+<t id="B_CANCEL" ver="1">Elvet</t>
+<t id="B_APPLY" ver="1">Alkalmaz</t>
+<t id="B_OK" ver="1">OK</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">Nyomtató beállítás törlése</t>
+<t id="TAB_CONNECTION" ver="1">Csatlakozás</t>
+<t id="TAB_PRINTER" ver="1">Nyomtató</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">Nyomtató alak</t>
+<t id="TAB_ADVANCED" ver="1">Részletek</t>
+<t id="W_PRINTER_SETTINGS" ver="1">Nyomtató beállítások</t>
+<t id="L_POST_SLICE_FILTER" ver="1">Szeletelő szűrő állás</t>
+<t id="L_Z_MIN" ver="1">Z-Min</t>
+<t id="W_PRINT_PAUSED" ver="1">Nyomtatás felfüggesztve</t>
+<t id="L_PAUSE_HINT" ver="1">Megjegyzés: Elmozgathatod az Extrudert, ha a szálat újra kell töltetni, vagy szivárgás történt. A fej vissza fog állni a megállítás előtti pozícióba.</t>
+<t id="B_CONTINUE_PRINTING" ver="1">Nyomtatás folytatása</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Repetier-Host frissítés ellenőrzése.</t>
+<t id="B_DOWNLOAD" ver="1">Letöltés</t>
+<t id="B_REMIND_ME_LATER" ver="1">Emlékeztess később</t>
+<t id="B_SKIP_VERSION" ver="1">Ennek a verziónak a kihagyása</t>
+<t id="L_AVAILABLE_VERSION" ver="1">Elérhető verzió:</t>
+<t id="L_INSTALLED_VERSION" ver="1">Telepített verzió:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">Frissítési információ</t>
+<t id="L_NO_NEW_UPDATES" ver="1">Nincs új elérhető frissítés.
+A legújabb verziót használod .</t>
+<t id="L_UPDATE_STATUS" ver="1">Frissítési állapot</t>
+<t id="W_SLICING_INFO" ver="1">Szeletelési információ</t>
+<t id="L_ACTION:" ver="1">Művelet:</t>
+<t id="L_DURATION:" ver="1">Időtartam:</t>
+<t id="L_SLICER:" ver="1">Szeletelő:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">Feladat indítás szeletelés után</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">Repetier-Host -ról</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">Licenszek és könyvtárak</t>
+<t id="L_REPETIER_INFO" ver="1">Ez a szoftver a Rep-rap típusú 3D nyomtatókhoz lett fejlesztve. 
+Legjobban a Repetier-Firmware -el használható, ami támogatja az összes funkciót. Egyéb nyomtató firmware -ek, mint a Marlin, Teacup, Sprinter vagy 5D GCode fordító esetén szükségesek a megfelelő beállítások a helyes működéshez.</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">Másolásra kijelölt objektumok</t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">Másolatok száma:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">Automatikus pozíció objektumok hozzáadása után.</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1">Nyomtatási réteg: $1, $2 -ből</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">Nyomtatási feladat létrehozása...</t>
+<t id="L_PRINTING..." ver="1">Nyomtatás...</t>
+<t id="L_JOB_KILLED" ver="1">Feladat megállítása</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">Nyomtatás befejezve: $1 -kor</t>
+<t id="L_PRINTING_TIME:" ver="1">nyomtatási idő: $1</t>
+<t id="L_LINES_SEND:X" ver="1">Küldött sorok: $1</t>
+<t id="L_FINISHED_IN" ver="1">Befejezve $1 -ben</t>
+<t id="L_TIME_H:" ver="1">$1ó:</t>
+<t id="L_TIME_M:" ver="1">$1p:</t>
+<t id="L_TIME_S" ver="1">$1mp</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">Firmware EEPROM beállítások</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">Generált G-kód nem található</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">Várt fájlnév és hely</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">Nem találok generált G-kód fájlt.
+
+Lehetséges okok:
+- a szeletelő hibába futott és nem tudta befejezni a szeletelést. Ellenőrizd a naplót.
+- a szeletelő nem elvárt néven tárolja a fájlt.</t>
+<t id="B_CLOSE" ver="1">Bezár</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Repetier beállítások</t>
+<t id="L_BEHAVIOUR" ver="1">Viselkedés</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">Fájlok és könyvtárak</t>
+<t id="L_GUI" ver="1">GUI</t>
+<t id="L_INFO_WORKDIR" ver="1">A szeletelés átmeneti és naplófájljai a munka könyvtárban kerülnek tárolásra. 
+Ha a naplózás engedélyezett, a repetier.log fájlban lesznek, miután bezártad a programot. 
+A program indításakor a régi naplófájl törlődik! A naplófájl tartalmaz minden kommunikációt a nyomtatóval, még akkor is ha a naplónézet ki van kapcsolva. 
+A naplózás megváltoztatása a következő indításkor érvényesül.</t>
+<t id="L_LOG_SESSION" ver="1">Napló idő</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">Csökkentett ezköztár méret</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">Minőség csökkentés kikapcsolása</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">Létező munka könyvtár szükséges!</t>
+<t id="L_WORKDIR:" ver="1">Munkakönyvtár:</t>
+<t id="B_BROWSE" ver="1">Böngészés...</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">Munkakönyvtár kiválasztása</t>
+<t id="L_PAST_60_MINUTES" ver="1">Elmúlt 60 perc</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">3D Nézeti beállítások</t>
+<t id="L_COLORS" ver="1">Színek</t>
+<t id="L_EDITOR" ver="1">Szerkesztő</t>
+<t id="L_VISUALIZATION" ver="1">Nézet:</t>
+<t id="L_AMBIENT_COLOR" ver="1">Környezeti szín:</t>
+<t id="L_BACKGROUND" ver="1">Háttér:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">Szórt szín:</t>
+<t id="L_DRAW_METHOD" ver="1">Rajzolási mód:</t>
+<t id="L_EDGES" ver="1">Élek:</t>
+<t id="L_EXTRUDER_X:" ver="1">Extruder $1:</t>
+<t id="L_FACES" ver="1">Felszín:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">A nyomtatási anyag alakja számított minden rétegben. Ez függ a szélességtől, magasságtól és vastagságtól vagy a nyomtatószál átmérőjétől. A szélesség felett a vastagság az E érték a G-kódban. A második verzió jobb eredményt ad, ha a réteg magasság változik. Ez a Skeinforge verzióban sosem történik meg.</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">Szálak nézete:</t>
+<t id="L_HOT_FILAMENT" ver="1">Meleg szál:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">Meleg szál hossza:</t>
+<t id="L_LIGHT_X" ver="1">Fény $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">Kieső rész:</t>
+<t id="L_PRINTER_BASE" ver="1">Nyomtató alap:</t>
+<t id="L_SELECTED_FACES" ver="1">Választott felszín:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">Választott szál:</t>
+<t id="L_SPECULAR_COLOR" ver="1">Tükrözött szín:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">Szélesség a vastagság felett:</t>
+<t id="L_X_DIRECTION" ver="1">X irány:</t>
+<t id="L_Y_DIRECTION" ver="1">Y irány:</t>
+<t id="L_Z_DIRECTION" ver="1">Z irány:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">Szál nézet kikapcsolása</t>
+<t id="L_ENABLE_LIGHT" ver="1">Fény engedélyezése</t>
+<t id="L_SHOW_EDGES" ver="1">Élek mutatása</t>
+<t id="L_SHOW_FACES" ver="1">Felszín mutatása</t>
+<t id="L_SHOW_PRINTBED" ver="1">Nyomtató ágy mutatása</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">Villogás, ha a nyomtatás nem végrehajtható</t>
+<t id="TAB_GENERAL" ver="1">Általános</t>
+<t id="TAB_FILAMENT" ver="1">Szál</t>
+<t id="TAB_MODEL" ver="1">Minta</t>
+<t id="TAB_LIGHTS" ver="1">Fények</t>
+<t id="L_LAYER_HEIGHT" ver="1">Réteg magasság:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">Szál átmérő:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">Automatikus (Legjobb)</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (Leggyorsabb)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">Tömbösített (Közepes)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">Azonnali (Lassú)</t>
+<t id="W_JOB_STATUS" ver="1">Feladat állapot</t>
+<t id="L_ETA:" ver="1">ETA:</t>
+<t id="L_FINISH_TIME:" ver="1">Befejezés ideje:</t>
+<t id="L_LINES_SEND:" ver="1">Küldött vonalak:</t>
+<t id="L_START_TIME:" ver="1">Kezdési idő:</t>
+<t id="L_STATUS:" ver="1">Állapot:</t>
+<t id="L_TOTAL_LINES:" ver="1">Összes vonalak:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">Nincs meghatározott feladat</t>
+<t id="L_RUNNING..." ver="1">Futtatás ...</t>
+<t id="L_FINISHED" ver="1">Befejezve</t>
+<t id="L_ABORTED" ver="1">Megszakítva</t>
+<t id="W_PRINTER_INFO" ver="1">Nyomtató információ</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">Czatlakozási információ</t>
+<t id="L_PRINTER_DATA" ver="1">Nyomtató adat</t>
+<t id="L_BYTES_SEND:" ver="1">Küldött byte -ok:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">Fogadott hibák:</t>
+<t id="L_FIRMWARE:" ver="1">Firmware:</t>
+<t id="L_FIRMWARE_URL:" ver="1">Firmware URL:</t>
+<t id="L_MACHINE_TYPE:" ver="1">Gép típus:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">Extruder -ek száma:</t>
+<t id="L_PROTOCOL:" ver="1">Protokoll:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">Nem valós 8.3 fájlnév.</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">SD-kártyára töltés</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">Feltöltött Fájlnév:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">Tartalmazza a befejező parancsokat</t>
+<t id="L_INCLUDE_START_END_CODE" ver="1">Tartalmazza "Start" és "End" kódot</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">Külső fájl feltöltés</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">Aktuális G-kód feltöltés</t>
+<t id="L_FILE:" ver="1">Fájl:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">G-kód mentése közvetlen nyomtatáshoz</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">Ez a mentési funkció azt jelenti, hogy a G-kód fájlt tudjuk nyomtatni az SD kártyáról. Azért kell a start és az end kódot elhelyezni, hogy egy szabvány leállító paranccsal le tudjuk állítani a direkt nyomtatást. Minden megjegyzés és vezérlő parancs el lesz távolítva! Ha csak el szeretnéd menteni a G-kódot, használd a mentés ikont.</t>
+<t id="L_SAVE_AS_BINARY" ver="1">Mentés bináris formában (Repetier-Firmware -hez)</t>
+<t id="B_SAVE" ver="1">Mentés</t>
+<t id="W_SD_CARD_MANAGER" ver="1">SD kártya kezelő</t>
+<t id="L_FILENAME" ver="1">Fájl név</t>
+<t id="L_SIZE" ver="1">Méret</t>
+<t id="L_UPLOAD_FILE" ver="1">Fájl feltöltés</t>
+<t id="L_DELETE_FILE" ver="1">Fájl törlés</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">Kiválasztott fájl futtatás / Felfüggesztett feladat folytatása</t>
+<t id="L_STOP_UPLOAD" ver="1">Felfügg/Leáll Futó SD nyomtatás</t>
+<t id="L_MOUNT_SD_CARD" ver="1">SD kártya csatolása</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">SD kártya leválaszt</t>
+<t id="L_PRINT_FINISHED" ver="1">Nyomtatás befejezve</t>
+<t id="L_UPLOAD_FINISHED" ver="1">Feltöltés kész</t>
+<t id="L_SD_PRINTING..." ver="1">SD nyomtatás ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">Feltöltés hiba</t>
+<t id="L_FILE_DELETED" ver="1">Fájl törölve</t>
+<t id="L_DELETE_FAILED" ver="1">Törlés hiba</t>
+<t id="L_UPLOADING_FILE..." ver="1">Fájl feltöltése ...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">A firmware -ed nem tud fájlt törölni vagy ismeretlen a megvalósítása.</t>
+<t id="L_PRINT_ABORTED" ver="1">Nyomtatás megszakítva</t>
+<t id="L_PRINT_PAUSED" ver="1">Nyomtatás felfüggesztve</t>
+<t id="L_REMOVE_SD_CARD" ver="1">Eltávolíthatod az SD kártyát.</t>
+<t id="L_INFORMATION" ver="1">Információ</t>
+<t id="L_REALLY_DELETE_X" ver="1">Sikeres törlés $1</t>
+<t id="SOUND_CONFIGURATION" ver="1">Hang beállítás</t>
+<t id="L_SOUNDS" ver="1">Hangok</t>
+<t id="L_ERROR_SOUND" ver="1">Hiba hangok</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">Nyomtatás befejezve hangja</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">Nyomtatás felfüggesztve hangja</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">Hang parancsok hangja</t>
+<t id="L_FILE:X" ver="1">Fájl: $1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">Lejátszásra kiválasztott WAV fájl.</t>
+<t id="W_SLIC3R_SETUP" ver="1">Slic3r beállítás</t>
+<t id="L_SLIC3R_SETUP" ver="1">Slic3r beállítás</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="6">Hagyd üresen a csomag vagy rendszer változathoz.</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Slic3r beállítások könyvtára</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Slic3r futtató</t>
+<t id="L_SLIC3R_INFO" ver="1">Ezekkel a beállításokkal, használhatsz különböző Slic3r verziókat. Új verziót beszerezhetsz: http://www.slic3r.org oldalról. A szükséges legalacsonyabb verzió 0.9.0. Hagyj minden mezőt üresen a beépített verzió használatához.</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">Hagyd üresen, hogy megtaláljuk a helyet.</t>
+<t id="W_EEPROM_MARLIN" ver="1">Marlin Firmware EEPROM beállítások</t>
+<t id="L_M_ACCELERATION" ver="1">Gyorsaság:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">Bővített változók:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">Alapállás érték:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">Maximum gyorsaság [mm/s²]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">Maximum előtolás [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">Maximum X-Y jerk [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">Maximum Z emelés [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">Min előtolás [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">Minimum metszet idő [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">Min mozgási előtolás [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">PID beállítások:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">Lépés / mm:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">Visszahúzási gyorsaság:</t>
+<t id="B_M_LOAD" ver="1">Beállítás újratöltés</t>
+<t id="B_M_RESTORE" ver="1">Gyári beállítások visszaállítása</t>
+<t id="B_M_SAVE" ver="1">Mentés az EEPROM -ba</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">Beállítások tárolva a futtatáshoz.
+Az EEPROM -ba írjuk a változásokat?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">Beállítások tárolva</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">Mentsük a visszaállított beállításokat az EEPROM -ba?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">Gyári beállítások visszaállítva</t>
+<t id="L_SLICING_STL_FILE..." ver="1">STL fájl szeletelés ...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">Az utolsó szeletelési feladat még fut. Az új feladat elvetve.</t>
+<t id="L_SKEIN_KILLED" ver="1">$1 felhasználói kérésre a szeletelési folyamat leállítva.</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Skeinforge/SFACT beállítások</t>
+<t id="L_SKEIN_APPLICARTION" ver="1">Skeinforge alkalmazás:</t>
+<t id="L_SKEIN_CRAFT" ver="1">Skeinforge törzs:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">Válaszd ki a profil alkönyvtárat a skeinforge beállítások könyvtárában. Ez általában: HOME/.skeinforge/profiles. Néhány egyedi verzióban SFACT útvonalnak különbözőnek kell lenni.</t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">Profil könyvtár:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">Ha installáltad a pypy -t, a Skeinforge szeletelő 3-4 x gyorsabb lesz. Ha nincs installált pypy -od, hagyd üresen és a python értelmező lesz használva helyette. YA legújabb pypy -t a http://www.pypy.org/ oldalon találod.</t>
+<t id="L_SKEIN_PYTHON" ver="1">Python értelmező:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">Munkakönyvtár megadása, ahol az SFACT tárolni fogja a profilt!</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">Munkakönyvtár:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge alkalmazások</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Python értelmező</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge törzs alkalmazások</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python értelmező</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">Profil könyvtár választás</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">Munkakönyvtár választás</t>
+<t id="L_FEEDRATE:" ver="1">Sebesség:</t>
+<t id="L_FLOWRATE:" ver="1">Folyamat:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">Nem tudtam csatlakozni az Update szerverhez!</t>
+<t id="L_MOVE_CAMERA" ver="1">Kamera mozgatás</t>
+<t id="L_MOVE_OBJECT" ver="1">Tárgy mozgatás</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">Nézőpont mozgatás</t>
+<t id="L_RESET_VIEW" ver="1">Nézet alapállapotba</t>
+<t id="L_ROTATE" ver="1">Forgatás</t>
+<t id="L_TOP_VIEW" ver="1">Felülnézet</t>
+<t id="T_ZOOM_VIEW" ver="1">Nagyítás</t>
+<t id="T_CLEAR_OBJECTS" ver="1">Törlés</t>
+<t id="L_DEBUG_OPTIONS" ver="2">Hibakereső opciók</t>
+<t id="L_X_MIN:" ver="3">X Min</t>
+<t id="L_X_MAX:" ver="3">X Max</t>
+<t id="L_Y_MIN:" ver="3">Y Min</t>
+<t id="L_Y_MAX:" ver="3">Y Max</t>
+<t id="L_BED_LEFT:" ver="3">Ágy balról:</t>
+<t id="L_BED_FRONT:" ver="3">Ágy előlről:</t>
+<t id="L_SHAPE_INFO" ver="3">A min és max érték megadja a lehetséges tartományát az extruder koordinátáknak. Ezek a koordináták lehetnek negatívak és kieshetnek a tálcáról. A ágy bal/elől megadja azokat a koordinátákat ahonnan a nyomtatóágy kezdődik. A min/max érték megváltoztatásával beállhatsz a nyomtató ágy közepére, ha a firmware támogatja ezt.</t>
+<t id="L_SELECTION_BOX" ver="3">Választó doboz:</t>
+<t id="L_FILAMENT_NONE" ver="3">Nincs/Olyan, mint Extruder 1</t>
+<t id="L_REALLY_QUIT" ver="3">Nyomtatás folyamatban. Biztos kilépsz?</t>
+<t id="M_DONATE" ver="3">Támogatás PayPal -al</t>
+<t id="L_FAN" ver="4">Hűtés</t>
+<t id="L_HOME_X:" ver="4">Kezdő X:</t>
+<t id="L_HOME_Y:" ver="4">Kezdő Y:</t>
+<t id="L_HOME_Z:" ver="4">Kezdő Z:</t>
+<t id="L_MIN" ver="4">Min</t>
+<t id="L_MAX" ver="4">Max</t>
+<t id="L_PAUSED_FIRMWARE" ver="4">Felfüggesztést vár a nyomtatód.</t>
+<t id="L_CREATE_FOLDER" ver="4">Új könyvtár...</t>
+<t id="L_CREATE_FOLDER_INFO" ver="4">Könyvtár név:</t>
+<t id="L_UPLOADING_TIME" ver="4">Feltöltési idő: $1</t>
+<t id="L_FILAMENT_POS" ver="4">Szál: $1</t>
+<t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">Haladás megjelenítés ki</t>
+<t id="M_HIDE_TRAVEL" ver="4">Haladás</t>
+<t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">Haladás megjelenítés be</t>
+<t id="M_SHOW_TRAVEL" ver="4">Haladás</t>
+<t id="L_TRAVEL_MOVES:" ver="4">Haladás mozgás:</t>
+<t id="L_DISABLE_TRAVEL_MOVES_VIS" ver="4">Haladás mozgás nézet ki</t>
+<t id="L_NUMBER_OF_EXTRUDER:" ver="5">Extruder száma:</t>
+<t id="L_NEW_FOLDER" ver="5">Új könyvtár</t>
+<t id="L_USE_PARALLEL_PROJECTION" ver="5">Párhuzamos megjelenítés</t>
+<t id="L_USE_RED_GREEN_SWITCH" ver="5">Használd a piros/zöld gombokat (újraindítás szükséges)</t>
+<t id="L_SLIC3R_NOT_FOUND" ver="6">Slic3r nem található.</t>
+<t id="L_ANALYSING_STL" ver="6">STL fájl elemzés ...</t>
+<t id="L_SLICING_STL" ver="6">STL fájl szeletelés ...</t>
+<t id="L_PYPY_NOT_FOUND" ver="6">Pypy vagy Python értelmező nem található.</t>
+<t id="L_SKEINCRAFT_NOT_FOUND" ver="6">Skeinforge törzs nem található.</t>
+<t id="L_PYTHON_NOT_FOUND" ver="6">Python értelmező nem található.</t>
+<t id="L_SKEINFORGE_NOT_FOUND" ver="6">Skeinforge nem található.</t>
+<t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">Skeinforge/SFACT profil könyvtár nem található.</t>
+<t id="B_REFRESH_PORTS" ver="6">Portok frissítése</t>
+<t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">Nyomtatható magasság:</t>
+<t id="L_ROS_PRINTABLE_RADIUS:" ver="6">Nyomtatható rádiusz:</t>
+<t id="L_CARTESIAN_PRINTER" ver="6">Klasszikus nyomtató</t>
+<t id="L_CARTESIAN_PRINTER_DUMP" ver="6">Classic Printer (lerakási zóna)</t>
+<t id="L_ROSTOCK_CIRCLE" ver="6">Rostock nyomtató (körkörös nyomtatás)</t>
+<t id="L_CORRECT_NORMALS" ver="7">Javító normák (jobb kinézet, több memória szükség)</t>
+<t id="L_WARNING" ver="8">Figyelem</t>
+<t id="L_HEATERS_ON_QUEST" ver="8">A fűtések még mennek. Kikapcsoljam?</t>
+<t id="L_OBJECTS_OUTSIDE_SLICE_QUEST" ver="8">Legalább egy tárgy kiesik a nyomtató zónából. Megszakítsam a szeletelést?</t>
+<t id="L_CNC_ROUTER" ver="8">CNC Router</t>
+<t id="L_SLIC3R_VERSION" ver="8">Slic3r verzió</t>
+<t id="L_MODEL_ERRORS" ver="9">Model hibák:</t>
+<t id="L_SPLIT" ver="9">Feloszt</t>
+<t id="L_YES" ver="9">Igen</t>
+<t id="L_NO" ver="9">Nem</t>
+<t id="L_MODEL_CHANGED_RELOAD" ver="9"><![CDATA[Egy vagy több tárgy fájl megváltozott.
+Tárgy újratöltése?]]></t>
+<t id="L_FILES_CHANGED" ver="9">Fájl megváltozott</t>
+<t id="L_INNER_FACES" ver="9">Belső felszín:</t>
+<t id="L_BACKGROUND_TOP" ver="9">Háttér teteje:</t>
+<t id="L_BACKGROUND_BOTTOM" ver="9">Háttér alja:</t>
+<t id="L_PRINTER_FRAME" ver="9">Nyomtató keret:</t>
+<t id="L_ISOMETRIC_VIEW" ver="9">Izometrikus nézet</t>
+<t id="L_BOTTOM_VIEW" ver="9">Alul nézet</t>
+<t id="L_LEFT_VIEW" ver="9">Bal nézet</t>
+<t id="L_RIGHT_VIEW" ver="9">Jobb nézet</t>
+<t id="L_FRONT_VIEW" ver="9">Elől nézet</t>
+<t id="L_BACK_VIEW" ver="9">Hátul nézet</t>
+<t id="M_VIEW" ver="9">Nézet</t>
+<t id="M_SHOW_EDGES" ver="9">Élek be</t>
+<t id="M_SHOW_FACES" ver="9">Felszínt mutat</t>
+<t id="L_ANA_MODIFIED" ver="9">Módosítás:</t>
+<t id="L_ANA_MANIFOLD" ver="9">Darabolás:</t>
+<t id="L_ANA_INTERSECTING_TRIANGLES" ver="9">Háromszög metszet:</t>
+<t id="L_ANA_NORMALS" ver="9">Normák:</t>
+<t id="L_ANA_LOOP_EDGES" ver="9">Él ismétlés:</t>
+<t id="L_ANA_HIGHLY_CONNECTED" ver="9">Csatlakoztatott élek:</t>
+<t id="L_ANA_VERTICES" ver="9">Pontok:</t>
+<t id="L_ANA_EDGES" ver="9">Élek:</t>
+<t id="L_ANA_FACES" ver="9">Felszín:</t>
+<t id="L_ANA_SHELLS" ver="9">Héjjak:</t>
+<t id="L_ANA_ORIENTED" ver="9">Tájolás</t>
+<t id="L_ANA_NOT_ORIENTED" ver="9">Nincs tájolva</t>
+<t id="M_TOOLS" ver="9">Eszközök</t>
+<t id="M_BELT_CALCULATOR" ver="9">Szíj kalkulátor</t>
+<t id="M_LEADSCREW_CALCULATOR" ver="9">Főorsó kalkulátor</t>
+<t id="L_MOTOR_STEP_ANGLE" ver="9">Motor szöglépés</t>
+<t id="L_DRIVER_MICROSTEPPING" ver="9">Mikrolépés meghajtó</t>
+<t id="L_BELT_PITCH" ver="9">Fogtávolság</t>
+<t id="L_TOOTH_COUNT" ver="9">Fog szám</t>
+<t id="B_CALCULATE" ver="9">Kalkulátor</t>
+<t id="L_STEPS_PER_MM" ver="9">Lépés/mm érték</t>
+<t id="L_TOOTH_COUNT_MUST_INT" ver="9">A fogszámnak egésznek kell lenni</t>
+<t id="L_LEADSCREW_PITCH" ver="9">Főorsó menetemelkedés</t>
+<t id="L_GEAR_RATIO" ver="9">Áttétel</t>
+<t id="L_SERIAL_CONNECTION" ver="9">Soros csatlakozás</t>
+<t id="L_VIRTUAL_CONNECTION" ver="9">Virtuális nyomtató</t>
+<t id="L_REPETIER_SERVER_CONNECTION" ver="9">Repetier-Server</t>
+<t id="L_CONNECTOR" ver="9">Csatlakozó</t>
+<t id="L_DISABLED" ver="9">Kikapcsolva</t>
+<t id="L_DTR_LOW_HIGH" ver="9">DTR magas->alacsony</t>
+<t id="L_DTR_LOW_HIGH_LOW" ver="9">DTR alacsony->magas->alacsony</t>
+<t id="L_DTR_TOGGLE" ver="9">DTR tüske</t>
+<t id="L_RESET_ON_CONNECT" ver="9">Újra csatlakozás</t>
+<t id="L_RESET_ON_EMERGENCY" ver="9">Vész újraindítás</t>
+<t id="L_SEND_EMERGENCY_CMD" ver="9">Vészhelyzeti parancs küldés</t>
+<t id="L_SEND_EMERGENCY_CMD_DTR_TOGGLE" ver="9">Vészhelyzeti parancs küldés + DTR magas->alacsony</t>
+<t id="L_SEND_EMERGENCY_CMD_RECONNECT" ver="9">Vészhelyzeti parancs küldés és újracsatlakozás</t>
+<t id="L_FILE_ASSOCIATIONS" ver="9">Fájl társítás</t>
+<t id="L_ASSOCIATE_EXTENSIONS" ver="9">Kiterjesztés társítás</t>
+<t id="L_CONNECTION_FAILED" ver="9">Sikertelen csatlakozás a következő hibával: $1. Ellenőrizd a nyomtató csatlakoztatását, az engedélyezést csatlakozási adatokat. Megnyissuk a nyomtató beállításokat?</t>
+<t id="L_AUTOENABLE_PARALLEL_TOPVIEW" ver="9">Párhuzamos felülnézet engedélyezve</t>
+<t id="L_RESET_DEFAULTS" ver="9">Alapértelmezett</t>
+<t id="L_REMOVED_DEGENERATED" ver="9">Hibás háromszögek eltávolítása:</t>
+<t id="L_REMOVED_ISOLATED" ver="9">Különálló háromszögek eltávolítása:</t>
+<t id="L_REMOVED_DOUBLE" ver="9">Duplikált háromszögek eltávolítása:</t>
+<t id="L_STARTING_ANALYSER" ver="9">Tárgy analizélás elindítva ...</t>
+<t id="L_ANALYSER_FINISHED" ver="9">Analizálás befejezve.</t>
+<t id="L_LOADING_3D_FAILED" ver="9">$1 3D fájl betöltése sikertelen.</t>
+<t id="L_OBJECT_INFORMATIONS" ver="9">Tárgy információk</t>
+<t id="L_MINIMUM:" ver="9">Minimum:</t>
+<t id="L_MAXIMUM:" ver="9">Maximum:</t>
+<t id="L_SIZE:" ver="9">Méret:</t>
+<t id="L_VOLUME:" ver="9">Térfogat:</t>
+<t id="L_SURFACE:" ver="9">Felület:</t>
+<t id="L_DIMENSIONS:" ver="9">Kiterjedés:</t>
+<t id="L_SPLIT_OBJECT" ver="9">Tárgy felosztás</t>
+<t id="L_FIX_NORMALS" ver="9">Normák javítása</t>
+<t id="M_FIT_PRINTER" ver="9">Nyomtató javítás</t>
+<t id="M_FIT_OBJECTS" ver="9">Tárgy állapota</t>
+<t id="IMPORTING_1" ver="9">Importálás $1</t>
+<t id="L_LOADING..." ver="9">Betöltés ...</t>
+<t id="L_INTERSECTION_TESTS" ver="9">Keresztező tesztek</t>
+<t id="L_FIXING_NORMALS" ver="9">Normák javítása</t>
+<t id="L_ANA_FIXED_COLLINEAR_TRIANGLES" ver="9">Kollineáris háromszögek javítása:</t>
+<t id="L_ANA_CORRECTED_NORMAL_ORIENTATIONS" ver="9">Korrigált tájolás:</t>
+<t id="L_OBJECT_IS_MANIFOLD" ver="9">A tárgy darabolva..</t>
+<t id="L_OBJECT_IS_NON_MANIFOLD" ver="9">A tárgy nincs darabolva. A szeletelés hibába futott. Javítsd a tárgy fájlját elősször.</t>
+<t id="L_SHOW_COMPASS" ver="9">Iránytű</t>
+<t id="L_CONFIRM_DELETE_JOB" ver="10">Biztosan elveted a $1 feladatot?</t>
+<t id="L_PRINT_STATE_SAVED_SUCCESSFULLY" ver="10">Sikeres állapot mentés</t>
+<t id="M_POSPONED_JOBS" ver="10">Halasztott feladatok </t>
+<t id="M_RESUME_JOB" ver="10">Újra</t>
+<t id="M_POSTPONE_JOB" ver="10">Aktuális feladat halasztása</t>
+<t id="W_POSTPONED_PRINT_JOBS" ver="10">Halasztott nyomtatások</t>
+<t id="M_POSTPONED_JOB_SELECT_JOB" ver="10">Feladat újra</t>
+<t id="M_POSTPONED_JOB_KILL_JOB" ver="10">Feladat törlése</t>
+<t id="M_POSTPONED_JOB_RENAME_JOB" ver="10">Feladat átnevezése</t>
+<t id="L_POSTPONED_JOB_NAME" ver="10">Feladat neve</t>
+<t id="L_NAME_POSTPONED_JOB" ver="10">Add meg a nevét a feladatnak</t>
+<t id="L_POSTPONED_JOB_DIALOG_DESCRIPTION" ver="10">A feladat állapota mentve lesz, amint az aktuális réteg elkészül. Kényszerítheted a mentést azonnal, vagy visszatérhetsz a nyomtatáshoz.</t>
+<t id="B_FORCE_SAVE_POSTPONED_JOB" ver="10">&amp;Kényszerítés</t>
+<t id="B_RESUME_PRINTING_JOB" ver="10">&amp;Újra</t>
+<t id="W_POSTPONED_JOB_DIALOG" ver="10">Halasztott nyomtatási feladat</t>
+<t id="M_TOGGLE_PRINTER_ID" ver="10">Nyomtató ID kapcsoló nézet</t>
+<t id="L_PRINTER_ID" ver="10">Nyomtató ID</t>
+<t id="L_BGCOLOR:" ver="10">Háttér szín:</t>
+<t id="L_EDIT_INSTANCE_NAME" ver="10">Nyomtató ID szerkesztés</t>
+<t id="L_ANAYLSING" ver="10">Analizálás</t>
+<t id="L_NOT_TESTED" ver="10">Nem tesztelt</t>
+<t id="L_CONNECTOR:" ver="10">Csatlakozó:</t>
+<t id="L_NORMAL_CORRECTION_IMPOSSIBLE" ver="10">Normális korrekció nem lehetséges a darabolási hálózatnak.</t>
+<t id="M_MED_HEIGHT_MAP" var="10">ágy magassági térkép</t>
+<t id="M_CREATE_HEIGHT_MAP" var="10">Magassági térkép létrehozás</t>
+<t id="B_MEASURE_HEIGHTS" ver="10">Magasság mérés</t>
+<t id="B_RESULT_TO_CLIPBOARD" ver="10">Eredmény a vágólapra</t>
+<t id="L_SCAN_AREA" ver="10">Beolvasási terület</t>
+<t id="L_SCAN_RESULTS" ver="10">Beolvasás eredménye</t>
+<t id="L_X_POINTS:" ver="10">X pontok:</t>
+<t id="L_Y_POINTS:" ver="10">Y pontok:</t>
+<t id="L_Z_MIN:" ver="10">Z min:</t>
+<t id="L_Z_MAX:" ver="10">Z max:</t>
+<t id="L_Z_AVG:" ver="10">Z átlag:</t>
+<t id="L_Z_CENTER:" ver="10">Z közép</t>
+<t id="L_CUT_FACES" ver="10">Tárgy kivágás</t>
+<t id="L_CUT_POSITION" ver="10">Pozíció</t>
+<t id="L_CUT_INCLINATION" ver="10">Dőlés</t>
+<t id="L_CUT_AZIMUTH" ver="10">Irányszög</t>
+<t id="UNITS_OF_IMPORTED_OBJECTS" ver="10">Importált tárgy mértékegysége</t>
+<t id="OBJECTS_ARE_IN_MILLIMETER" ver="10">A tárgy milliméterben van</t>
+<t id="OBJECTS_ARE_IN_INCHES" ver="10">A tárgy inch -ben van</t>
+<t id="OBJECTS_ARE_IN_FOOT" ver="10">A tárgy láb -ban van</t>
+<t id="OBJECTS_ARE_IN_METER" ver="10">A tárgy méterben van</t>
+<t id="B_RESET" ver="10">Újraindít</t>
+<t id="L_SLIC3R_INFO2" ver="10">A Slic3r elkülönülő, külső program, ami elkülönülten indítható. Több információért, látogass el a weboldalára: http://www.slic3r.org</t>
+<t id="L_SKEINFORGE_INFO" ver="10">A Skeinforge elkülönülő, külső program, ami elkülönülten indítható. Több információért, látogass el a weboldalára: http://fabmetheus.crsndoo.com/</t>
+<t id="L_PRINT_SETTINGS:" ver="10">Nyomtatás beállítások:</t>
+<t id="L_PRINTER_SETTINGS:" ver="10">Nyomtató beállítások:</t>
+<t id="L_OVERRIDE_SLIC3R_SETTINGS" ver="10">Felülírt Slic3r beállítások</t>
+<t id="B_COPY_PRINT_SETTINGS_TO_OVERRIDE" ver="10">Nyomtatás beállítások másolása a felülíráshoz</t>
+<t id="L_ENABLE_SUPPORT" ver="10">Támogatás engedélyezés</t>
+<t id="L_ENABLE_COOLING" ver="10">Hűtés engedélyezés</t>
+<t id="L_LAYER_HEIGHT:" ver="10">Réteg magasság:</t>
+<t id="L_INFILL_DENSITY" ver="10">Kitöltési sűrűség:</t>
+<t id="L_INFILL_ANGLE" ver="10">Szög kitöltés</t>
+<t id="L_INFILL_PATTERN:" ver="10">Kitöltési minta:</t>
+<t id="L_SOLID_INFILL_PATTERN:" ver="10">Erős kitöltési minta:</t>
+<t id="L_SHOW_EXTRUDER" ver="10">Extruder mutatása</t>
+<t id="L_SHOW_BED" ver="10">ágy mutatása</t>
+<t id="L_SHOW_OUTPUT" ver="10">Kimenet mutatása</t>
+<t id="L_SHOW_TARGET_TEMPERATURES" ver="10">Cél hőmérséklet</t>
+<t id="L_SHOW_AVERAGE_TEMPERATURES" ver="10">Átlag hőmérséklet</t>
+  <t id="L_NOT_VALID_SD_FILENAME" ver="10">A fájlnév tiltott karakert tartalmaz, vagy túl hosszú. Ne legyen 26 karakternél hosszabb.</t>
+  <t id="B_ADD_SLICER" ver="10">Szeleteléshez ad</t>
+  <t id="B_DELETE" ver="10">Töröl</t>
+  <t id="L_SLICER" ver="10">Szeletelő</t>
+  <t id="L_CONFIGURATION:" ver="10">Konfiguráció:</t>
+  <t id="L_SETUP" ver="10">Beállítás</t>
+  <t id="L_SLICER_CONFIGURATIONS" ver="10">Szeletelő konfiguráció</t>
+  <t id="L_NAME" ver="10">Név</t>
+  <t id="L_SLICER_MANAGER" ver="10">Szeletelő menedzser</t>
+  <t id="L_ASK_LOAD_GCODE" ver="10">A szeletelő egy új g-kód fájl-t készít. Betöltöd?</t>
+  <t id="L_QUESTION" ver="10">Kérdés</t>
+  <t id="L_FILE_TYPES:" ver="10">Fájl típus:</t>
+  <t id="L_WATCHDIRECTORY_INFO" ver="10">A felügyeleti könyvtár megmutatja a felül definiált fájl típusokat. A különböző fajtákat pontosvesszővel választjuk el: &quot;g;gcode&quot;. Minden nyomtatónak saját könyvtára van, amit figyel. Ha új fájl van vagy változás van, akkor válthatsz a  Repetier-Host -hoz, ami megmutatja a fájlt kiemeli ezeket a gyors importhoz.</t>
+  <t id="B_LOAD" ver="10">Betölt</t>
+  <t id="L_CHANGED" ver="10">Megváltozott</t>
+  <t id="L_NEW" ver="10">Új</t>
+  <t id="L_DIRECTORY:" ver="10">Könyvtár:</t>
+  <t id="L_ACTION" ver="10">Művelet</t>
+  <t id="L_FILE" ver="10">Fájl</t>
+  <t id="L_STATUS" ver="10">Állapot</t>
+  <t id="L_SEND_ETA_DISPLAY" ver="10">Küld az ETA -t a nyomtató kijelzőre.</t>
+  <t id="L_ETA_SHORT$1" ver="10">ETA $1</t>
+  <t id="L_ETE_SHORT$1" ver="10">ETE $1</t>
+  <t id="L_CACHING..." ver="10">Raktározás ... $1%</t>
+  <t id="M_MAKE_SCREENSHOT" ver="10">Képernyőkép mentés</t>
+  <t id="PNG_FILTER" ver="10">PNG-kép|*.png</t>
+  <t id="L_INVALID_FILENAME" ver="10">Helytelen fájlnév.</t>
+  <t id="L_EEPROM_IMPORT_FAILED" ver="10">Eprom adat importálási hiba. Hibás fájl formátum.</t>
+  <t id="L_EXPORT_EEPROM_DATA" ver="10">EEPROM adat export</t>
+  <t id="L_IMPORT_EEPROM_DATA" ver="10">EEPROM adat import</t>
+<t id="L_TIME_H" ver="10">$1ó </t>
+<t id="L_TIME_M" ver="10">$1p </t>
+<t id="L_SHOW_OUTPUT_EXTRUDER" ver="10">Extruder kimenet</t>
+<t id="L_SHOW_OUTPUT_BED" ver="10">ágy kimenet</t>
+<t id="M_SHOW_BED_POWER" ver="10">ágy teljesítmény</t>
+  <t id="L_ENABLE_ANTI_ALIAS" ver="10">Élsimítás engedélyezése, ha lehetséges (lassabb megjelenítés, újraindítás szükséges)</t>
+  <t id="L_MODEL_ERRORS_EDGE:" ver="10">Modell hibák (él):</t>
+  <t id="L_CUT_FACES:" ver="10">Vágott felszín:</t>
+  <t id="L_NOT_MANIFOLD_INFO" ver="11">A tárgy nem rétegezhető. Ez azt jelenti, hogy nem vízzáró. Ez általában problémákat okozhat szeletelés közben, és nem várt eredményt hozhat. Erősen ajánljuk, hogy javítsd a fájlt. Ingyenes javító szolgáltatás: https://netfabb.azurewebsites.net </t>
+  <t id="L_EXPERT_MODE" ver="11">Fejlett mód</t>
+<t id="L_CURAENGINE_EXECUTABLE" ver="11">CuraEngine futtató</t>
+<t id="L_CURAENGINE_INFO" ver="11">CuraEngine egy különálló, külső program, amit David Braam fejleszt. Több információért látogasd meg a https://www.ultimaker.com</t>
+<t id="L_CURAENGINE_NOT_FOUND" ver="11">CuraEngine nem található.</t>
+  <t id="L_ANY_EXTRUDER" ver="11">Extruder -ek</t>
+  <t id="L_PUSH_MESSAGES" ver="11">Küldött üzenetek</t>
+  <t id="L_INFORMER_ACTIVE" ver="11">Üzenet küldés aktiválva</t>
+  <t id="L_INFORMER_GROUP" ver="11">Információs csoport:</t>
+  <t id="L_PUSH_PRINT_FINISHED" ver="11">Nyomtatás befejezve</t>
+  <t id="L_PUSH_PRINT_PAUSED" ver="11">Nyomtatás felfüggesztve</t>
+  <t id="L_PUSH_PRINT_STARTED" ver="11">Nyomtatás elindítva</t>
+  <t id="L_PUSH_PRINT_STOPPED" ver="11">Nyomtatás leállítva</t>
+  <t id="L_PUSH_SLICING_FINISHED" ver="11">Szeletelés befejezve</t>
+  <t id="L_PUSH_FATAL_ERRORS" ver="11">Végzetes hiba</t>
+  <t id="L_PUSH_SEND_FOR" ver="11">Üzenet küldés ezekről az eseményekről:</t>
+  <t id="L_TEST" ver="11">Teszt</t>
+  <t id="L_INFORMER_INSTRUCTIONS" ver="11">A Repetier-Informer egy okostelefon alkalmazás amivel elérhetőek a küldött üzenetek. Az alkalmazásban létrehozhatsz csoportot, vagy használhatsz egy megosztott csoportot. Lépj be a csoportba, ahová szeretnék és a Host ide küldi az üzeneteket. Minden csoport tag meg fogja kapni az üzeneteket.</t>
+  <t id="L_VISIT_INFORMER" ver="11">Repetier-Informer weboldal meglátogatása</t>
+  <t id="L_HOST_NAME:" ver="11">Host Név:</t>
+  <t id="L_PUSH_HEAD_STARTED" ver="11">Nyomtatás elkezdve</t>
+  <t id="L_PUSH_MSG_STARTED" ver="11">A nyomtatás a $1 nyomtatón elindult. A nyomtatás befejezése kb.: $2.</t>
+  <t id="L_PUSH_HEAD_PAUSED" ver="11">Nyomtatás felfüggesztve</t>
+  <t id="L_PUSH_MSG_PAUSED" ver="11">A nyomtatás felfüggesztve a $1 nyomtatón. Üzenet: $2</t>
+  <t id="L_PUSH_HEAD_FINISHED" ver="11">Nyomtatás befejezve</t>
+  <t id="L_PUSH_MSG_FINISHED" ver="11">A nyomtatás befejezve a $1 nyomtatón. Nyomtatás ideje: $2. Nyomtatónak üldött sorok: $3</t>
+  <t id="L_PUSH_HEAD_KILLED" ver="11">Nyomtatás leállítva</t>
+  <t id="L_PUSH_MSG_KILLED" ver="11">A nyomtatás leállt a $1 nyomtatón, mielőtt a feladat befejeződött volna.</t>
+  <t id="L_PUSH_HEAD_SLICING" ver="11">Szeletelés befejezve</t>
+  <t id="L_PUSH_MSG_SLICING" ver="11">A szeletelés $1 nyomtatón befejeződött.</t>
+  <t id="L_PUSH_HEAD_FATAL" ver="11">Végzetes hiba</t>
+  <t id="L_PUSH_MSG_FATAL" ver="11">Végzetes hiba keletkezett a $1 nyomtatón. Üzenet: $2</t>
+  <t id="L_CURA_EXTRUDER_INFO" ver="11">CuraEngine csak egy extruder átmérőt és adagolási értéket támogat, ezért minden extrudert azonosnak feltételez . Ha multi-extruder -ed van különböző beállítási értékekkel, Az étékek mindig az első extruder beállításától fognak származni. A nyomtatási hőmérséklet beáll a g-kód idulásakor, így a különböző anyagok hőmérsékletének beállítása nem okoz problémát. A hűtés a legnagyobb értéken legyen és minden extruder ezt fogja használni.</t>
+  <t id="L_TCPIP_CONNECTION" ver="11">TCP/IP Csatlakozás</t>
+  <t id="L_IP_ADDRESS:" ver="11">IP cím:</t>
+  <t id="L_INFORMER_GROUP_INFO" ver="11">Csoport azonosító az aplikációdból.</t>
+  <t id="L_INFORMER_HOST_NAME_INFO" ver="11">Opcionális. Címke hozzáadása az üzenetekhez.</t>
+  <t id="L_INFORMER_TEST_FAILED" ver="11">Nem lehetet hívni az információs szervert.</t>
+  <t id="L_OBJECT_GROUP_%" ver="11">Tárgy csoport $1</t>
+  <t id="L_NOT_COMPUTED" ver="11">Nem számított</t>
+  <t id="L_ANALYSE" ver="11">Elemez</t>
+  <t id="L_ANALYSIS" ver="11">Elemzés</t>
+  <t id="L_SETTINGS" ver="11">Beállítások</t>
+  <t id="L_FILENAME:" ver="11">Fájlnév:</t>
+  <t id="L_ASSIGNED_EXTRUDER:" ver="11">Kijelölt extruder:</t>
+  <t id="L_ASSIGNED_OBJECT:" ver="11">Kijelölt tárgy:</t>
+  <t id="L_EXTRACT_FROM_GROUP" ver="11">Csoportból kivonás</t>
+  <t id="L_SHOW_PLATER" ver="11">Szeletelő belső lemezek</t>
+  <t id="L_PRINT" ver="11">Nyomtat</t>
+  <t id="L_SPEED_AND_QUALITY" ver="11">Sebesség és minőség</t>
+  <t id="L_EXTRUSION" ver="11">Extrudálás</t>
+  <t id="L_STRUCTURES" ver="11">Felépítések</t>
+  <t id="L_G-CODES" ver="11">G-kódok</t>
+  <t id="L_COOLING" ver="11">Hűtés</t>
+  <t id="L_GENERAL_EXTRUDER_SETTINGS" ver="11">Általános extrúder beállítások</t>
+  <t id="L_INFILL" ver="11">Kitöltés</t>
+  <t id="L_MESH_ERRORS" ver="11">Hiba háló</t>
+  <t id="L_MULTI_EXTRUDER_SETTINGS" ver="11">Multi extruder beállítások</t>
+  <t id="L_QUALITY" ver="11">Minőség</t>
+  <t id="L_RAFT" ver="11">Híd</t>
+  <t id="L_SELECTED_QUALITY_SETTING" ver="11">Kiválasztott minőség beállítás</t>
+  <t id="L_SKIRT_AND_BRIM" ver="11">Szoknya és karima</t>
+  <t id="L_SPEED" ver="11">Sebesség</t>
+  <t id="L_SUPPORT" ver="11">Támogatás</t>
+  <t id="L_BED_TEMPERATURE:" ver="11">Ágy hőmérséklet:</t>
+  <t id="L_BRIM_WIDTH:" ver="11">Karima szélesség:</t>
+  <t id="L_INFILL_DENSITY:" ver="11">Kitöltés sűrűsége:</t>
+  <t id="L_INFILL_OVERLAP:" ver="11">Kitöltés átfedése:</t>
+  <t id="L_INFILL_TYPE:" ver="11">Kitöltési minta:</t>
+  <t id="L_MAX_FAN_SPEED:" ver="11">Max. ventillátor sebesség:</t>
+  <t id="L_MIN_FAN_SPEED:" ver="11">Min. ventillátor sebesség:</t>
+  <t id="L_MIN_EXTR_BEFORE_RETRACT:" ver="11">Minimális Extrudálás visszahúzás előtt:</t>
+  <t id="L_MIN_LAYER_TIME:" ver="11">Minimális réteg idő:</t>
+  <t id="L_MIN_SKIRT_LENGTH:" ver="11">Minimális szoknya hossz:</t>
+  <t id="L_MIN_TRAVEL_BEFORE_RETRACT:" ver="11">Minimális haladás visszahúzás előtt:</t>
+  <t id="L_OVERHANG_ANGLE:" ver="11">Túlnyúlási szög:</t>
+  <t id="L_PRINT_SPEED:" ver="11">Nyomtatási sebesség:</t>
+  <t id="L_PRINT_TEMPERATURE:" ver="11">Nyomtatási hőmérséklet:</t>
+  <t id="L_NAME:" ver="11">Név:</t>
+  <t id="L_EXTRA_MARGIN:" ver="11">Extra Margó:</t>
+  <t id="L_BASE_LINE_WIDTH:" ver="11">Alap vonal szélesség:</t>
+  <t id="L_LINE_SPACING:" ver="11">Vonal távolság:</t>
+  <t id="L_BASE_LINE_THICKNESS:" ver="11">Alapvonal vastagság:</t>
+  <t id="L_INTERFACE_LINE_WIDTH:" ver="11">Interface vonal szélesség:</t>
+  <t id="L_INTERFACE_THICKNESS:" ver="11">Interface vastagság:</t>
+  <t id="L_RETRACTION_DISTANCE:" ver="11">Visszahúzási távolság:</t>
+  <t id="L_RETRACTION_ON_EXTRUDER_SWITCH:" ver="11">Extruder váltási visszahúzás:</t>
+  <t id="L_RETRACTION_SPEED:" ver="11">Visszahúzási sebesség:</t>
+  <t id="L_SKIRT_DISTANCE:" ver="11">Szoknya távolság:</t>
+  <t id="L_SKIRT_LINE_COUNT:" ver="11">Szoknya vonal szám:</t>
+  <t id="L_FAST" ver="11">Gyors</t>
+  <t id="L_SLOW" ver="11">Lassú</t>
+  <t id="L_INNER_PERIMETER:" ver="11">Belső kerület</t>
+  <t id="L_OUTER_PERIMETER:" ver="11">Külső kerület</t>
+  <t id="L_SUPPORT_EXTRUDER:" ver="11">Extruder támasztás:</t>
+  <t id="L_SUPPORT_TYPE:" ver="11">Támasztás típusa:</t>
+  <t id="L_TOP/BOTTOM_THICKNESS:" ver="11">Felső/Alsó vastagság:</t>
+  <t id="L_VOLUME_OVERLAP:" ver="11">Átlapolási szint:</t>
+  <t id="L_WIPE_AND_PRIME_VOLUME:" ver="11">Első és úsztatott szint:</t>
+  <t id="L_Z_HOP:" ver="11">Z ugrás:</t>
+  <t id="L_SHELL_THICKNESS:" ver="11">Héj vastagság:</t>
+  <t id="L_DISTANCE_XY:" ver="11">XY távolság:</t>
+  <t id="L_DISTANCE_Z:" ver="11">Z távolság:</t>
+  <t id="L_GCODE_FLAVOUR:" ver="11">G-kód ízesítés:</t>
+  <t id="L_FLOW:" ver="11">Folyás:</t>
+  <t id="L_DEFAULT_QUALITY:" ver="11">Alapértelmezett minőség:</t>
+  <t id="L_FIRST_LAYER_HEIGHT:" ver="11">Első réteg magasság:</t>
+  <t id="L_COMBINE_EVERYTHING_A" ver="11">Mindent egyesít (A típus)</t>
+  <t id="L_COMBINE_EVERYTHING_B" ver="11">Mindent egyesít (B típus)</t>
+  <t id="L_MINIMIZE_CROSSING_PERIMETERS" ver="11">Minimalizált keresztező kerületek</t>
+  <t id="L_ENABLE_RETRACTION" ver="11">Visszahúzás engedélyezés</t>
+  <t id="L_EXTENSIVE_STITCHING" ver="11">Kiterjesztett befűzés</t>
+  <t id="L_KEEP_OPEN_FACES" ver="11">Felszín nyitva tartás</t>
+  <t id="L_CREATE_OOZE_SHIELD" ver="11">Ooze pajzs készítés</t>
+  <t id="L_CREATE_WIPE_PRIME" ver="11">Úsztatot és elsődleges torony készítés</t>
+  <t id="L_SPIRALIZE_CONTOUR" ver="11">Spirális szegély</t>
+  <t id="L_SOLID_TOP_INFILL" ver="11">Erősített felső kitöltés</t>
+  <t id="L_SOLID_BOTTOM_INFILL" ver="11">Erősített alsó kitöltés</t>
+  <t id="L_COOL_HEAD_LIFT" ver="11">fej emelés hűtés</t>
+  <t id="L_FILL_AMOUNT:" ver="11">Töltési költség:</t>
+  <t id="L_CURAENGINE_SETTINGS" ver="11">CuraEngine beállítások</t>
+  <t id="L_PRINT_CONFIGURATION:" ver="11">Beállítások:</t>
+  <t id="L_ADHESION_TYPE:" ver="11">Ragasztás típus:</t>
+  <t id="L_SPEED:" ver="11">Sebesség:</t>
+  <t id="B_SAVE_AS" ver="11">Mentve mint ...</t>
+  <t id="L_AIR_GAP:" ver="11">Lég rés:</t>
+  <t id="L_NUM_SURFACE_LAYER:" ver="11">Felületi szint szám:</t>
+  <t id="L_NONE" ver="11">Nincs</t>
+  <t id="L_BRIM" ver="11">Szoknya</t>
+  <t id="L_GRID" ver="11">Rács</t>
+  <t id="L_LINES" ver="11">Vonalak</t>
+  <t id="L_TOUCHING_BED" ver="11">Ágy érinthető</t>
+  <t id="L_EVERYWHERE" ver="11">Mindenhol</t>
+  <t id="L_AUTOMATIC" ver="11">Automatikus</t>
+  <t id="L_CONCENTRIC_LINES" ver="11">Koncentrikus vonalak</t>
+  <t id="L_CURACODEHINTS" ver="11">
+Megadhatsz dinamikus változókat, amit lehet változtatni szeletelés közben.
+
+Hőmérséklet:
+{TEMP0}, {TEMP1}
+{BED}
+
+Sebesség:
+{Z_TRAVEL_SPEED}
+{TRAVEL_SPEED}
+
+Te hozzáadhatsz egy sort, ami akkor jut érvénybe, ha az extruder, vagy a ágy használatban van. Így kell a sort kezdeni:
+{IF_BED}
+{IF_EXT0}
+
+Használd az "Alapértelmezés létrehozása" -t hogy kapj egy jó indítási szkriptet azokkal a beállításokkal ami neked szükséges.
+  </t>
+  <t id="H_RETRACTION_SPEED" ver="11">
+    Ezzel a szál visszahúzás sebességét adjuk meg. 
+	A gyorsabb visszahúzás jobb munkát eredményez,
+	de ha túl gyors, akkor a szál megcsúszhat és sérülhet.
+  </t>
+  <t id="H_RETRACTION_DISTANCE" ver="11">
+    Visszahúzási távolság. A 0 -nál nincs visszahúzás.
+    A tipikus érték 2mm -től (közvetlen extruder)
+    a 7 mm -ig (bowdenes extruder) terjed.
+  </t>
+  <t id="H_FIRST_LAYER_HEIGHT" ver="11">
+    Az alsó réteg rétegmagassága. A vastagabb réteg
+	kiegyenlíti a ágy beállítási hibáit.
+  </t>
+  <t id="H_CUT_OFF_OBJECT_BOTTOM" ver="11">
+    Tárgy platformba süllyesztése. Ez akkor lehet, ha tárgynak 
+	olyan az alakja, hogy nem lehet alsó réteget létrehozni.
+  </t>
+  <t id="H_VOLUME_OVERLAP" ver="11">
+    Ez a hossza a különböző anyagok és színek átlapolásának
+	multi extrudálásnál, így szebben kapcsolódnak össze.
+  </t>
+  <t id="H_TRAVEL_SPEED" ver="11">
+    Ez a léptetési sebesség. Ez lehet gyors, azonban egyes nyomtatók
+	magas értéknél lépést hibázhatnak.
+  </t>
+  <t id="H_FIRST_LAYER_SPEED" ver="11">
+    Az első réteg nyomtatási sebessége. Ez jobb ha alacsonyabb,
+	mert jobb lesz az első réteg a tálcán.
+  </t>
+  <t id="H_INFILL_SPEED" ver="11">
+    A nyomtatás kitöltési sebessége. A gyorsabb mozgás 
+	csökkenti a nyomtatási időt, de a minőség is rosszabb lesz.
+  </t>
+  <t id="H_OUTER_PERIMETER_SPEED" ver="11">
+    A külső körvonalak nyomtatási sebessége.
+    Az alacsonyabb sebesség jobb minőséget eredményez.
+	A túl nagy különbség a kölső és a belső körvonalak között 
+	azonban szintén minőség romlást eredményeznek.
+  </t>
+  <t id="H_INNER_PERIMETER_SPEED" ver="11">
+    Belső körvonalak nyomtatási sebessége.
+    A gyorsabb nyomtatás gyökkenti a nyomtatási időt.
+	Ennek a sebbességnek a kitöltési és a külső körvonalak nyomtatási 
+	sebessége között kell lennie.
+  </t>
+  <t id="H_MINIMUM_LAYER_TIME_COOLING" ver="11">
+    Egy réteg legkissebb nyomtatási ideje. Ennek az időnek 
+	elégnek magasnak kell lenni arra, hogy legyen ideje visszahűlni az előző rétegnek.
+    Ha a nyomtatási sebesség túl gyors, túl kicsi lesz az idő egy réteghez.
+  </t>
+  <t id="H_ENABLE_COOLING" ver="11">
+    Hűtés aktiválása nyomtatás közben. Egyértelműen növeli 
+	a nyomtatás minőségét, különösen PLA anyagnál, hidaknál, kinyúlásoknál.
+  </t>
+  <t id="H_LAYER_HEIGHT" ver="11">
+    Egy réteg magassága miliméterben, ezzel állíthatod be 
+	a nyomtatás felbontását Z irányban. Az alacsonyabb érték 
+	növeli a nyomtatás minőségét, de tovább fog tartani a nyomtatás.
+	Általános érték  0.1 mm és 0.4 mm között van.
+  </t> 
+  <t id="H_SHELL_THICKNESS" ver="11">
+    Vízszintes irányú külső héj vastagság. A fúvóka vastagság és a kerületi vonalak száma
+	határozza meg.
+  </t>
+  <t id="H_ENABLE_RETRACTION" ver="11">
+    Szál visszahúzás, amikor a fúvóka olyan helyen halad, ahol nem kell nyomtatni.
+	Ez segít csökkenteni vagy megszüntetni a húrosodást.
+  </t>
+  <t id="H_TOP_BOTTOM_THICKNESS" ver="11">
+    Az alsó és a felső erősebb réteg összegét állítja be.
+	Függ a kitöltési sűrűségtől, növelned kell a vastagságot, ha a kitöltés
+	áttetsző vagy jobb nyomtatási minőséget szeretnél. 1 mm az általános érték.
+  </t>
+  <t id="H_INFILL_DENSITY" ver="11">
+    Itt tudod meghatározni a kitöltési sűrűséget. Tömör tárgy: 100%, üres tárgy: 0%. 
+	A magasabb kitöltési sűrűségnél a tárgy is erősebb lesz. 
+	Alacsonyabb sűrűségnél időt és szálat takaríthatunk meg.
+	Általános érték 20% és 30%, ha nem szükséges a nagy stabilitás.
+  </t>
+  <t id="H_PRINT_SPEED" ver="11">
+    Nyomtatási sebesség minden részre, ha nincs megadva 
+	elkülönített sebesség.
+  </t>
+  <t id="H_PRINT_TEMPERATURE" ver="11">
+    A nyomtatási hőmérséklet függ a szál anyagától és a nyomtatótól.
+	A legtöbb szál gyártó megadja az optimális hőmérséklet tartományt.
+  </t>
+  <t id="H_SUPPORT_TYPE" ver="11">
+    Épített támasztékok típusa.
+
+    "Nincs" támasztás kikapcsolva.
+
+    "Ágy érinthető" a legáltalánosabb beállítás.
+    Csak ott hoz létre támasztást, ahol a tárgy érintkezhet az ággyal.
+
+    "Mindenhol" a model minden kilógó részére támasztást készít.
+  </t>
+  <t id="H_ADHESION_TYPE" ver="11">
+    Segít növelni a kötést a tárgy és a ágy között.
+
+    "Nincs" kikapcsolja ezt a funkciót.
+
+    "Szoknya" hozzáad egy egszerű réteget a tárgy körül, 
+	amit később egyszerűen levághatunk.
+    A karima akkor szükséges, ha az éleknél elmozdulás van.
+
+    "Híd" hozzáad egy vastag rácsot a tárgyon belül, amit később,
+	nyomtatás után eltávolíthatunk. Ez akkor szükséges, ha nem egyenletes a tálcánk,
+	vagy a tárgy nagyon kicsi, és nem tudja megtártani a tárgyat nyomtatás közben.
+  </t>
+  <t id="H_FILAMENT_DIAMETER" ver="11">
+    A szál átmérője. Ezt a lehető legpontosabban kell megadni.
+  </t>
+  <t id="H_FLOW" ver="11">
+    Az extrudált szál összege, amit ebből az értékből szorozva kapunk meg.
+	Az általános értéknek 100% -nak kell lennie.
+  </t>
+  <t id="L_OUTER_PERIMETER_SPEED:" ver="11">Külső kerületi sebesség:</t>
+  <t id="L_INFILL_SPEED:" ver="11">Kitöltési sebesség:</t>
+  <t id="L_PRINT:" ver="11">Nyomtatás:</t>
+  <t id="L_SUPPORT_PATTERN:" ver="11">Támaszték minta:</t>
+  <t id="L_TRAVEL:" ver="11">Léptetés:</t>
+  <t id="L_CUTOFF_BOTTOM" ver="11">Tárgy kivágás alul:</t>
+  <t id="L_ESTIMATED_PRINTING_TIME:" ver="11">Becsült nyomtatási idő:</t>
+  <t id="L_LAYER_COUNT:" ver="11">Réteg számláló:</t>
+  <t id="L_FILAMENT_NEEDED:" ver="11">Szál szükséglet:</t>
+  <t id="L_FAN_FULL_AT_HEIGHT:" ver="11">Hűtés teljes szélességben:</t>
+  <t id="L_MINIMUM_SPEED:" ver="11">Minimum sebesség:</t>
+  <t id="H_MINIMUM_TRAVEL_BEFORE_RETRACT" ver="11">Minimum lépéstávolság a visszahúzásig.</t>
+  <t id="L_PREVIEW" ver="11">Előnézet</t>
+  <t id="L_SCALE_OBJECT" ver="11">Tárgy mérték</t>
+  <t id="L_ROTATE_OBJECT" ver="11">Tárgy forgatás</t>
+  <t id="H_MINIMIZE_CROSSING_PERIMETERS" ver="11">
+	Ha ezen a módon mozgatunk, olyan útvonalunk lesz, hogy
+	a fej a cél pontig nem hagyja el a tárgyat.
+	Ha kikapcsoljuk, akkor mindig egy egyenes úton haladunk
+	a cél pont felé, ami húrokat képezhet.
+  </t>
+  <t id="H_MINIMUM_EXTRUSION_BEFORE_RETRACT" ver="11">
+	A legkissebb extrudálási költség, mielőtt a 
+	következő visszahúzás végrehajtódik.
+	Ha a visszahúzás szükséges lenne, mielőtt a minimum költséget
+	elérjük, a visszahúzás el lesz halasztva.
+	Ha a visszahúzás túl gyakori egy adott helyen,
+	a szál falat fog képezni és blokkolja az extrudert.
+  </t>
+  <t id="H_Z_HOP" ver="11">
+    A fej felemelkedik ebbe a magasságba visszahúzáskor.
+	Ennek vannak pozitív hatásai a Z tengelyen, úgy
+	mint a Delta nyomtatóknál.
+  </t>
+  <t id="H_SKIRT_LINE_COUNT" ver="11">
+    A szoknya egy vonal, ami körberajzolja a tárgyat
+	az első rétegen. Ez segít, hogy lásd, a tárgyadat
+	jól tudja nyomtatni az extruder, és jól tapad az ágyon.
+	A 0 állás kikapcsolja a szoknyát.
+  </t>
+  <t id="H_SKIRT_DISTANCE" ver="11">A szoknya távolsága az objektum szélétől.</t>
+  <t id="H_MINIMUM_SKIRT_LENGTH" ver="11">
+    A szoknya vonal minimális hossza. Ha a minimális hossz nem elégnek
+	akkor további szoknya vonalat ad hozzá. Ha a szoknya vonalak száma 0,
+	akkor ez a funkció elvetésre kerül.
+  </t>
+  <t id="H_FAN_FULL_ON_AT_HEIGHT" ver="11">
+    Ez az a magasság, ahol a ventillátor teljesen bekapcsol.
+	A ventillátor sebessége egy lineáris skálán emelkedik, 
+	úgy, hogy az első rétegnél még ki van kapcsolva.
+  </t>
+  <t id="H_MIN_FAN_SPEED" ver="11">Ez a minimális hűtési ventillátor sebesség. 
+  Ha a réteg idő kisebb lesz, mint a minimum réteg idő, akkor a nyomtatási sebesség
+alacsonyabb lesz. Ilyenkor a ventillátor sebessége kiszámított lesz a minimális
+és a maximális ventillátor sebesség között, de mindig az alacsonyabb lesz az érvényes.
+  </t> 
+  <t id="H_MAX_FAN_SPEED" ver="11">
+    Ez a maximális hűtési ventillátor sebesség.
+	Ha elérte a maximális sebességet a ventillátor, a réteg 
+	idő csökkenhet több mint 50% -ot.
+  </t>
+  <t id="H_COOL_HEAD_LIFT" ver="11">
+	Fej emelés ha a nyomtatás minimum sebessége
+	gyorsabb, mint a minimális réteg idő, ami alatt egy réteg 
+	kinyomtatódik.
+  </t>
+<t id="H_MINIMUM_COOLING_SPEED" ver="11">A minimális réteg idő lassítja a nyomtatót
+annyira, hogy a nyomtató szál elkezdhet szivárogni.  A minimális sebesség 
+megvéd ez ellen. 
+Bármikor, amikor a nyomtató lelassul, ez alá a sebesség alá nem mehet.</t> 
+  <t id="H_SOLID_TOP_INFILL" ver="11">
+	Masszív felső felület létrehozása. Ha kikapcsoljuk, akkor
+	a kitöltés nem lesz használva. Hasznos, ha szilárd vázat 
+	akarunk definiálni.
+  </t>
+  <t id="H_SOLID_BOTTOM_INFILL" ver="11">
+    Masszív alsó felület létrehozása. Ha kikapcsoljuk, a 
+	kitöltés lesz használva. Hasznos, ha a tárgy masszív felépítésű.
+  </t>
+  <t id="H_INFILL_OVERLAP" ver="11">
+    Ez határozza meg az átfedést a kitöltésnél és a falaknál.
+	Kell lenni egy kis átfedésnek, hogy a kitöltés és 
+	a falak szilárdan kapcsolódjank.
+  </t>
+  <t id="H_SUPPORT_PATTERN" ver="11">
+    Válassz a két támaszték minta közül:
+
+    "Rács" nagyon erős és egy darabban jön ki. Néha túl erős is.
+
+    "Vonalak" egyszerű fal vonalak, amik letörnek egy darabban.
+	Ez a legtöbb munkánál eltávolítódik, de kevésbé lesz erős a tárgy.
+	Jól használható trükkös nyomtatásoknál.
+  </t>
+  <t id="H_OVERHANG_ANGLE" ver="11">
+	A legkissebb szög, ami szükséges a megtámasztáshoz.
+    0° a vízszintes, 90° a függőleges.
+  </t>
+  <t id="H_SUPPORT_FILL_AMOUNT" ver="11">
+    A támasztási felépítmény sűrűsége. Kevesebb anyag, gyengébb
+	megtámasztást ad, viszont könnyű eltávolítani.
+    15% átlagosan a legjobb.
+  </t>
+  <t id="H_DISTANCE_XY" ver="11">
+	A támaszték és a tárgy távolsága XY irányban.
+	A 0.8 mm egy megfelelő távlság, így nem fog a 
+	támaszték egy darabot képezni a tárgyal.
+  </t>
+  <t id="H_DISTANCE_Z" ver="11">
+    Alsó és felső irányban lévő tárgy és támaszték
+	távolsága. Egy kis réssel elérhetjük, hogy könnyen 
+	el lehet a tárgytól választani.
+  </t>
+  <t id="H_SPIRALIZE_CONTOUR" ver="11">
+	Ezzel elérhetjük, hogy a szilárd tárgy
+	egyetlen fallal lesz körbevéve, ahol a Z folyamatosan 
+	növekszik, így sima felületet hoz létre.
+	Ideális vázák esetén.
+  </t>
+  <t id="H_BRIM_WIDTH" ver="11">
+    Karima szélesség. Nagyobb karima esetén
+	a tárgy stabilabban fekszik a tálcán,
+	azonban csökken a tényleges nyomtatási terület.
+  </t>
+  <t id="H_RAFT_EXTRA_MARGIN" ver="11">
+    Ha engedélyezve van, akkor létrejön egy extra úsztatott
+	terület a tárgy körül. A nagyobb úsztatott terület stabilabb,
+	de erősen redukálja a tényleges nyomtatási területet.
+  </t>
+  <t id="H_RAFT_LINE_SPACING" ver="11">Ez az úsztatott terület középvonalától mért távolság.</t>
+  <t id="H_RAFT_BASE_LINE_THICKNESS" ver="11">Ez a vastagsága az alaprétegnél.</t>
+  <t id="H_RAFT_BASE_LINE_WIDTH" ver="11">Ez a szélessége az alapréteg vonalainak.</t>
+  <t id="H_RAFT_INTERFACE_THICKNESS" ver="11">Ez a vastagsága a kapcsolatoi rétegnek.</t>
+  <t id="H_RAFT_INTERFACE_LINE_WIDTH" ver="11">Ez a szélessége a kapcsolati réteg vonalainak.</t>
+  <t id="H_RAFT_AIG_GAP" ver="11">
+    Ez a rés a tárgy és az úsztatás között van.
+    Ha a rés nagyobb, könnyebb eltávolítani az objektumot,
+	de nem szabad nagyon megnövelni a távolságot, mert nem fog elég fixen
+	állni a tárgy a nyomtatás alatt.
+  </t>
+  <t id="H_RAFT_NUM_SURFACE_LAYER" ver="11">
+    A felületi réteg a legfelső az úsztatáson.
+    A 100% kitöltésnél a felső réteg az úszattáson síklap lesz.
+  </t>
+  <t id="H_COMBINE_EVERYTING_TYPE_A" ver="11">
+	Ez a fejlett opció a tárgy minden részéhez hozzáadódott.
+	Az eredmény általában, hogy a belső üregek eltűnnek.
+	Függően attól, hogy ez a tárgynál szándékolt-e vagy sem.
+	Kockázatos engedélyezni ezt az opciót.
+	Az A-tipus a tárgy normáitól függ, és próbálja
+	megtartani a belső lyukakat sértetlenül.
+	A B-típus figyelmen kívül hagy minden belső
+	üreget, és csak a külső vonalakat tartja.
+  </t>
+  <t id="H_COMBINE_EVERYTING_TYPE_B" ver="11">
+	Ez a fejlett opció a tárgy minden részéhez hozzáadódott.
+	Az eredmény általában, hogy a belső üregek eltűnnek.
+	Függően attól, hogy ez a tárgynál szándékolt-e vagy sem.
+	Kockázatos engedélyezni ezt az opciót.
+	Az A-tipus a tárgy normáitól függ, és próbálja
+	megtartani a belső lyukakat sértetlenül.
+	A B-típus figyelmen kívül hagy minden belső
+	üreget, és csak a külső vonalakat tartja.
+  </t>
+  <t id="H_KEEP_OPEN_FACES" ver="11">
+	Ez a fejlett opció megtartja a teljes modell nyitott darabjait.
+	A Cura általában megpróbálja beölteni a kis lyukakat,
+	és eltávolít mindent a nagy lyukakból, ami nem része 
+	semminek.Így csak az marad szabadon, ami úgy is maradhat.
+	Ez általában nem az amit akarsz, de lehetővé teszi azokat az 
+	utakat, amit egyébként nem hozhatóak létre.
+	Mint minden kiterjesztett opciónál, ennél is eltérőek
+	lehetnek a végeredmények. Csak saját felelősségre használd.
+  </t>
+  <t id="H_EXTENSIVE_STITCHING" ver="11">
+	A kiterjesztett varrás megpróbálja rögzíteni a lyukakat
+	a tárgyban. Úgy, hogy a lyukak közelébe érintő poligonokat
+	helyez. Ez az algoritmus nagyon számítás igényes, 
+	jelentősen növelheti a szeletelési időt.
+	Mint minden extra funkciónál, az eredmény változó lehet.
+	Használd óvatosan.
+  </t>
+  <t id="L_CREATE_DEFAULT" ver="11">Legyen Alapértelmezett</t>
+
+  <t id="H_NAME_SELECTED_QUALITY_SETTING" ver="11">Válassz beszédes nevet a mentéshez.</t>
+  <t id="H_INFILL_PATTERN" ver="11">
+    "Automatikus" vonalakat vagy rácsot választ a sűrűség szerint.
+
+    "Rács" stabil szerkezetet eredményez.
+
+    "Vonalak" párhozamosak és közeliek.
+
+    "Koncentrikus vonalak" vonalak, csökkentett váz.
+  </t>
+  <t id="H_CREATE_WIPE_AND_PRIME_TOWER" ver="11">
+	A törlési torony egy nyomtatott torony minden rétegen,
+	mikor két fúvóka között van váltás. A régi fúvókát
+	letörli a torony, mielőtt az új fúvóka a második
+	színnel kezd el dolgozni. Az új fúvóka légtelenítve lesz,
+	így az új szállal történő nyomtatás korrekt lesz.
+  </t>
+  <t id="H_OOZE_SHIELD" ver="11">
+	A szivárgási pajzs egy 1 vonal vastag héj,
+	a tárgy körül, ami pár mm távolságban van a tárgytól.
+	Ez a pajzs, elkap bármilyen szivárgást, 
+	a nem használt fúvókából, duál extrúderes
+	nyomtatók esetében.
+  </t>
+  <t id="H_RETRACTION_ON_EXTRUDER_SWITCH" ver="11">
+	Visszahúzási távolság mikor két fúvóka között váltasz.
+	Ha 0 -t állítasz be, nem lesz visszahúzás.
+  </t>
+  <t id="H_WIPE_AND_PRIME_VOLUME" ver="11">
+	A szál anyagának az összessége, amit a fő építmény
+	és a törlő torony ad meg. Ez általában az a mennyiség, 
+	amit szeretnél hogy kinyomjon az extruder,
+	függetlenül a réteg magasságától.
+	Vékonyabb rétegekkel a te építményed nagyobb lesz.
+  </t>
+  <t id="L_AIR_GAP_LAYER0:" ver="11">Légrés réteg 0:</t>
+
+	<t id="H_AIR_GAP_OTHER_LAYERS" ver="11">
+	A feltételezett légrés az úsztatott réteg és a tárgy között, 
+	az objektum második rétegétől számítva. Az ideális érték a 0.
+	A feltételezés az, hogy a légrés az első rétegnél 0,
+	a réteg szélétől az úsztatott rétegig, így ez egy zárt
+	rést eredményez.
+	</t> 
+	
+    <t id="H_SLIC3R_OVERRIDE_SLIC3R_SETTINGS" ver="11">
+	A kiválasztott Slic3r beállításokat felülírja
+	ezekkel az értékekkel.
+  </t>
+    <t id="H_SLIC3R_COPY_PRINT_SETTINGS_TO_OVERRIDE" ver="11">
+	Az alábbi értékekre lecseréli a konfigurációban
+	megadott értékeket.
+  </t>  
+    <t id="H_SLIC3R_ENABLE_SUPPORT" ver="11">
+	Támaszték hozzáadása, ahol ez szükséges a nyomtatáshoz. 
+  </t> 
+    <t id="H_SLIC3R_ENABLE_COOLING" ver="11">
+	Hűtőventillátor bekapcsolása nyomtatás közben.
+	Ez meghatározóan tudja befolyásolni a nyomtatás
+	minőségét, különösen PLA esetén, hidak és túlnyúlások
+	nyomtatásakor.
+  </t>  
+    <t id="H_SLIC3R_LAYER_HEIGHT" ver="11">
+	Ezzel a mm -ben megadott réteg magassággal tudod
+	megadni a nyomtató Z irányú felbontását.
+	Alacsonyabb emelkedésnél javul a nyomtatás minősége,
+	de sokkal tovább tart a nyomtatás.
+	Az átlagos érték 0.1 mm és 0.4 mm között van.
+  </t>  
+  <t id="H_SLIC3R_INFILL_DENSITY" ver="11">
+	
+    Itt adható meg a kitöltési minta sűrűsége. 
+	Tömör tárgynál 100%, üres tárgynál 0%.
+	Az erősebb kitöltésnél erősebb lesz a tárgy, kisebb
+	kitöltés esetén rövidül a nyomtatás ideje, és szálat
+	takaríthatunk meg. Jellemzően 20% és 30% közötti
+	kitöltés adunk meg, hacsak nem akarunk sokkal erősebb
+	tárgyat.
+  </t>
+  <t id="H_SLIC3R_INFILL_PATTERN" ver="11">
+	Ez az elem választja ki a belső kitöltési mintát.
+  </t>
+  <t id="H_SLIC3R_SOLID_INFILL_PATTERN" ver="11">
+    Ez az elem választja ki a felület kitöltési mintáját.
+  </t>
+  <t id="B_CONFIGURE" ver="11">Konfiguráció</t>
+  <t id="B_CURA_FAST" ver="11">Gyors</t> 
+  <t id="B_CURA_SLOW" ver="11">Lassú</t> 
+<t id="L_SCALE_TO_MAX" ver="11">Skála a Maximum -hoz</t>
+<t id="L_RESET_ROTATION" ver="11">Forgatás alaphelyzet</t>
+<t id="L_LAY_FLAT" ver="11">Fekvés</t>
+  <t id="L_PREFERENCES" ver="11">Tulajdonságok</t>
+  <t id="L_BASIC_SETTINGS" ver="11">Alap beállítások</t>
+  <t id="L_3D_VISUALIZATION" ver="11">3D Nézet</t>
+  <t id="L_SHOW_HELP_BUBBLES" ver="11">Súgó mutatása (Újraindítás szükséges)</t>
+  <t id="L_MAX_EXTRUDER_TEMP:" ver="11">Max. Extruder hőmérséklet:</t>
+  <t id="L_MAX_BED_TEMP:" ver="11">Max. ágy hőmérséklet:</t>
+  <t id="L_HAS_MIXING_EXTRUDER" ver="11">A nyomtatónak kevert Extruder -e van. (egy fúvóka minden színhez)</t>
+  <t id="L_MANUAL_EXTRUSION_SPEED:" ver="11">Kézi Extrudálási Sebesség:</t>
+  <t id="L_MANUAL_RETRACTION_SPEED:" ver="11">Kézi Visszahúzási Sebesség:</t>
+  <t id="L_INVERT_MOVEMENT_DIRECTION_FOR_MANUAL_CONTROL" ver="11">Fordított irányú mozgatás a kézi vezérléshez:</t>
+  <t id="L_X_AXIS" ver="11">X-irány</t>
+  <t id="L_Y_AXIS" ver="11">Y-irány</t>
+  <t id="L_Z_AXIS" ver="11">Z-irány</t>
+  <t id="H_CONTROL_POWER" ver="11">
+    Néhány nyomtatónak van készenléti tápegysége, így 
+	a normál táp ezzel a funkcióval ki és be kapcsolható.
+  </t>
+
+  <t id="H_CONTROL_MOTOR" ver="11">
+    Minden motor lekapcsolása.
+    Az extruder helyzete megváltozhat.
+    Amint a mozgatás újra aktiválódik, a motorok
+	újra visszakapcsolnak.
+  </t>
+
+  <t id="H_CONTROL_PARKING" ver="11">
+    Az extruder parkoló állásba mozgatása.
+  </t>
+
+  <t id="H_CONTROL_SCRIPTX" ver="11">
+    Az $1 szkript elküldése a nyomatónak. Te meg tudod nézni 
+	és módosítani a jobb egér gombbal.
+  </t>
+
+  <t id="H_CONTROL_SPEED" ver="11">
+	Nyomtatási sebesség megváltoztatása. Minden sebességre
+	hatással van ez az érték, de az adagolási sebességet nem befolyásolja.
+	Figyelj arra, hogy a nagyobb sebesség a 
+	minőséget hátrányosan befolyásolja.
+  </t>
+
+  <t id="H_CONTROL_FLOW" ver="11">
+	Szál adagolási sebesség vezérlése. Ez befolyásolja
+	mennyi lesz a nyomtatási költség. A magasabb
+	érték vastagabb nyomtatott vonalakat jelent.
+  </t>
+
+  <t id="H_CONTROL_FAN" ver="11">
+	Ez a hűtés vezérlése. A hűtés nagyban befolyásolhatja
+	a nyomtatás minőségét. Különösen igaz ez a 
+	túlnyúlásokra és a hidakra.
+  </t>
+
+  <t id="H_CONTROL_BED" ver="11">
+	Ez a fűthető ágy hőmérséklet vezérlése.
+	Tipikus hőmérséklet PLA esetén 50°C és 60°C fok között,
+	ABS esetén 100°C és 120°C között van. 
+	Ez függhet a ágy felületétől és bevonatától is.
+  </t>
+
+  <t id="H_CONTROL_EXTRUDER" ver="11">
+	Ez az extruder hőmérséklet vezérlése.
+	Tipikus hőmérséklet PLA esetén 180°C és 220°C fok között,
+	ABS esetén 240°C és 260°C fok között, de ez függ a száltól, és
+	az extrudertől is.
+  </t>
+
+  <t id="H_PS_CONNECTOR" ver="11">
+	Kommunikáció típusa. A legtöbb nyomtató soros 
+	kommunikációt használ. A virtuális csatlakozás
+	biztosít egy virtuális nyomtatót a teszteléshez.
+  </t>
+
+  <t id="H_PS_PORT" ver="11">
+	Válaszd ki a nyomtatódhoz tartozó COM portot.
+	Ha nem ismered a portot, húzd ki az USB kábelt,
+	és frissítsd a portokat. Jegyezd meg, milyen 
+	portokat látsz, és csatlakoztasd újra a nyomtatót.
+	Meg kell jelennie egy új portnak a listában, ez a 
+	port tartozik a nyomtatódhoz. Ha nem jelenik meg új port,
+	akkor nincs helyesen installálva a nyomtató driver.
+  </t>
+
+  <t id="H_PS_BAUD_RATE" ver="11">
+	A nyomtató kommunikációs sebessége.
+	A leggyakoribb sebességek 115200 és a 250000.
+	Ha rossz értéket adsz meg, nem fog kommunikálni 
+	a nyomtatód, és nem fog utasításokat fogadni.
+	Ez a leggyakoribb hibaforrás, a kommunikációs
+	hibák esetén.
+  </t>
+
+  <t id="H_PS_TRANSFER_PROTOCOL" ver="11">
+	A használt átviteli protokoll a nyomtató és a host közötti adatcseréhez.
+	A bináris protokoll a legjobb és a leggyorsabb, 
+	de csak a Repetier firmware -el működik.
+	Ha kiválasztjuk az "Autodetekt" módot,
+	automatikusan beállítódik a legjobb átviteli metódus.
+  </t>
+
+  <t id="L_AUTODETECT" ver="11">
+    Autodetektálás
+  </t>
+
+  <t id="L_REPETIER_PROTOCOL" ver="11">
+    Repetier protokoll
+  </t>
+
+  <t id="H_PS_RESET_ON_CONNECT" ver="11">
+	Sok vezérlő lehetőséget ad arra, hogy a DTR vagy az RTS
+	pin megváltozása esetén RESET -et hajtson végre.
+	Ez előnyös lehet, mert új csatlakozás esetén 
+	újraindul a vezérlő, így az esetleges csatlakozási
+	problémákat elhárítja. Néhány nyomtató ezt a funkciót nem támogatja,
+	ilyen esetben az opciót ki kell kapcsolni.
+  </t>
+
+  <t id="H_PS_RESET_ON_EMERGENCY" ver="11">
+	Ez adja meg, mi fog történni a vészleállító
+	gomb megnyomása esetén. Mivel eltelhet némi idő,
+	amíg a vészleállító parancs megérkezik, lehetőség
+	van arra, hogy ez kombinálva legyen RESET -tel.
+  </t>
+
+  <t id="H_PS_RECEIVE_CACHE_SIZE" ver="11">
+	Hogy megelőzzük a pici szüneteket a nyomtatás alatt,
+	a host több parancsot küld egy időben. Írd be a 
+	karakterek számát, amire a nyomtató képes emlékezni 
+	(cache méret), így elkerülheted a túlterhelést.
+	A legtöbb nyomtató 127 byte fogadásra képes, azonban
+	egyes nyomtatók esetén ez csak 63 byte.
+	Ha túl sok kommunkációs hiba jelzést kapsz, a nyomtatás alatt,
+	akkor valószínűleg túl nagy a megadott szám.
+  </t>
+
+  <t id="H_PS_USE_PING_PONG_COMMUNICATION" ver="11">
+	A ping-pong kommunikációnál, mindig csak egy
+	utasítás megy a nyomtatónak. Ez sokkal lassabb
+	kommunikációs forma, így ha lehetséges, akkor
+	kapcsold ki ezt.
+  </t>
+
+  <t id="H_PS_IP_ADDRESS" ver="11">
+    Ezzel az IP címmel tudod elérni a nyomtatót.
+  </t>
+
+  <t id="H_PS_IP_PORT" ver="11">
+    Ezen a porton érhető el a nyomtató.
+  </t>
+
+  <t id="H_PS_VIRTUAL_BAUD_RATE" ver="11">
+	Szimulált nyomtató csatlakozási sebesség.
+	250000 -tól nincs várakozási idő, kisebb
+	értéknél megfelelő szüneteket kell beszúrni.
+  </t>
+
+  <t id="H_PS_TRAVEL_FEED_RATE" ver="11">
+    Ez az extruder X és Y irányú sebessége 
+	manuális vezérlésnél.
+  </t>
+
+  <t id="H_PS_Z_AXIS_FEED_RATE" ver="11">
+    Ez az extruder Z irányú sebessége 
+	manuális vezérlésnél.
+  </t>
+
+  <t id="H_PS_MANUAL_EXTRUSION_SPEED" ver="11">
+    Ez a sebesség, amivel a szál továbbítódik 
+	az extruderbe manuális sebességnél.
+  </t>
+
+  <t id="H_PS_MANUAL_RETRACTION_SPEED" ver="11">
+    Ez a szál visszahúzási sebesség manuális vezérlésnél.
+  </t>
+
+  <t id="H_PS_DEFAULT_EXTRUDER_TEMPERATURE" ver="11">
+    Ez a javasolt alapértelmezett extruder hőmérséklet, 
+	a nyomtatóhoz való csatlakozáskor.
+  </t>
+
+  <t id="H_PS_DEFAULT_HEAT_BED_TEMPERATURE" ver="11">
+    Ez a javasolt alapértelmezett nyomtató ágy hőmérséklet, 
+	a nyomtatóhoz való csatlakozáskor.
+  </t>
+
+  <t id="H_PS_CHECK_EXTRUDER_AND_BED_TEMPERATURE" ver="11">
+    Ezt be kell kapcsolnod az extruder hőmérséklet vezérléséhez.
+  </t>
+
+  <t id="H_PS_REMOVE_TEMPERATURE_REQUEST_FROM_LOG" ver="11">
+    A hőmérséklet lekérdezések bejegyzésének eltávolítása a
+	naplóból, így tisztább lesz.
+  </t>
+
+  <t id="H_PS_CHECK_EVERY" ver="11">
+    Az extruder és a ágy hőmérséklet lekérdezésének
+	gyakorisága.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_X" ver="11">
+    Parkoláskor, az extruder ebbe az X pozícióba álljon be.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_Y" ver="11">
+    Parkoláskor, az extruder ebbe az Y pozícióba álljon be.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_Z_MIN" ver="11">
+    Ilyen magasba emelje fel az extruder fejet
+	park pozícióba álláskor.
+  </t>
+
+  <t id="H_PS_SEND_ETA_TO_PRINTER_DISPLAY" ver="11">
+	A hátralévő nyomtatási idő vagy a számított befejezési
+	idő elküldése. Ez megjelenik a host állapot sorában,
+	és meg tudod változtatni, hogy melyiket mutassa.
+     </t>
+
+  <t id="H_PS_DISABLE_EXTRUDER_AFTER_JOB_KILL" ver="11">
+    Az extruder lekapcsolása, ha végzett a feladattal,
+	vagy megnyomtuk a vészleállító gombot.
+  </t>
+
+  <t id="H_PS_DISABLE_MOTORS_AFTER_JOB_KILL" ver="11">
+    A motorok lekapcsolása, ha végzett a feladattal,
+	vagy megnyomtuk a vészleállító gombot.
+  </t>
+
+  <t id="H_PS_DISABLE_HEATED_BED_AFTER_JOB_KILL" ver="11">
+	A ágyfűtés lekapcsolása, ha végzett a feladattal,
+	vagy megnyomtuk a vészleállító gombot.
+  </t>
+
+  <t id="H_PS_ADD_TO_COMP_PRINTING_TIME" ver="11">
+	
+    Ez az összeg növeli meg a nyomtatási időt.
+	Ez azért szükséges, mert a nyomtató nem tudja tartani a sebességet
+	a sarkokban, és hirtelen megállásoknál. 
+	Ez segíti a pontosabb nyomtatási idő kalkulációt,
+	de ez mindig változik, függően a tárgytól,
+	és a szeletelés beállításaitól.
+  </t>
+
+  <t id="H_PS_GO_TO_PARK_POSITION_AFTER_JOB_KILL" ver="11">
+    Mozgassa az extrudert park pozícióba, ha végzett
+	a feladattal, vagy megnyomtad a vészleállító gombot.
+  </t>
+
+  <t id="H_PS_INVERT_MOVEMENT_DIRECTION" ver="11">
+	Ez a hátrafelé mozgási iránya a kiválasztott 
+	tengelynek manuális vezérlésnél.
+  </t>
+
+  <t id="H_PS_NUMBER_OF_EXTRUDERS" ver="11">
+    Itt adhatod meg, mennyi extrudere van a nyomtatónak.
+  </t>
+
+  <t id="H_PS_MAX_EXTRUDER_TEMPERATURE" ver="11">
+    Itt tudod megadni azt a maximális extruder hőmérsékletet,
+	amit manuális vezérlésnél nem tudsz túllépni,
+	így nem tudod az extrudert túlhevíteni véletlenül.
+  </t>
+
+  <t id="H_PS_MAX_BED_TEMPERATURE" ver="11">
+	Itt tudod megadni azt a maximális ágy hőmérsékletet,
+	amit manualis vezérlésnél nem tudsz túllépni,
+	így nem tudod a tálcát túlhevíteni véletlenül.
+  </t>
+
+  <t id="H_PS_PRINTER_HAS_MIXING_EXTRUDER" ver="11">
+    Ha keverős extruder -t használsz, ahol minden szín engedélyezett, 
+	kérlek engedélyezt ezt az opciót.
+  </t>
+
+  <t id="H_PS_NAME" ver="11">
+    A tárgy elhelyezésének a neve.
+  </t>
+
+  <t id="H_PS_DIAMETER" ver="11">
+    Fúvóka átmérő.
+  </t>
+
+  <t id="H_PS_TEMPERATURE_OFFSET" ver="11">
+  Ez a különbség hozzáadódik a szál hőmérséklethez.
+  Így lehetőséged van különböző extruderek használatához, 
+  ugyanolyan szál belállításokkal.
+  </t>
+
+  <t id="H_PS_OFFSET_X" ver="11">
+	Ez az eltérés az extruderek között X irányban,
+	többszörös extruder esetén, ha ez nincs a 
+	firmware -ben konfigurálva.
+  </t>
+
+  <t id="H_PS_OFFSET_Y" ver="11">
+	Ez az eltérés az extruderek között Y irányban,
+	többszörös extruder esetén, ha ez nincs a 
+	firmware -ben konfigurálva.
+  </t>
+
+  <t id="H_PS_COLOR" ver="11">
+    Ez lesz a szál színe a bemutatón.
+  </t>
+
+  <t id="H_PS_PRINTER_TYPE" ver="11">
+	Itt tudod beállítani a nyomtató típust.
+  </t>
+
+  <t id="H_PS_HOME" ver="11">
+	Itt tudod beállítani, hol legyen az extruder
+	alapállás után.
+  </t>
+  <t id="L_PRINT_BED" ver="11">Nyomtató ágy</t>
+  <t id="L_DUMP_AREA" ver="11">Lerakási terület</t>
+  <t id="L_PRINTER_TYPE:" ver="11">Nyomtató típus:</t>
+  <t id="L_START_GCODE" ver="11">G-Kód indít</t>
+  <t id="L_END_GCODE" ver="11">G-Kód vége</t>
+  <t id="L_BEFORE_EXTRUDER_SWITCH" ver="11">Extruder előtti kapcsoló</t>
+  <t id="L_AFTER_EXTRUDER_SWITCH" ver="11">Extruder utáni kapcsoló</t>
+<t id="L_INVERT_DIRECTION_FOR" ver="11">Fordított vezérlési irány</t>
+<t id="L_EXPORTING_MODEL_FOR_SLICING" ver="11">Tárgy exportálás szeleteléshez ...</t>
+  <t id="L_MAX_VOLUME_PER_SECOND" ver="11">Max. térfogat/mp</t>
+  <t id="H_PS_MAX_VOLUME_PER_SECOND" ver="11">
+	Ez az értéket használja a szeletelő, hogy 
+	limitálja az alap nyomtatási sebességet,
+	ami a szükséges térfogat kinyomáshoz elegendő.
+	Általában, körülbelül 12mm³/s a nyomtatási sebesség.
+	A magasabb sebességhez több fűtés és szálnyomó
+	erő szükséges, a fejbe nyomáshoz.
+  </t>
+  <t id="L_SHOW_TRAVEL_MOVES" ver="11">Mozgás haladásának mutatása</t>
+  <t id="L_PRINTING_STATISTICS" ver="11">Nyomtatási statisztika</t>
+  <t id="L_POSTPROCESSING..." ver="11">Utómunkálatok ...</t>
+  <t id="L_PRINTER_HAS_SD_CARD" ver="11">A nyomtató SD kártyás</t>
+  <t id="L_IMPORT" ver="11">Import</t>
+  <t id="L_EXPORT" ver="11">Export</t>
+  <t id="L_PRINT_SETTINGS_ALREADY_EXIST" ver="11">A nyomtató beállításokhoz használt név már létezik. Nincs mentve.</t>
+  <t id="L_SAVE_PRINT_SETTINGS_AS" ver="11">Nyomtató beállítás mentve, mint</t>
+  <t id="L_SELECT_SETTING_NAME" ver="11">Válassz beállítás nevet</t>
+  <t id="L_REALLY_DELETE_FILAMENT_SETTING" ver="11">Valóban töröljük a szál beállításokat?</t>
+  <t id="L_SAVE_FILAMENT_SETTINGS_AS" ver="11">Szál beállítás mentve, mint</t>
+  <t id="L_FILAMENT_SETTINGS_ALREADY_EXIST" ver="11">A szál beállításokhoz használt név már létezik. Nincs mentve.</t>
+  <t id="L_PRINTING..ETE" ver="11">Nyomtatás...ETE $1</t>
+  <t id="L_DIAMETER:" ver="12">Átmérő:</t>
+  <t id="L_TEMP_OFFSET:" ver="12">Hőfok eltolás:</t>
+  <t id="L_OFFSET_X:" ver="12">X eltolás:</t>
+  <t id="L_OFFSET_Y:" ver="12">Y eltolás:</t>
+  <t id="L_NOZZLE_DIAMETER:" ver="12">Fúvóka méret:</t>
+  <t id="L_0_OR_PRINTERSETTINGS:" ver="12">[mm vagy 0 = használható értékek "Nyomtató beállítások"]</t>
+  <t id="L_SEE_ALSO_PRINTERSETTINGS" ver="12">A szeletelő is ezeket a beállításokat használja: "Nyomtató-beállítások"->"Extruderek"!</t>
+  <t id="L_SHOW_QUICKSETTINGS" ver="12">Gyorsbeállítások</t>
+  <t id="L_INFORMER_URL" ver="12">URL:</t>
+  <t id="L_INFORMER_URL_INFO" ver="12">Elküldi a fenti linkre az üzeneteket. Pl. egy webes webkamerához url.</t>
+  <t id="L_PUSH_SD_STARTED" ver="12">SD kártyáról való nyomtatás a $1 -n elkezdődött.</t>
+  <t id="L_PUSH_SD_FINISHED" ver="12">SD kártyáról való nyomtatás a $1 -n befejeződött.</t>
+  <t id="L_FIRST_LAYER_EXTRUSION_WIDTH:" ver="12">Első réteg extrudálási szélessége:</t>
+  <t id="H_FIRST_LAYER_EXTRUSION_WIDTH" ver="12">
+    A tálcához való jobb tapadás érdekében, gyakran előnyös lehet, ha az első rétegnél több anyagot extrudálunk
+	és ezáltal szélesebb lesz. Itt tudod beállítani, hogy mennyivel legyen szélesebb az alapvonal
+	a normál extrudálástól.
+    A vonal sűrűséget lehet igazítani.</t>
+  <t id="L_MIRROR_OBJECT" ver="12">Tárgy tükrözés</t>
+  <t id="L_X_HOURS" ver="12">$1 óra</t>
+  <t id="L_PUSH_MSG_PROGRESS" ver="12">A nyomtatás $1 -n be fog fejeződni $2 -kor.</t>
+  <t id="L_PUSH_MSG_PROGRESS_SD" ver="12">A nyomtatás $1 -n befejeződött $2% -kor.</t>
+  <t id="L_PUSH_HEAD_PROGRESS" ver="12">Folyamat frissítés</t>
+  <t id="L_PROGRESS_EVERY" ver="12">Minden folyamat</t>
+  <t id="L_POSITION_OBJECT" ver="12">Tárgy helyzet</t>
+  <t id="L_OBJECTS_CHANGED" ver="12">A tárgy helyzete megváltozott az utolsó szeletelés óta . Biztosan indítsuk a feladatot?</t>
+  <t id="H_SKIN_SPEED" ver="13">A külső kitöltés sebessége. Engedély a gyorsabb belső kitöltésre anélkül, hogy a külső minőséget lerontanánk.</t>
+  <t id="L_SKIN_INFILL:" ver="13">Héj kitöltés:</t>
+  <t id="L_NEVER" ver="13">Soha</t>
+  <t id="L_ALWAYS" ver="13">Mindig</t>
+  <t id="L_ONLY_SKIN" ver="13">Mindig kivétel a héjnak</t>
+  <t id="L_API_KEY:" ver="13">Api Kkulcs:</t>
+  <t id="H_PS_RS_APIKEY" ver="13">Globális Api kulcs vagy nyomtatási joggal rendelkező felhasználó Api kulcsa.</t>
+  <t id="L_RS_CONNECTION_INFO" ver="13">Ez egy direkt kapcsolat, hogy a Repetier-szerver helyben futtasson vagy egy távvezérelt eszközön. A csatlakozáshoz add meg a szerver IP/gépnevét és a portot és az Api kulcsot is.
+  Használhatsz globális Api kulcsot vagy egy meglévő felhasználóét, akinek van a nyomtatáshoz jogosultsága. A szerverhez való csatlakozás után közvetlenül csatlakozhatsz a nyomtatóhoz. Te le és fel csatlakozhatsz nyomtatás közben is!</t>
+  <t id="TAB_PRINT" ver="13">Nyomtat</t>
+  <t id="L_PERIMETER_BEFORE_INFILL" ver="13">Kerület kitöltés előtt</t>
+  <t id="H_PS_PERIMETER_BEFORE_INFILL" ver="13">Definiáld hogy a körvonal vagy a kitöltés nyomtatódjon elősször.</t>
+  <t id="L_OFFLINE" ver="13">Üzemen kívül</t>
+  <t id="L_NO_PORT_ONLINE" ver="13">Nincs elérhető port az automatikus választáshoz. Csatlakoztasd a nyomtatót elősször!</t>
+  <t id="L_TEMPERATURE_REACHED" ver="14">Hőfok elérve</t>
+  <t id="L_RS_MINVERSION" ver="14">A szükséges legalacsonyabb verzió $1 a Repetier-Szerverből hogy tudj csatlakozni.</t>
+  <t id="L_NO_PRINTER_SELECTED" ver="14">--- Nincs kiválasztott nyomtató ---</t>
+  <t id="L_OTHER_PRINTER_CONNECTED" ver="14">Csatlakoztál már egy másik nyomtatóval. 
+  Zárd le elősször a csatlakozást a folytatáshoz.</t>
+  <t id="L_RS_NOAUTH" ver="14">Szerver authentikációs hiba. Ellenőrizd az Api kulcsodat.</t>
+  <t id="L_RS_WRONG_IP" ver="14">Nem lehetett csatlakozni a szerverhez. 
+  Ellenőrizd az IP címet és a portot, és hogy engedélyezve van -e a szerver.</t>
+  <t id="TAB_SERVER" ver="14">Szerver</t>
+  <t id="L_RS_COPY_INFO" ver="14">A legtöbb beállítás át lett húzva a szerverről és mentve lett. 
+  Néhány beállítás elérhetetlen így azok maradtak változatlanul.</t>
+  <t id="L_RS_COPY_CONFIG" ver="14">Szerver konfigurációs beállítások mentése</t>
+  <t id="L_SERVER_DISCONNECTED" ver="14">Szerver lecsatlakoztatva</t>
+  <t id="L_PRINTER_OFFLINE" ver="14">Nyomtató elérhetetlen</t>
+  <t id="L_PRINTER_DEACTIVATED" ver="14">Nyomtató lekapcsolva</t>
+  <t id="L_SAVE_TO_SERVER" ver="14">Mentés a Szerver -re</t>
+  <t id="L_WILL_OVERWRITE_EXISTING" ver="14">A külső fájl felülíródik!</t>
+  <t id="L_RS_NO_UPLOAD_PERMISSION" ver="14">Nincs engedélyed feltölteni!</t>
+  <t id="L_RS_NO_PRINT_PERMISSION" ver="14">Nincs engedélyed nyomtatni!</t>
+  <t id="L_RS_NOPRINTERS" ver="14">A szerverben nincs nyomtató létrehozva. 
+  Nem tud csatlakozni. Hozz létre egy nyomtatót, és próbáld újra a csatlakozást.</t>
+  <t id="L_INFO" ver="14">Info</t>
+  <t id="T_WAITING_PRINTS">Várakozás nyomtatásra</t>
+  <t id="T_STORED_PRINTS">Tárolt nyomtatások</t>
+  <t id="L_TIMES">Idők</t>
+  <t id="L_LENGTH">Hossz</t>
+  <t id="L_WEIGHT">Súly</t>
+  <t id="L_COST">Költség</t>
+  <t id="L_FILAMENT">Szál</t>
+  <t id="L_PRINTED">Nyomtatva</t>
+  <t id="L_UPLOADED">Feltöltve</t>
+  <t id="L_FILE_SIZE">Fájl méret</t>
+  <t id="L_VOLUMETRIC_EXTRUSION">Térfogat Extrudálás</t>
+  <t id="L_PER_EXTRUDER_VALUES" ver="14">Extruder/Értékek</t>
+  <t id="L_TOTAL_VALUES" ver="14">Teljes értékek</t>
+  <t id="L_EXTR" ver="14">Extr.</t>
+  <t id="L_TOTAL_PRICE:" ver="14">Teljes ár:</t>
+  <t id="L_SCRIPTS" ver="14">Szkriptek</t>
+  <t id="L_SCRIPT" ver="14">Szkript</t>
+  <t id="B_SAVE_FOR_SD_PRINT" ver="14">Mentés SD nyomtatáshoz</t>
+  <t id="L_PRINT_PREVIEW" ver="14">Nyomtatás előkép</t>
+  <t id="TAB_SEARCH" ver="14">Keres</t>
+  <t id="L_SEARCHTERM" ver="14">Keres:</t>
+  <t id="L_REPLACETERM" ver="14">Csere:</t>
+  <t id="B_SEARCH" ver="14">Keres</t>
+  <t id="B_REPLACE_SEARCH" ver="14">Csere &amp;&amp; Keres</t>
+  <t id="B_REPLACE" ver="14">Csere</t>
+  <t id="L_SAVE_TO_FILE" ver="14">Mentés fájlba</t>
+  <t id="L_EDIT_GCODE" ver="14">G-kód szerkesztés</t>
+  <t id="TAB_GCODE_SYNTAX" ver="14">G-kód Szintaxis</t>
+  <t id="M_USING_REPETIER_SERVER" ver="14">Repetier-Szerver használata</t>
+  <t id="M_REPETIER_SERVER_MANUAL" ver="14">Repetier-Szerver kézikönyv</t>
+  <t id="M_START_SERVER" ver="14">Helyi szerver indítás</t>
+  <t id="M_STOP_SERVER" ver="14">Helyi szerver leállítás</t>
+  <t id="M_OPEN_SERVER_FRONTEND" ver="14">Szerver előkép megnyitás</t>
+  <t id="L_VIEW_CROSS_SECTION" ver="14">Kereszt szekció nézet</t>
+  <t id="M_SERVER" ver="14">Szerver</t>
+  <t id="L_AUTO_ZOOM_OBJECTS" ver="14">Automatikus nagyítás az objektumokra</t>
+  <t id="L_AUTO_POSITION_OBJECTS" ver="14">Automatikus tárgy pozíció új tárgy esetén</t>
+  <t id="L_TRAVEL_ACCELERATION" ver="14">Léptetés gyorsítás</t>
+  <t id="L_CONNECT_TO_CONTINUE" ver="14">Csatlakozás a folytatáshoz</t>
+  <t id="L_ZOOM_SPEED_FACTOR" ver="14">Nagyítás sebesség tényező</t>
+  <t id="L_WARN_JOB_RUNNING_CLOSE" ver="14">Van egy folyamatban lévő feladat. A csatlakozás megszakítása elrontja a nyomtatást. Bezárjuk mindenképpen?</t>
+  <t id="M_SAVE_GCODE_SERVER" ver="14">G-kód mentés a szerverre</t>
+  <t id="L_SAVE_GCODE_AS" ver="14">G-kód mentve mint</t>
+  <t id="L_WILL_OVERWRITE_EXISTING_FILE" ver="14">Felül lesz írva a külső fájl!</t>
+  <t id="L_FLIP_X_Y" ver="15">Fordít X és Y</t>
+  <t id="H_FLIP_X_Y" ver="15">Gombok felcserélése az X Y irányú mozgásokhoz kézi vezérlésnél.</t>
+  <t id="L_SHOW" ver="15">Mutat</t>
+  <t id="L_COLOR" ver="16">Szín</t>
+  <t id="L_MANAGER" ver="16">Kezelő</t>
+  <t id="L_PROGRESS" ver="16">Folyamatban</t>
+  <t id="L_COMMUNICATION_TIMEOUT" ver="16">Kommunikáció időn túl</t>
+  <t id="L_EASY_MODE" ver="16">Könnyű mód</t>
+  <t id="L_FATAL_ERROR" ver="16">Végzetes hiba</t>
+  <t id="L_FATAL_ERROR_INFO" ver="16">Végzetes hiba miatt a nyomtatás megállt. Amíg nem hárítódik el, nem indul újra. A nyomtató üzenete:</t>
+  <t id="E_SENSOR_DEFECT" ver="17">Hőszenzor hiba</t>
+  <t id="E_DECOUPLED" ver="17">Hőszenzor és a fűtés nincs párban.</t>
+  <t id="E_SLIPPING" ver="17">A szál csúszik</t>
+  <t id="E_JAMMED" ver="17">Az extruder elakadt</t>
+  <t id="E_JAMMED_OR_NO_FILAMENT" ver="17">Az extruder elakadt, vagy elfogyott a szál</t>
+  <t id="E_OUT_OF_FILAMENT" ver="17">Elfogyott a szál</t>
+  <t id="E_UNKNOWN_ERROR" ver="17">Ismeretlen hiba</t>
+  <t id="L_SERVER_CONNECTOR_HINT" ver="17">Megjegyzés: Van installált Repetier szervered. Mi erősen ajánljuk, hogy használd a szervert a csatlakozáshoz. Kattints a "Segítség" -re több információért.</t>
+  <t id="L_PRINTER_ERRORS" ver="17">Nyomtató hiba</t>
+</translation>
+

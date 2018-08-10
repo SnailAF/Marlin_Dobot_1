@@ -738,7 +738,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 
   int32_t de = target[E_AXIS] - position[E_AXIS];
 
-  /* <-- add a slash to enable
+  //* <-- add a slash to enable
     SERIAL_ECHOPAIR("  _buffer_steps FR:", fr_mm_s);
     SERIAL_ECHOPAIR(" A:", target[A_AXIS]);
     SERIAL_ECHOPAIR(" (", da);
@@ -753,6 +753,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 
   // If LIN_ADVANCE is disabled then do E move prevention with integers
   // Otherwise it's done in _buffer_segment.
+  /*
   #if DISABLED(LIN_ADVANCE) && (ENABLED(PREVENT_COLD_EXTRUSION) || ENABLED(PREVENT_LENGTHY_EXTRUDE))
     if (de) {
       #if ENABLED(PREVENT_COLD_EXTRUSION)
@@ -773,9 +774,11 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       #endif // PREVENT_LENGTHY_EXTRUDE
     }
   #endif // !LIN_ADVANCE && (PREVENT_COLD_EXTRUSION || PREVENT_LENGTHY_EXTRUDE)
-
+ */
   // Compute direction bit-mask for this block
+  //为这个块计算方向位掩码
   uint8_t dm = 0;
+/*  
   #if CORE_IS_XY
     if (da < 0) SBI(dm, X_HEAD);                // Save the real Extruder (head) direction in X Axis
     if (db < 0) SBI(dm, Y_HEAD);                // ...and Y
@@ -794,11 +797,11 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
     if (dc < 0) SBI(dm, Z_HEAD);                // ...and Z
     if (db + dc < 0) SBI(dm, B_AXIS);           // Motor B direction
     if (CORESIGN(db - dc) < 0) SBI(dm, C_AXIS); // Motor C direction
-  #else
+  #else*/
     if (da < 0) SBI(dm, X_AXIS);
     if (db < 0) SBI(dm, Y_AXIS);
     if (dc < 0) SBI(dm, Z_AXIS);
-  #endif
+  //#endif
   if (de < 0) SBI(dm, E_AXIS);
 
   const float esteps_float = de * e_factor[extruder];
@@ -825,6 +828,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 
   // Number of steps for each axis
   // See http://www.corexy.com/theory.html
+  /*
   #if CORE_IS_XY
     block->steps[A_AXIS] = labs(da + db);
     block->steps[B_AXIS] = labs(da - db);
@@ -837,25 +841,28 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
     block->steps[X_AXIS] = labs(da);
     block->steps[B_AXIS] = labs(db + dc);
     block->steps[C_AXIS] = labs(db - dc);
-  #else
+  #else*/
     // default non-h-bot planning
     block->steps[X_AXIS] = labs(da);
     block->steps[Y_AXIS] = labs(db);
     block->steps[Z_AXIS] = labs(dc);
-  #endif
+  //#endif
 
   block->steps[E_AXIS] = esteps;
   block->step_event_count = MAX4(block->steps[X_AXIS], block->steps[Y_AXIS], block->steps[Z_AXIS], esteps);
 
   // Bail if this is a zero-length block
+  // 如果这是一个零长度的块
   if (block->step_event_count < MIN_STEPS_PER_SEGMENT) return;
 
   // For a mixing extruder, get a magnified step_event_count for each
+  // 对于混合挤出机，为每个挤压机提供一个放大的step_event_count
+  /*
   #if ENABLED(MIXING_EXTRUDER)
     for (uint8_t i = 0; i < MIXING_STEPPERS; i++)
       block->mix_event_count[i] = mixing_factor[i] * block->step_event_count;
   #endif
-
+ */
   #if FAN_COUNT > 0
     for (uint8_t i = 0; i < FAN_COUNT; i++) block->fan_speed[i] = fanSpeeds[i];
   #endif
@@ -868,6 +875,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
   block->active_extruder = extruder;
 
   //enable active axes
+  /*
   #if CORE_IS_XY
     if (block->steps[A_AXIS] || block->steps[B_AXIS]) {
       enable_X();
@@ -888,15 +896,17 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       enable_Z();
     }
     if (block->steps[X_AXIS]) enable_X();
-  #else
+  #else*/
     if (block->steps[X_AXIS]) enable_X();
     if (block->steps[Y_AXIS]) enable_Y();
-    #if DISABLED(Z_LATE_ENABLE)
+	
+    //#if DISABLED(Z_LATE_ENABLE)
       if (block->steps[Z_AXIS]) enable_Z();
-    #endif
-  #endif
+    //#endif
+  //#endif
 
   // Enable extruder(s)
+  /*暂时不用e轴
   if (esteps) {
 
     #if ENABLED(DISABLE_INACTIVE_EXTRUDER) // Enable only the selected extruder
@@ -995,7 +1005,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
     NOLESS(fr_mm_s, min_feedrate_mm_s);
   else
     NOLESS(fr_mm_s, min_travel_feedrate_mm_s);
-
+ */
   /**
    * This part of the code calculates the total length of the movement.
    * For cartesian bots, the X_AXIS is the real X movement and same for Y_AXIS.
@@ -1012,6 +1022,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 	* 所以我们需要创造另外两个“轴”，叫做xhead和yhead，意思是头部的真正位移。
 	* 有了头部的实际位移，我们就可以计算总运动长度并应用所需的速度。
 	*/
+/*	
   #if IS_CORE
     float delta_mm[Z_HEAD + 1];
     #if CORE_IS_XY
@@ -1033,12 +1044,12 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       delta_mm[B_AXIS] = (db + dc) * steps_to_mm[B_AXIS];
       delta_mm[C_AXIS] = CORESIGN(db - dc) * steps_to_mm[C_AXIS];
     #endif
-  #else
+  #else*/
     float delta_mm[XYZE];
     delta_mm[X_AXIS] = da * steps_to_mm[X_AXIS];
     delta_mm[Y_AXIS] = db * steps_to_mm[Y_AXIS];
     delta_mm[Z_AXIS] = dc * steps_to_mm[Z_AXIS];
-  #endif
+  //#endif
   delta_mm[E_AXIS] = esteps_float * steps_to_mm[E_AXIS_N];
 
   if (block->steps[X_AXIS] < MIN_STEPS_PER_SEGMENT && block->steps[Y_AXIS] < MIN_STEPS_PER_SEGMENT && block->steps[Z_AXIS] < MIN_STEPS_PER_SEGMENT) {
@@ -1046,15 +1057,15 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
   }
   else {
     block->millimeters = SQRT( //计算直线距离 mm
-      #if CORE_IS_XY
-        sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_AXIS])
-      #elif CORE_IS_XZ
-        sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_AXIS]) + sq(delta_mm[Z_HEAD])
-      #elif CORE_IS_YZ
-        sq(delta_mm[X_AXIS]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_HEAD])
-      #else
+      //#if CORE_IS_XY
+      //  sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_AXIS])
+      //#elif CORE_IS_XZ
+      //  sq(delta_mm[X_HEAD]) + sq(delta_mm[Y_AXIS]) + sq(delta_mm[Z_HEAD])
+      //#elif CORE_IS_YZ
+      //  sq(delta_mm[X_AXIS]) + sq(delta_mm[Y_HEAD]) + sq(delta_mm[Z_HEAD])
+      //#else
         sq(delta_mm[X_AXIS]) + sq(delta_mm[Y_AXIS]) + sq(delta_mm[Z_AXIS])
-      #endif
+      //#endif
     );
   }
   const float inverse_millimeters = 1.0 / block->millimeters;  // Inverse millimeters to remove multiple divides
@@ -1069,6 +1080,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 
   // Slow down when the buffer starts to empty, rather than wait at the corner for a buffer refill
   // 当缓冲区开始空时慢下来，而不是在角落等待缓冲区的填充。
+  /*
   #if ENABLED(SLOWDOWN) || ENABLED(ULTRA_LCD) || defined(XY_FREQUENCY_LIMIT)
     // Segment time im micro seconds
     uint32_t segment_time_us = LROUND(1000000.0 / inverse_secs);
@@ -1092,10 +1104,10 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       block_buffer_runtime_us += segment_time_us;
     CRITICAL_SECTION_END
   #endif
-
+  */
   block->nominal_speed = block->millimeters * inverse_secs;           // (mm/sec) Always > 0
   block->nominal_rate = CEIL(block->step_event_count * inverse_secs); // (step/sec) Always > 0
-
+/*
   #if ENABLED(FILAMENT_WIDTH_SENSOR)
     static float filwidth_e_count = 0, filwidth_delay_dist = 0;
 
@@ -1129,7 +1141,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       }
     }
   #endif
-
+*/
   // Calculate and limit speed in mm/sec for each axis
   // 计算并限制每条轴的mm/秒的速度
   float current_speed[NUM_AXIS], speed_factor = 1.0; // factor <1 decreases speed
@@ -1241,7 +1253,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 
   // Initial limit on the segment entry velocity
   float vmax_junction;
-
+/*
   #if 0  // Use old jerk for now
 
     float junction_deviation = 0.1;
@@ -1253,7 +1265,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       delta_mm[Z_AXIS] * inverse_millimeters
     };
 
-    /*
+    ///*
        Compute maximum allowable entry speed at junction by centripetal acceleration approximation.
 
        Let a circle be tangent to both previous and current path line segments, where the junction
@@ -1267,7 +1279,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
        This may be also viewed as path width or max_jerk in the previous grbl version. This approach
        does not actually deviate from path, but used as a robust way to compute cornering speeds, as
        it takes into account the nonlinearities of both the junction angle and junction velocity.
-     */
+     /
 
     vmax_junction = MINIMUM_PLANNER_SPEED; // Set default max junction speed
 
@@ -1290,7 +1302,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
       }
     }
   #endif
-
+*/
   /**
    * Adapted from Průša MKS firmware
    * https://github.com/prusa3d/Prusa-Firmware
@@ -1482,13 +1494,14 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 void Planner::buffer_segment(const float &a, const float &b, const float &c, const float &e, const float &fr_mm_s, const uint8_t extruder) {
   // When changing extruders recalculate steps corresponding to the E position
   // 当改变挤压器时，重新计算对应于E位置的步骤
+  /*
   #if ENABLED(DISTINCT_E_FACTORS)
     if (last_extruder != extruder && axis_steps_per_mm[E_AXIS_N] != axis_steps_per_mm[E_AXIS + last_extruder]) {
       position[E_AXIS] = LROUND(position[E_AXIS] * axis_steps_per_mm[E_AXIS_N] * steps_to_mm[E_AXIS + last_extruder]);
       last_extruder = extruder;
     }
   #endif
-
+  */
   // The target position of the tool in absolute steps
   // Calculate target position in absolute steps
   // 计算到目标位置的绝对步数
@@ -1501,21 +1514,24 @@ void Planner::buffer_segment(const float &a, const float &b, const float &c, con
 
   // DRYRUN prevents E moves from taking place
   // DRYRUN阻止E的移动
+  /*
   if (DEBUGGING(DRYRUN)) {
     position[E_AXIS] = target[E_AXIS];
     #if ENABLED(LIN_ADVANCE)
       position_float[E_AXIS] = e;
     #endif
   }
-
+*/
+/*
   #if ENABLED(LIN_ADVANCE)
     lin_dist_e = e - position_float[E_AXIS];
   #endif
-
+*/
   // If LIN_ADVANCE is enabled then do E move prevention with floats
   // Otherwise it's done in _buffer_steps.
   // 如果启用了LIN_ADVANCE，那么用浮动来移动预防
   // 否则它是在_buffer_steps中完成的。
+  /*
   #if ENABLED(LIN_ADVANCE) && (ENABLED(PREVENT_COLD_EXTRUSION) || ENABLED(PREVENT_LENGTHY_EXTRUDE))
     if (lin_dist_e) {
       #if ENABLED(PREVENT_COLD_EXTRUSION)
@@ -1538,12 +1554,13 @@ void Planner::buffer_segment(const float &a, const float &b, const float &c, con
       #endif // PREVENT_LENGTHY_EXTRUDE
     }
   #endif // LIN_ADVANCE && (PREVENT_COLD_EXTRUSION || PREVENT_LENGTHY_EXTRUDE)
-
+  */
+  /*
   #if ENABLED(LIN_ADVANCE)
     if (lin_dist_e > 0)
       lin_dist_xy = HYPOT(a - position_float[X_AXIS], b - position_float[Y_AXIS]);
   #endif
-
+  */
   /* <-- add a slash to enable
     SERIAL_ECHOPAIR("  buffer_segment FR:", fr_mm_s);
     #if IS_KINEMATIC
@@ -1603,13 +1620,14 @@ void Planner::buffer_segment(const float &a, const float &b, const float &c, con
     _buffer_steps(target, fr_mm_s, extruder);
 
   stepper.wake_up();
-
+  /*
   #if ENABLED(LIN_ADVANCE)
     position_float[X_AXIS] = a;
     position_float[Y_AXIS] = b;
     //position_float[Z_AXIS] = c;
     position_float[E_AXIS] = e;
   #endif
+  */
 } // buffer_segment()
 
 /**

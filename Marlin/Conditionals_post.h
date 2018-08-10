@@ -71,10 +71,10 @@
   /**
    * CoreXY, CoreXZ, and CoreYZ - and their reverse
    */
-  #define CORE_IS_XY (ENABLED(COREXY) || ENABLED(COREYX))
-  #define CORE_IS_XZ (ENABLED(COREXZ) || ENABLED(COREZX))
-  #define CORE_IS_YZ (ENABLED(COREYZ) || ENABLED(COREZY))
-  #define IS_CORE (CORE_IS_XY || CORE_IS_XZ || CORE_IS_YZ)
+  //#define CORE_IS_XY (ENABLED(COREXY) || ENABLED(COREYX))
+  //#define CORE_IS_XZ (ENABLED(COREXZ) || ENABLED(COREZX))
+  //#define CORE_IS_YZ (ENABLED(COREYZ) || ENABLED(COREZY))
+  //#define IS_CORE (CORE_IS_XY || CORE_IS_XZ || CORE_IS_YZ)
   #if IS_CORE
     #if CORE_IS_XY
       #define CORE_AXIS_1 A_AXIS

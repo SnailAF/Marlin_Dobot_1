@@ -1,0 +1,1852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <translation revision="18.1.1" language="한국어" languageInEnglish="Korean" author="Makers' Park">
+  <t id="M_FILE" ver="1">파일</t>
+  <t id="M_CONFIG" ver="1">설정</t>
+  <t id="M_SLICER" ver="1">슬라이스</t>
+  <t id="M_TEMPERATURE" ver="1">온도</t>
+  <t id="M_PRINTER" ver="1">프린터</t>
+<t id="M_HELP" ver="1">도움말</t>
+<t id="M_LOAD_GCODE" ver="1">G-Code 열기</t>
+<t id="M_SHOW_WORKDIRECTORY" ver="1">작업 폴더 보기</t>
+<t id="M_LANGUAGE" ver="1">언어</t>
+<t id="M_PRINTER_SETTINGS" ver="1">프린터 설정</t>
+<t id="M_EEPROM_SETTINGS" ver="1">펌웨어 EEPROM 설정</t>
+<t id="M_3D_VIEWER_CONFIGURATION" ver="1">3D 보기 설정</t>
+<t id="M_REPETIER_SETTINGS" ver="1">Repetier 설정</t>
+<t id="M_TESTCASE_SETTINGS" ver="1">시험용 슬라이스 파라메터</t>
+<t id="M_SOUND_CONFIGURATION" ver="1">소리 설정</t>
+<t id="M_SHOW_EXTRUDER_TEMPERATURES" ver="1">압출기 온도 보기</t>
+<t id="M_SHOW_HEATED_BED_TEMPERATURES" ver="1">히트베드 온도 보기</t>
+<t id="M_SHOW_TARGET_TEMPERATURES" ver="1">목표 온도 보기</t>
+<t id="M_SHOW_AVERAGE_TEMPERATURES" ver="1">평균 온도 보기</t>
+<t id="M_SHOW_HEATER_POWER" ver="1">히터 전력 보기</t>
+<t id="M_AUTOSCROLL_TEMPERATURE_VIEW" ver="1">온도 보기 자동 넘김</t>
+<t id="M_TIMEPERIOD" ver="1">시간간격</t>
+<t id="M_TEMPERATURE_ZOOM" ver="1">확대</t>
+<t id="M_BUILD_AVERAGE_OVER" ver="1">평균 계산 시간</t>
+<t id="M_30_SECONDS" ver="1">30 초</t>
+<t id="M_1_MINUTE" ver="1">1 분</t>
+<t id="M_2_MINUTES" ver="1">2 분</t>
+<t id="M_5_MINUTES" ver="1">5 분</t>
+<t id="M_10_MINUTES" ver="1">10 분</t>
+<t id="M_15_MINUTES" ver="1">15 분</t>
+<t id="M_30_MINUTES" ver="1">30 분</t>
+<t id="M_60_MINUTES" ver="1">60 분</t>
+<t id="M_CONTINUOUS_MONITORING" ver="1">지속 모니터링</t>
+<t id="M_DISABLE" ver="1">사용안함</t>
+<t id="M_EXTRUDER_1" ver="1">압출기 1</t>
+<t id="M_EXTRUDER_2" ver="1">압출기 2</t>
+<t id="M_HEATED_BED" ver="1">히트베드</t>
+<t id="M_PRINTER_INFORMATION" ver="1">프린터 정보</t>
+<t id="M_JOB_STATUS" ver="1">작업 상태</t>
+<t id="M_SD_CARD_MANAGER" ver="1">SD 카드 관리자</t>
+<t id="L_SD_CARD_MANAGEMENT" ver="1">SD 카드 관리</t>
+<t id="M_TEST_CASE_GENERATOR" ver="1">시험 값 생성기</t>
+<t id="M_SEND_SCRIPT_1" ver="1">스크립트 전송 1</t>
+<t id="M_SEND_SCRIPT_2" ver="1">스크립트 전송 2</t>
+<t id="M_SEND_SCRIPT_3" ver="1">스크립트 전송 3</t>
+<t id="M_SEND_SCRIPT_4" ver="1">스크립트 전송 4</t>
+<t id="M_SEND_SCRIPT_5" ver="1">스크립트 전송 5</t>
+<t id="M_REPETIER_HOST_HOMEPAGE" ver="1">Repetier-Host 홈페이지</t>
+<t id="M_REPETIER_HOST_DOWNLOAD_PAGE" ver="1">Repetier-Host 다운로드</t>
+<t id="M_MANUAL" ver="1">Repetier-Host 설명서</t>
+<t id="M_SLIC3R_HOMEPAGE" ver="1">Slic3r 홈페이지</t>
+<t id="M_SKEINFORGE_HOMEPAGE" ver="1">Skeinforge 홈페이지</t>
+<t id="M_REPRAP_WEBSITE" ver="1">RepRap 홈페이지</t>
+<t id="M_REPRAP_FORUM" ver="1">RepRap 포럼</t>
+<t id="M_THINGIVERSE_NEWEST" ver="1">Thingiverse의 최신 Things</t>
+<t id="M_THINGIVERSE_POPULAR" ver="1">Thingiverse의 인기있는 Things</t>
+<t id="M_ABOUT_REPETIER_HOST" ver="1">Repetier-Host에 대하여</t>
+<t id="M_CHECK_FOR_UPDATES" ver="1">업데이트 확인</t>
+<t id="L_DISCONNECT_PRINTER" ver="1">프린터 끊기</t>
+<t id="L_CONNECT_PRINTER" ver="1">프린터 연결</t>
+<t id="M_DISCONNECT" ver="1">끊기</t>
+<t id="M_CONNECT" ver="1">연결</t>
+<t id="M_QUIT" ver="1">종료</t>
+<t id="TAB_3D_VIEW" ver="1">3D 보기</t>
+<t id="TAB_TEMPERATURE_CURVE" ver="1">온도 곡선</t>
+<t id="TAB_OBJECT_PLACEMENT" ver="1">객체 배치</t>
+<t id="TAB_SLICER" ver="1">슬라이서</t>
+<t id="TAB_GCODE_EDITOR" ver="1">G-Code 편집기</t>
+<t id="TAB_MANUAL_CONTROL" ver="1">수동 조작</t>
+<t id="M_EMERGENCY_STOP" ver="1">비상 정지</t>
+<t id="M_LOAD" ver="1">열기</t>
+<t id="M_SAVE_JOB" ver="11">프린트 저장</t>
+<t id="M_RUN_JOB" ver="11">프린트 시작</t>
+<t id="M_PAUSE_JOB" ver="11">프린트 일시 멈춤</t>
+<t id="M_KILL_JOB" ver="11">프린트 종료</t>
+<t id="M_SD_CARD" ver="1">SD 카드</t>
+<t id="M_TOGGLE_LOG" ver="1">로그 보기/감추기</t>
+<t id="M_SHOW_FILAMENT" ver="1">필라멘트 보기</t>
+<t id="M_HIDE_FILAMENT" ver="1">필라멘트 감추기</t>
+<t id="L_FILAMENT_VISUALIZATION_DISABLED" ver="1">필라멘트 시각화 사용 안함</t>
+<t id="L_FILAMENT_VISUALIZATION_ENABLED" ver="1">필라멘트 시각화 사용</t>
+<t id="L_LOAD_FILE" ver="1">파일 열기</t>
+<t id="L_IMPORT_G_CODE" ver="1">G-Code 가져오기</t>
+<t id="L_SAVE_G_CODE" ver="1">G-Code 저장</t>
+<t id="L_ERROR" ver="1">오류</t>
+<t id="L_PAUSE_MSG" ver="1">계속하려면 확인을 누르세요.
+사용자 코드에 @pause를 넣음으로서
+일시 정지를 할 수 있습니다.</t>
+<t id="L_DISCONNECTED" ver="1">연결이 끊어짐</t>
+<t id="L_UPDATING..." ver="1">새로고치는 중 ...</t>
+<t id="L_SLICE_WITH" ver="1">$1로 슬라이스</t>
+<t id="L_EMERGENCY_STOP_MSG" ver="1">프린터로 비상정지를 보냅니다. 재시작을 위해서 프린터의 리셋이 필요할 수 있습니다!</t>
+<t id="L_TRANSLATION:" ver="1">옮김</t>
+<t id="L_SCALE:" ver="1">스케일</t>
+<t id="L_ROTATE:" ver="1">회전</t>
+<t id="L_STL_OBJECTS" ver="9">STL 객체</t>
+<t id="B_SAVE_AS_STL" ver="9">STL 형식으로 저장</t>
+<t id="B_REMOVE_STL_OBJECT" ver="1">STL 객체 제거</t>
+<t id="B_ADD_STL_OBJECT" ver="1">STL 객체 추가</t>
+<t id="B_AUTOPOSITION" ver="1">자동 위치</t>
+<t id="B_DROP_OBJECT" ver="1">객체 내림</t>
+<t id="B_COPY_OBJECTS" ver="1">객체(들) 복사</t>
+<t id="B_CENTER_OBJECT" ver="1">객체를 중앙으로 이동</t>
+<t id="L_LOCK_ASPECT_RATIO" ver="1">형상 비율 고정</t>
+<t id="B_KILL_SLICING_PROCESS" ver="1">슬라이싱 정지</t>
+<t id="B_SETUP_SKEINFORGE" ver="1">설정</t>
+<t id="B_SETUP_SLIC3R" ver="1">설정</t>
+<t id="B_CONFIGURE_SKEINFORGE" ver="1">설정</t>
+<t id="B_CONFIGURE_SLIC3R" ver="1">설정</t>
+<t id="B_ACTIVE" ver="1">유효</t>
+<t id="L_FILAMENT_SETTINGS" ver="1">필라멘트 설정:</t>
+<t id="L_PRINTER_SETTINGS" ver="1">프린터 설정:</t>
+<t id="L_PRINT_SETTINGS" ver="1">프린트 설정:</t>
+<t id="L_PROFILE" ver="1">프로파일:</t>
+<t id="B_SEND" ver="1">보내기</t>
+<t id="B_SIMULATE_OK" ver="1">확인</t>
+<t id="B_STOP_MOTOR" ver="1">모터 끄기</t>
+<t id="B_PARK" ver="1">대기 위치</t>
+<t id="B_RETRACT" ver="1">필라멘트 되감기</t>
+<t id="B_EXTRUDE" ver="1">필라멘트 보내기</t>
+<t id="L_OUTPUT_PERCENT" ver="1">출력 $1%</t>
+<t id="B_POWER" ver="1">전원</t>
+<t id="B_HEAT_EXTRUDER" ver="1">압출기 가열</t>
+<t id="B_HEAT_PRINTBED" ver="1">프린트 베드 가열</t>
+<t id="B_FAN" ver="1">팬</t>
+<t id="B_DEBUG_ERRORS" ver="1">오류</t>
+<t id="B_DEBUG_ECHO" ver="1">에코</t>
+<t id="B_DRY_RUN" ver="1">무압출 실행</t>
+<t id="B_DEBUG_INFO" ver="1">정보</t>
+<t id="L_EXTRUDER" ver="1">압출기</t>
+<t id="L_PRINTBED" ver="1">프린트 베드</t>
+<t id="L_SPEED_MULTIPLY" ver="1">속도 배율</t>
+<t id="L_EXTRUDE_MM" ver="1">압출 [mm]</t>
+<t id="L_EXTRUDER_SPEED_MM_MIN" ver="1">속도 [mm/min]</t>
+<t id="L_RETRACT_MM" ver="1">되감기 [mm]</t>
+<t id="L_TEMP" ver="1">온도</t>
+<t id="L_CONNECTED" ver="1">연결됨</t>
+<t id="L_HEATING_BED" ver="1">베드 가열중</t>
+<t id="L_HEATING_EXTRUDER" ver="1">압출기 가열중</t>
+<t id="L_PRINT_JOB_KILLED" ver="1">프린트 작업 중단됨</t>
+<t id="L_PRINT_JOB_PAUSED" ver="1">프린트 작업 일시멈춤</t>
+<t id="L_PRINT_JOB_FINISHED" ver="1">프린트 작업 완료</t>
+<t id="L_UPLOADING..." ver="1">업로드 중 ... $1%</t>
+<t id="L_PRINTING_JOB_ETA" ver="1">프린트 작업 ETA $1</t>
+<t id="L_IDLE" ver="1">대기중</t>
+<t id="L_X_COMMANDS_WAITING" ver="1">$1 명령 대기중</t>
+<t id="L_EXTRUDER:" ver="1">압출기:</t>
+<t id="L_BED:" ver="1">베드:</t>
+<t id="L_OFF" ver="1">끄기</t>
+<t id="L_NOT_A_NUMBER" ver="1">숫자가 아님</t>
+<t id="L_POSITIVE_NUMBER_REQUIRED" ver="1">양의 숫자 값이 필요합니다</t>
+<t id="L_NOT_AN_INTEGER" ver="1">정수가 아님</t>
+<t id="L_RESET_OUTPUT" ver="1">출력 리셋. 잠시 기다린 후에 $1을 얻습니다</t>
+<t id="L_RECEIVING_ONLY_ERRORS" ver="1">오류 메시지들 수신. 연결이 중단됨.</t>
+<t id="L_PRINTING..ETA" ver="1">프린트중...ETA $1</t>
+<t id="L_LAYER_X/Y" ver="1"> 레이어 $1/$2</t>
+<t id="L_ERROR_SENDING_DATA:" ver="1">데이터 전송 오류:</t>
+<t id="L_CONNECTION_ERROR" ver="1">연결 오류</t>
+<t id="L_SERIAL_COM_ERROR" ver="1">시리얼 통신 오류:</t>
+<t id="L_SHOW_IN_LOG" ver="1">로그 보기:</t>
+<t id="B_ACK" ver="1">응답</t>
+<t id="B_AUTO_SCROLL" ver="1">자동 넘김</t>
+<t id="B_COMMANDS" ver="1">명령</t>
+<t id="B_LOG_ERRORS" ver="1">오류</t>
+<t id="B_LOG_INFO" ver="1">정보</t>
+<t id="B_LOG_WARNINGS" ver="1">주의</t>
+<t id="B_COPY" ver="1">복사</t>
+<t id="B_CLEAR_LOG" ver="1">로그 지우기</t>
+<t id="L_COPY" ver="1">복사</t>
+<t id="L_CUT" ver="1">자르기</t>
+<t id="L_NEW_TEXT" ver="1">새 텍스트</t>
+<t id="L_SAVE" ver="1">저장</t>
+<t id="L_PASTE" ver="1">붙이기</t>
+<t id="L_UNDO" ver="1">취소</t>
+<t id="L_REDO" ver="1">다시 실행</t>
+<t id="L_AUTO_UPDATE_PREVIEW" ver="1">자동 갱신 보기</t>
+<t id="L_START_CODE" ver="1">시작 코드</t>
+<t id="L_END_CODE" ver="1">종료 코드</t>
+<t id="L_RUN_ON_KILL" ver="1">종료시 실행</t>
+<t id="L_RUN_ON_PAUSE" ver="1">멈춤시 실행</t>
+<t id="L_SCRIPT_X" ver="1">스크립트 $1</t>
+<t id="L_LAYER_X" ver="1">레이어 $1</t>
+<t id="L_EXTRUDER_X" ver="1">압출기 $1</t>
+<t id="L_EDITOR_C" ver="1">C$1</t>
+<t id="L_EDITOR_R" ver="1">R$1</t>
+<t id="L_OVERWRITE" ver="1">덮어쓰기</t>
+<t id="L_INSERT" ver="1">삽입</t>
+<t id="L_SYNTAX" ver="1">문법</t>
+<t id="TAB_HELP" ver="1">도움말</t>
+<t id="TAB_VISUALIZATION" ver="1">시각화</t>
+<t id="L_SHOW_COMPLETE_CODE" ver="1">레이어 모두 보기</t>
+<t id="L_SHOW_LAYER_RANGE" ver="1">레이어 일부 보기</t>
+<t id="L_SHOW_SINGLE_LAYER" ver="1">레이어 하나씩 보기</t>
+<t id="L_FIRST_LAYER" ver="1">처음 레이어:</t>
+<t id="L_LAST_LAYER" ver="1">마지막 레이어:</t>
+<t id="L_REALLY_DELETE_PRINTER" ver="1">$1의 설정 모두를 지우시겠습니까?</t>
+<t id="L_SECURITY_QUESTION" ver="1">보안 질문</t>
+<t id="L_ADD_PRINTING_TIME" ver="1">프린트 시간 가산 분</t>
+<t id="L_BAUD_RATE" ver="1">통신 속도:</t>
+<t id="L_CACHE_SIZE_HINT" ver="1">아두이노 1부터 수신 캐쉬 사이즈가 127에서 63 바이트로 감소되었음!</t>
+<t id="L_CHECK_EVERY_X" ver="1">$1초 간격으로 체크.</t>
+<t id="L_CONNECTION_INFO" ver="1">프린터 설정은 상단에서 선택한 프린터에 해당됨.
+프린터 설정은 확인과 함께 저장되거나 적용됩니다.
+새 프린터를 만들려면, 새 프린터 이름을 입력하고 적용을 누르세요.
+새 프린터는 선택된 마지막 설정으로 시작됩니다.</t>
+<t id="L_DEFAULT_EXTRUDER_TEMPERATURE" ver="1">기본 압출기 온도:</t>
+<t id="L_DEFAULT_HEATED_BED_TEMPERATURE" ver="1">기본 히트베드 온도:</t>
+<t id="L_DUMP_AREA_DEPTH" ver="1">Dump 영역 깊이:</t>
+<t id="L_DUMP_AREA_FRONT" ver="1">Dump 영역 앞쪽:</t>
+<t id="L_DUMP_AREA_LEFT" ver="1">Dump 영역 왼쪽:</t>
+<t id="L_DUMP_AREA_WIDTH" ver="1">Dump 영역 폭:</t>
+<t id="L_FILTER_INFO" ver="1">슬라이싱 동작이 끝난 후 필터 프로그램을 실행시킬 수 있음.
+필터는 슬라이서로 만들어진 G-코드를 실행할 것임. #in과 #out을 입/출력 파일 이름을 넣기 위한 파라메터로 사용.</t>
+<t id="L_FILTER_PATH_PARAM" ver="1">필터 경로와 파라메터:</t>
+<t id="L_PARITY" ver="1">패리티:</t>
+<t id="L_PARK_POSITION" ver="1">대기 위치:</t>
+<t id="L_PORT" ver="1">포트:</t>
+<t id="L_PRINT_AREA_DEPTH" ver="1">프린트 영역 깊이:</t>
+<t id="L_PRINT_AREA_HEIGHT" ver="1">프린트 영역 높이:</t>
+<t id="L_PRINT_AREA_WIDTH" ver="1">프린트 영역 폭:</t>
+<t id="L_PRINTER" ver="1">프린터:</t>
+<t id="L_RECEIVE_CACHE_SIZE" ver="1">수신 캐시 크기:</t>
+<t id="L_STOPBITS" ver="1">정지 비트:</t>
+<t id="L_TRANSFER_PROTOCOL" ver="1">전송 프로토콜:</t>
+<t id="L_TRAVEL_FEED_RATE" ver="1">이동 속도:</t>
+<t id="L_ZFEED_RATE" ver="1">Z-축 이동 속도:</t>
+<t id="L_DISABLE_EXTRUDER_AFTER_JOB" ver="1">작업/종료 이후 압출기 끄기</t>
+<t id="L_DISABLE_MOTORS" ver="1">작업/종료 이후 모터 끄기</t>
+<t id="L_DISABLE_HEATED_BED_AFTER_JOB" ver="1">작업/종료 이후 히트베드 끄기</t>
+<t id="L_GO_PARK_POSITION" ver="1">작업/종료 이후 대기 위치로</t>
+<t id="L_HAS_DUMP_AREA" ver="1">Dump 영역을 설정</t>
+<t id="L_HOME_X_MAX" ver="1">홈을 X축 최대 값으로 설정</t>
+<t id="L_HOME_Y_MAX" ver="1">홈을 Y축 최대 값으로 설정</t>
+<t id="L_HOME_Z_MAX" ver="1">홈을 Z축 최대 값으로 설정</t>
+<t id="L_PING_PONG_MODE" ver="1">전송 확인 사용 (확인후에만 전송)</t>
+<t id="L_RUN_FILTER_EVERY_SLICE" ver="1">모든 슬라이스 이후에 필터 실행</t>
+<t id="L_CHECK_EXTRUDER_BED_TEMPERATURE" ver="1">압축기 &amp;&amp; 베드 온도 확인</t>
+<t id="L_REMOVE_M105_REQUEST_LOG" ver="1">M105 요청을 로그에서 제거</t>
+<t id="B_CANCEL" ver="1">취소</t>
+<t id="B_APPLY" ver="1">적용</t>
+<t id="B_OK" ver="1">확인</t>
+<t id="B_DELETE_PRINTER_SETTINGS" ver="1">이 프린터 설정을 지움</t>
+<t id="TAB_CONNECTION" ver="1">연결</t>
+<t id="TAB_PRINTER" ver="1">프린터</t>
+<t id="TAB_PRINTER_SHAPE" ver="1">프린터 영역 설정</t>
+<t id="TAB_ADVANCED" ver="1">고급</t>
+<t id="W_PRINTER_SETTINGS" ver="1">프린터 설정</t>
+<t id="L_POST_SLICE_FILTER" ver="1">포스트 슬라이스 필터</t>
+<t id="L_Z_MIN" ver="1">Z-최소</t>
+<t id="W_PRINT_PAUSED" ver="1">프린트 일시 정지됨</t>
+<t id="L_PAUSE_HINT" ver="1">힌트: 필라멘트를 바꾸거나 보충하기 위해 압출기를 움직이고, 노즐에 필라멘트를 압출하는 것이 허용됨, 호스트는 일시 정지 때 위치를 복구할 것임.</t>
+<t id="B_CONTINUE_PRINTING" ver="1">계속 프린트 하기</t>
+<t id="W_REPETIER_HOST_UPDATE_CHECK" ver="1">Repetier-Host 업데이트 확인</t>
+<t id="B_DOWNLOAD" ver="1">다운로드</t>
+<t id="B_REMIND_ME_LATER" ver="1">나중에 다시 확인</t>
+<t id="B_SKIP_VERSION" ver="1">이 버전 건너 뛰기</t>
+<t id="L_AVAILABLE_VERSION" ver="1">사용 가능한 버전:</t>
+<t id="L_INSTALLED_VERSION" ver="1">설치된 버전:</t>
+<t id="L_INFORMATION_ON_UPDATE" ver="1">업데이트에 대한 정보</t>
+<t id="L_NO_NEW_UPDATES" ver="1">새로운 업데이트가 없습니다.
+최신 버전을 사용하고 있습니다.</t>
+<t id="L_UPDATE_STATUS" ver="1">업데이트 상태</t>
+<t id="W_SLICING_INFO" ver="1">슬라이스 정보</t>
+<t id="L_ACTION:" ver="1">동작:</t>
+<t id="L_DURATION:" ver="1">경과 시간:</t>
+<t id="L_SLICER:" ver="1">슬라이서:</t>
+<t id="L_START_JOB_AFTER_SLICING" ver="1">슬라이싱 후 작업 시작</t>
+<t id="W_ABOUT_REPETIER_HOST" ver="1">Repetier-Host에 대하여</t>
+<t id="L_LICENCE_AND_LIBRARIES" ver="1">라이센스와 라이브러리</t>
+<t id="L_REPETIER_INFO" ver="1">이 소프트웨어는 RepRap 같은 3 차원 프린터를 제어를 위해 개발되었습니다. 그것은 Repetier 펌웨어를 사용하는 것이 가장 좋고, 전기능을 지원합니다. Marlin, Teacup, Sprinter, 5D GCode 인터프리터와 같은 다른 프린터 펌웨어도 적절한 설정이면 작동할 것입니다.</t>
+<t id="W_COPY_MARKED_OBJECTS" ver="1">선택된객체들 복사</t>
+<t id="L_NUMBER_OF_COPIES:" ver="1">복사 수:</t>
+<t id="L_AUTO_POSITION_AFTER_COPY" ver="1">복사된 객체를 자동으로 배치</t>
+<t id="L_PRINTING_LAYER_X_OF_Y" ver="1">$2 레이어 중 $1 레이어 출력중</t>
+<t id="L_BUILDING_PRINT_JOB..." ver="1">프린트 작업을 만드는 중...</t>
+<t id="L_PRINTING..." ver="1">프린트 중...</t>
+<t id="L_JOB_KILLED" ver="1">작업이 중지됨</t>
+<t id="L_PRINTJOB_FINISHED_AT" ver="1">$1에서 프린트 작업이 종료됨</t>
+<t id="L_PRINTING_TIME:" ver="1">프린트 시간: $1</t>
+<t id="L_LINES_SEND:X" ver="1">보낸 라인들: $1</t>
+<t id="L_FINISHED_IN" ver="1"> 종료 시간 $1</t>
+<t id="L_TIME_H:" ver="1">$1시:</t>
+<t id="L_TIME_M:" ver="1">$1분:</t>
+<t id="L_TIME_S" ver="1">$1초</t>
+<t id="W_FIRMWARE_EEPROM_SETTINGS" ver="1">펌웨어 EEPROM 설정</t>
+<t id="W_GCODE_NOT_FOUND" ver="1">생성된 G-Code가 없습니다</t>
+<t id="L_EXPECTED_FILENAME_AND_LOCATION" ver="1">파일명과 폴더를 요구</t>
+<t id="L_GCODE_NOT_FOUND_INFO" ver="1">생성된 G-Code 파일을찾을 수 없음.
+
+가능한 원인들:
+- 슬라이서가 오류가 발생하여 슬라이싱 작업을 완료치 못함. 로그 출력을 확인.
+- 슬라이서가 예측치 못한 다른 파일 이름으로 저장.</t>
+<t id="B_CLOSE" ver="1">닫기</t>
+<t id="W_REPETIER_SETTINGS" ver="1">Repetier 설정</t>
+<t id="L_BEHAVIOUR" ver="1">처리 능력</t>
+<t id="L_FILES_AND_DIRECTORIES" ver="1">파일과 폴더 설정</t>
+<t id="L_GUI" ver="1">GUI</t>
+<t id="L_INFO_WORKDIR" ver="1">작업 디렉토리에 슬라이싱 로그파일과 임시파일이 저장됨. 만약 로깅이 활성화 된 경우 프로그램이 종료된 후 repetier.log 가 있을 것입니다.
+프로그램이 시작될 때 이전의 로그파일을 지울 것입니다!
+로그 파일은 로그뷰를 비활성화 시키더라도 프린터와의 모든 통신을 저장합니다. 
+변경된 로깅은 다음번 시작 때 적용 됩니다.</t>
+<t id="L_LOG_SESSION" ver="1">로그 세션</t>
+<t id="REDUCE_TOOLBAR_SIZE" ver="1">툴바 크기 줄이기</t>
+<t id="L_DISABLE_QUALITY_REDUCTION" ver="1">품질 저감 사용안함</t>
+<t id="L_EXISTING_WORKDIR_REQUIRED" ver="1">작업 폴더가 존재하지 않습니다!</t>
+<t id="L_WORKDIR:" ver="1">작업 폴더:</t>
+<t id="B_BROWSE" ver="1">검색...</t>
+<t id="L_SELECT_WORKING_DIRECTORY" ver="1">작업 폴더 선택</t>
+<t id="L_PAST_60_MINUTES" ver="1">60 분 경과</t>
+<t id="W_3D_VISUALIZATION_SETTINGS" ver="1">3D 시각화 설정</t>
+<t id="L_COLORS" ver="1">색상</t>
+<t id="L_EDITOR" ver="1">편집기</t>
+<t id="L_VISUALIZATION" ver="1">시각화:</t>
+<t id="L_AMBIENT_COLOR" ver="1">주위 색상:</t>
+<t id="L_BACKGROUND" ver="1">배경:</t>
+<t id="L_DIFFUSE_COLOR" ver="1">확산 색상:</t>
+<t id="L_DRAW_METHOD" ver="1">그리기 방법:</t>
+<t id="L_EDGES" ver="1">가장자리:</t>
+<t id="L_EXTRUDER_X:" ver="1">압출기 $1:</t>
+<t id="L_FACES" ver="1">면들:</t>
+<t id="L_FILAMENT_VISUALIZATION_INFO" ver="1">필라멘트의 형상은 레이어의 높이와 두께 또는 필라멘트의 직경,
+두께 그리고 G-Code 에서의 E축 값으로 부터 계산 됩니다.
+skeinforge 의 새 버전에서 일어날 수 있는 레이어 높이 변경은 다음 버전에서 더 나은 결과를 제공함.</t>
+<t id="L_FILAMENT_VISUALIZATION" ver="1">필라멘트 시각화:</t>
+<t id="L_HOT_FILAMENT" ver="1">Hot 필라멘트:</t>
+<t id="L_HOT_FILAMENT_LENGTH" ver="1">Hot 필라멘트 길이:</t>
+<t id="L_LIGHT_X" ver="1">조명 $1</t>
+<t id="L_OBJECTS_OUTSIDE_PRINTBED" ver="1">프린트 베드 영역 바깥에 있는 객체들:</t>
+<t id="L_PRINTER_BASE" ver="1">프린터 베이스:</t>
+<t id="L_SELECTED_FACES" ver="1">선택된 면들:</t>
+<t id="L_SELECTED_FILAMENT" ver="1">선택된 필라멘트:</t>
+<t id="L_SPECULAR_COLOR" ver="1">반사 색상:</t>
+<t id="L_WIDTH_OVER_THICKNESS" ver="1">두께와 폭의 비율:</t>
+<t id="L_X_DIRECTION" ver="1">X축 방향:</t>
+<t id="L_Y_DIRECTION" ver="1">Y축 방향:</t>
+<t id="L_Z_DIRECTION" ver="1">Z축 방향:</t>
+<t id="L_DISABLE_FILAMENT_VISUALIZATION" ver="1">필라멘트 시각화 사용안함</t>
+<t id="L_ENABLE_LIGHT" ver="1">조명 사용</t>
+<t id="L_SHOW_EDGES" ver="1">가장자리 보기</t>
+<t id="L_SHOW_FACES" ver="1">면 보기</t>
+<t id="L_SHOW_PRINTBED" ver="1">프린트 베드 보기</t>
+<t id="L_PULSE_OBJECT_IF_NOT_PRINTABLE" ver="1">만약 프린트 가능한 객체가 아니라면 잠시 멈춤</t>
+<t id="TAB_GENERAL" ver="1">일반</t>
+<t id="TAB_FILAMENT" ver="1">필라멘트</t>
+<t id="TAB_MODEL" ver="1">모델</t>
+<t id="TAB_LIGHTS" ver="1">조명들</t>
+<t id="L_LAYER_HEIGHT" ver="1">층 높이:</t>
+<t id="L_FILAMENT_DIAMETER" ver="1">필라멘트 직경:</t>
+<t id="L_DRAW_METHOD_AUTODETECT" ver="1">최적값 자동검출</t>
+<t id="L_DRAW_METHOD_VBOS" ver="1">VBOs (빠름)</t>
+<t id="L_DRAW_METHOD_ARRAYS" ver="1">배열 (중간)</t>
+<t id="L_DRAW_METHOD_IMMEDIATE" ver="1">즉시 (느림)</t>
+<t id="W_JOB_STATUS" ver="1">작업 상태</t>
+<t id="L_ETA:" ver="1">남은 시간:</t>
+<t id="L_FINISH_TIME:" ver="1">종료 시간:</t>
+<t id="L_LINES_SEND:" ver="1">보낸 선들:</t>
+<t id="L_START_TIME:" ver="1">시작 시간:</t>
+<t id="L_STATUS:" ver="1">상태:</t>
+<t id="L_TOTAL_LINES:" ver="1">총 선들:</t>
+<t id="L_NO_JOB_DEFINED" ver="1">정의된 작업 없음</t>
+<t id="L_RUNNING..." ver="1">실행중 ...</t>
+<t id="L_FINISHED" ver="1">완료됨</t>
+<t id="L_ABORTED" ver="1">중단됨</t>
+<t id="W_PRINTER_INFO" ver="1">프린터 정보</t>
+<t id="L_CONNECTION_INFORMATION" ver="1">연결 정보</t>
+<t id="L_PRINTER_DATA" ver="1">프린터 데이터</t>
+<t id="L_BYTES_SEND:" ver="1">전송된 바이트:</t>
+<t id="L_ERRORS_RECEIVED:" ver="1">수신 오류들:</t>
+<t id="L_FIRMWARE:" ver="1">펌웨어:</t>
+<t id="L_FIRMWARE_URL:" ver="1">펌웨어 URL:</t>
+<t id="L_MACHINE_TYPE:" ver="1">장치 타입:</t>
+<t id="L_NUMBER_EXTRUDER:" ver="1">압출기 갯수:</t>
+<t id="L_PROTOCOL:" ver="1">프로토콜:</t>
+<t id="L_NOT_VALID_83_FILENAME" ver="1">유효치 않은 8.3 파일 이름입니다.</t>
+<t id="W_SD_CARD_UPLOAD" ver="1">SD-카드 업로드</t>
+<t id="L_UPLOADED_FILENAME:" ver="1">업로드된 파일 이름:</t>
+<t id="L_INCLUDE_JOB_FINISHED_COMMANDS" ver="1">작업 완료된 명령들 포함</t>
+<t id="L_INCLUDE_START_END_CODE" ver="1">"시작"과 "끝" 코드 포함</t>
+<t id="L_UPLOAD_EXTERNAL_FILE" ver="1">외부 파일 업로드</t>
+<t id="L_UPLOAD_CURRENG_GCODE" ver="1">현재 G-Code 업로드</t>
+<t id="L_FILE:" ver="1">파일:</t>
+<t id="W_SAVE_GCODE_DIRECT_PRINT" ver="1">직접 프린트 하기 위한 G-Code 저장</t>
+<t id="L_SAVE_DIRECT_INFO" ver="1">이 저장 기능은 SD 카드에서 실행할 수 있는 G-Code 파일을 생성하기위한 것입니다. 그것은 호스트에서 직접 출력하는 것처럼 일반 마무리 명령과 함께 시작 및 종료 코드를 추가할 수 있습니다. 모든 주석과 호스트 명령은 삭제됨! 만약 편집기상의 G-Code만 저장하길 원한다면 저장 아이콘을 사용하세요.</t>
+<t id="L_SAVE_AS_BINARY" ver="1">이진파일 형태로 저장(Repetier-펌웨어용)</t>
+<t id="B_SAVE" ver="1">저장</t>
+<t id="W_SD_CARD_MANAGER" ver="1">SD 카드 관리자</t>
+<t id="L_FILENAME" ver="1">파일 이름</t>
+<t id="L_SIZE" ver="1">크기</t>
+<t id="L_UPLOAD_FILE" ver="1">파일 업로드</t>
+<t id="L_DELETE_FILE" ver="1">파일 삭제</t>
+<t id="L_RUN_CONTINUE_UPLOAD" ver="1">선택된 파일 실행 / 일시 정지된 프린트 계속</t>
+<t id="L_STOP_UPLOAD" ver="1">실행중 SD 프린트 일시 정지 / 정지</t>
+<t id="L_MOUNT_SD_CARD" ver="1">SD 카드 연결</t>
+<t id="L_UNMOUNT_SD_CARD" ver="1">SD 카드 연결 해제</t>
+<t id="L_PRINT_FINISHED" ver="1">프린트 완료됨</t>
+<t id="L_UPLOAD_FINISHED" ver="1">업로드 완료됨</t>
+<t id="L_SD_PRINTING..." ver="1">SD 프린트 중 ...</t>
+<t id="L_UPLOAD_FAILED" ver="1">업로드 실패됨</t>
+<t id="L_FILE_DELETED" ver="1">파일 삭제됨</t>
+<t id="L_DELETE_FAILED" ver="1">삭제 실패됨</t>
+<t id="L_UPLOADING_FILE..." ver="1">파일 업로드 중 ...</t>
+<t id="L_FIRMWARE_NO_DELETE" ver="1">이 펌웨어는 파일 삭제 기능을 사용할 수 없음.</t>
+<t id="L_PRINT_ABORTED" ver="1">프린트가 중단됨</t>
+<t id="L_PRINT_PAUSED" ver="1">프린트가 일지 중지됨</t>
+<t id="L_REMOVE_SD_CARD" ver="1">SD 카드를 제거할 수 있습니다.</t>
+<t id="L_INFORMATION" ver="1">정보</t>
+<t id="L_REALLY_DELETE_X" ver="1">$1을 정말 삭제하시겠습니까?</t>
+<t id="SOUND_CONFIGURATION" ver="1">소리 설정</t>
+<t id="L_SOUNDS" ver="1">소리들</t>
+<t id="L_ERROR_SOUND" ver="1">오류 시 소리</t>
+<t id="L_PRINT_FINISHED_SOUND" ver="1">프린트 완료 소리</t>
+<t id="L_PRINT_PAUSED_SOUND" ver="1">프린트 일시 중지 소리</t>
+<t id="L_SOUND_COMMAND_SOUND" ver="1">@sound 명령 소리</t>
+<t id="L_FILE:X" ver="1">파일: $1</t>
+<t id="L_SELECT_WAV_FILE_TO_PLAY" ver="1">재생할 WAV 파일 선택</t>
+<t id="W_SLIC3R_SETUP" ver="1">Slic3r 설정</t>
+<t id="L_SLIC3R_SETUP" ver="1">Slic3r 설정</t>
+<t id="L_SLIC3R_BLANK_BUNDLE" ver="6">번들 혹은 시스템 버전을 사용하기 위하여 비워둡니다.</t>
+<t id="L_SLIC3R_CONFIG_DIR" ver="1">Slic3r 설정 폴더</t>
+<t id="L_SLIC3R_EXECUTABLE" ver="1">Slic3r 실행 파일</t>
+<t id="L_SLIC3R_INFO" ver="1">이 설정을 사용하면 Slic3r의 다른 버전을 사용할 수 있습니다. 새버전은  http://www.slic3r.org 에서 받을 수 있고 최소 요구 버전은 0.9.0. 입니다. 모든 항목들은 번들 또는 시스템 버전을 사용하기 위해 비워 둡니다.</t>
+<t id="L_SLIC3R_BLANK_CONFIG" ver="1">비어 있으면 표준 설정을 사용.</t>
+<t id="W_EEPROM_MARLIN" ver="1">Marlin 펌웨어 EEPROM 설정</t>
+<t id="L_M_ACCELERATION" ver="1">가속도:</t>
+<t id="L_M_ADVANCED_VARIABLES" ver="1">고급 변수들:</t>
+<t id="L_M_HOMING_OFFSET" ver="1">홈 오프셋:</t>
+<t id="L_M_MAX_ACCELERATION" ver="1">최대 가속 [mm/s²]:</t>
+<t id="L_M_MAX_FEEDRATE" ver="1">최대 이동 속도 [mm/s]:</t>
+<t id="L_M_MAX_XY_JERK" ver="1">최대 X-Y jerk [mm/s]</t>
+<t id="L_M_MAX_Z_JERK" ver="1">최대 Z jerk [mm/s]</t>
+<t id="L_M_MIN_FEEDRATE" ver="1">최소 이동 속도 [mm/s]</t>
+<t id="L_M_MIN_SEGMENT_TIME" ver="1">최소 세그먼트 시간 [ms]</t>
+<t id="L_M_MIN_TRAVEL_FEEDRATE" ver="1">최소 이동 속도 [mm/s]</t>
+<t id="L_M_PID_SETTINGS" ver="1">PID 설정:</t>
+<t id="L_M_STEPS_PER_MM" ver="1">mm 당 스텝:</t>
+<t id="L_M_RETRACT_ACCELERATION" ver="1">되감기 가속도:</t>
+<t id="B_M_LOAD" ver="1">환경 설정 다시 로드</t>
+<t id="B_M_RESTORE" ver="1">초기 설정으로 복구</t>
+<t id="B_M_SAVE" ver="1">EEPROM에 저장</t>
+<t id="L_M_CONFIRM_WRITE" ver="1">설정을 저장합니다.
+EEPROM에 변경 사항들을 쓰시겠습니까?</t>
+<t id="L_M_SETTINGS_STORED" ver="1">설정 저장됨</t>
+<t id="L_M_SAVE_RETIEVED" ver="1">복구된 변경 사항을 EEPROM에 저장하시겠습니까?</t>
+<t id="L_M_FACTORY_RETRIEVED" ver="1">초기 설정으로 복구됨</t>
+<t id="L_SLICING_STL_FILE..." ver="1">STL 파일 슬라이스 중 ...</t>
+<t id="L_SKEIN_STILL_RUNNING" ver="1">마지막 슬라이스 작업이 진행중입니다. 새로운 슬라이싱 작업은 취소 되었습니다.</t>
+<t id="L_SKEIN_KILLED" ver="1">사용자 요청에 의해 $1 슬라이스 프로세스가 중단되었습니다.</t>
+<t id="W_SKEIN_SETTINGS" ver="1">Skeinforge/SFACT 설정</t>
+<t id="L_SKEIN_APPLICARTION" ver="1">Skeinforge 응용 프로그램:</t>
+<t id="L_SKEIN_CRAFT" ver="1">Skeinforge Craft:</t>
+<t id="L_SKEIN_PROFDIR_INFO" ver="1">설정 파일의 폴더를 지정하십시오. 일반적으로 HOME/.skeinforge/profiles 이 지정됩니다. SFACT 등의 사용자 정의 버전에서 변경될 수 있습니다.</t>
+<t id="L_SKEIN_PROFILES_DIRECTORY" ver="1">프로파일 폴더:</t>
+<t id="L_SKEIN_PYPY" ver="1">PyPy:</t>
+<t id="L_SKEIN_PYPY_INFO" ver="1">pypy를 설치하면 Skeinforge 슬라이스가 3 ~ 4배 빨라집니다. pypy가 설치되어 있지 않으면 비워 두십시오. 최신 pypy 는 http://www.pypy.org/에 있습니다.</t>
+<t id="L_SKEIN_PYTHON" ver="1">Python 인터프리터:</t>
+<t id="L_SKEIN_WORKDIR_INFO" ver="1">지정된 작업 폴더에 SFACT 프로필을 저장합니다!</t>
+<t id="L_SKEIN_WORKING_DIRECTORY" ver="1">작업 폴더:</t>
+<t id="L_SKEIN_OPEN_FILE" ver="1">Skeinforge 응용 프로그램</t>
+<t id="L_SKEIN_OPEN_PYTHON" ver="1">Python 인터프리터</t>
+<t id="L_SKEIN_OPEN_CRAFT" ver="1">Skeinforge Craft 응용 프로그램</t>
+<t id="L_SKEIN_OPEN_PYPY" ver="1">Pypy Python 인터프리터</t>
+<t id="L_SKEIN_SELECT_PROFILE_FOLDER" ver="1">프로파일 폴더 선택</t>
+<t id="L_SKEIN_SELECT_WORKING_FOLDER" ver="1">작업 폴더 선택</t>
+<t id="L_FEEDRATE:" ver="1">이동 속도:</t>
+<t id="L_FLOWRATE:" ver="1">유량율:</t>
+<t id="L_UPDATE_NO_CONNECTION" ver="1">업데이트 서버로 연결할 수 없습니다!</t>
+<t id="L_MOVE_CAMERA" ver="1">카메라 이동</t>
+<t id="L_MOVE_OBJECT" ver="1">객체 이동</t>
+<t id="L_MOVE_VIEWPOINT" ver="1">시점 이동</t>
+<t id="L_RESET_VIEW" ver="1">보기 초기화</t>
+<t id="L_ROTATE" ver="1">회전</t>
+<t id="L_TOP_VIEW" ver="1">위에서 보기(평면)</t>
+<t id="T_ZOOM_VIEW" ver="1">확대</t>
+<t id="T_CLEAR_OBJECTS" ver="1">초기화</t>
+<t id="L_DEBUG_OPTIONS" ver="2">디버그 옵션</t>
+<t id="L_X_MIN:" ver="3">X 최소</t>
+<t id="L_X_MAX:" ver="3">X 최대</t>
+<t id="L_Y_MIN:" ver="3">Y 최소</t>
+<t id="L_Y_MAX:" ver="3">Y 최대</t>
+<t id="L_BED_LEFT:" ver="3">베드 왼쪽:</t>
+<t id="L_BED_FRONT:" ver="3">베드 앞쪽:</t>
+<t id="L_SHAPE_INFO" ver="3">최소 및 최대 값은 익스트루더 좌표의 가능한 범위를 정의 합니다. 이 좌표는 0보다 작거나 베드 바깥쪽에 있을 수 있습니다. 베드의 왼쪽/전면 은 프린트 베드 그 자신이 시작되는 좌표를 정의 합니다. 펌웨어에서 지원한다면 최소/최대 값 변경시 프린트 베드의 중앙에 원점을 이동할 수 있습니다.</t>
+<t id="L_SELECTION_BOX" ver="3">선택 박스:</t>
+<t id="L_FILAMENT_NONE" ver="3">없거나/같은 압출기 1</t>
+<t id="L_REALLY_QUIT" ver="3">프린트가 끝나지 않았음. 무시하고 종료?</t>
+<t id="M_DONATE" ver="3">Paypal을 통한 기부 또는 지원</t>
+<t id="L_FAN" ver="4">팬</t>
+<t id="L_HOME_X:" ver="4">홈 X:</t>
+<t id="L_HOME_Y:" ver="4">홈 Y:</t>
+<t id="L_HOME_Z:" ver="4">홈 Z:</t>
+<t id="L_MIN" ver="4">최소</t>
+<t id="L_MAX" ver="4">최대</t>
+<t id="L_PAUSED_FIRMWARE" ver="4">프린터로부터 일시 정기가 요청됨.</t>
+<t id="L_CREATE_FOLDER" ver="4">새 폴더 생성</t>
+<t id="L_CREATE_FOLDER_INFO" ver="4">폴더 이름 입력:</t>
+<t id="L_UPLOADING_TIME" ver="4">업로드 시간: $1</t>
+<t id="L_FILAMENT_POS" ver="4">필라멘트: $1</t>
+<t id="L_TRAVEL_VISUALIZATION_DISABLED" ver="4">이동 경로 시각화 사용안함</t>
+<t id="M_HIDE_TRAVEL" ver="4">이동 경로 숨김</t>
+<t id="L_TRAVEL_VISUALIZATION_ENABLED" ver="4">이동 경로 시각화 사용함</t>
+<t id="M_SHOW_TRAVEL" ver="4">이동 경로 보기</t>
+<t id="L_TRAVEL_MOVES:" ver="4">이동 경로:</t>
+<t id="L_DISABLE_TRAVEL_MOVES_VIS" ver="4">이동 경로 시각화 사용안함</t>
+<t id="L_NUMBER_OF_EXTRUDER:" ver="5">압출기 갯수:</t>
+<t id="L_NEW_FOLDER" ver="5">새 폴더</t>
+<t id="L_USE_PARALLEL_PROJECTION" ver="5">평행 투영 사용</t>
+<t id="L_USE_RED_GREEN_SWITCH" ver="5">Red/Green 스위치 버튼 사용 (재시작 필요)</t>
+<t id="L_LAST_SLICE_RUNNING" ver="6">전 슬라이스가 아직 진행중입니다. 새로운 작업이 취소 되었습니다.</t>
+<t id="L_SLIC3R_NOT_FOUND" ver="6">Slic3r이 없습니다.</t>
+<t id="L_ANALYSING_STL" ver="6">STL 파일 분석중 ...</t>
+<t id="L_SLICING_STL" ver="6">STL 파일 슬라이스 중 ...</t>
+<t id="L_PYPY_NOT_FOUND" ver="6">Pypy 또는 Python 인터프리터가 없습니다.</t>
+<t id="L_SKEINCRAFT_NOT_FOUND" ver="6">Skeinforge craft가 없습니다.</t>
+<t id="L_PYTHON_NOT_FOUND" ver="6">파이썬 인터프리터가 없습니다.</t>
+<t id="L_SKEINFORGE_NOT_FOUND" ver="6">Skeinforge가 없습니다.</t>
+<t id="L_SKEINCRAFT_PROFILES_NOT_FOUND" ver="6">Skeinforge/SFACT 프로파일 폴더가 없습니다.</t>
+<t id="B_REFRESH_PORTS" ver="6">포트 갱신</t>
+<t id="L_ROS_PRINTABLE_HEIGHT:" ver="6">프린트 가능 높이:</t>
+<t id="L_ROS_PRINTABLE_RADIUS:" ver="6">프린트 가능 반경:</t>
+<t id="L_CARTESIAN_PRINTER" ver="6">클래식 프린터</t>
+<t id="L_CARTESIAN_PRINTER_DUMP" ver="6">클래식 프린터 (Dump 영역 포함)</t>
+<t id="L_ROSTOCK_CIRCLE" ver="6">Rostock 프린터 (원형 프린터 모양)</t>
+<t id="L_CORRECT_NORMALS" ver="7">올바른 법선(Normals) 사용 (더 좋아보이지만 메모리가 더 필요함)</t>
+<t id="L_WARNING" ver="8">경고</t>
+<t id="L_HEATERS_ON_QUEST" ver="8">일부 히터가 켜져 있음. 전부 끌까요?</t>
+<t id="L_OBJECTS_OUTSIDE_SLICE_QUEST" ver="8">적어도 한개의 오브젝트가 프린트 영역을 벗어남. 슬라이싱을 중단합니까?</t>
+<t id="L_CNC_ROUTER" ver="8">CNC 라우터</t>
+<t id="L_SLIC3R_VERSION" ver="8">Slic3r 버전</t>
+<t id="L_MODEL_ERRORS" ver="9">모델 오류들:</t>
+<t id="L_SPLIT" ver="9">분할</t>
+<t id="L_YES" ver="9">네</t>
+<t id="L_NO" ver="9">아니오</t>
+<t id="L_MODEL_CHANGED_RELOAD" ver="9"><![CDATA[하나 혹은 여러 객체 파일들이 변경되었습니다.
+객체들을 다시 로드할까요?]]></t>
+<t id="L_FILES_CHANGED" ver="9">파일들이 변경됨</t>
+<t id="L_INNER_FACES" ver="9">Inner 페이스:</t>
+<t id="L_BACKGROUND_TOP" ver="9">배경 위:</t>
+<t id="L_BACKGROUND_BOTTOM" ver="9">배경 아래:</t>
+<t id="L_PRINTER_FRAME" ver="9">프린터 프레임:</t>
+<t id="L_ISOMETRIC_VIEW" ver="9">등각 투영 보기</t>
+<t id="L_BOTTOM_VIEW" ver="9">밑에서 보기</t>
+<t id="L_LEFT_VIEW" ver="9">왼쪽에서 보기</t>
+<t id="L_RIGHT_VIEW" ver="9">오른쪽에서 보기</t>
+<t id="L_FRONT_VIEW" ver="9">앞에서 보기</t>
+<t id="L_BACK_VIEW" ver="9">뒤에서 보기</t>
+<t id="M_VIEW" ver="9">보기</t>
+<t id="M_SHOW_EDGES" ver="9">가장자리 보기</t>
+<t id="M_SHOW_FACES" ver="9">페이스 보기</t>
+<t id="L_ANA_MODIFIED" ver="9">수정됨:</t>
+<t id="L_ANA_MANIFOLD" ver="9">Manifold:</t>
+<t id="L_ANA_INTERSECTING_TRIANGLES" ver="9">교차한 삼각형들:</t>
+<t id="L_ANA_NORMALS" ver="9">법선(Normals):</t>
+<t id="L_ANA_LOOP_EDGES" ver="9">닫힌 가장자리:</t>
+<t id="L_ANA_HIGHLY_CONNECTED" ver="9">고집적 가장자리:</t>
+<t id="L_ANA_VERTICES" ver="9">점:</t>
+<t id="L_ANA_EDGES" ver="9">가장자리:</t>
+<t id="L_ANA_FACES" ver="9">면:</t>
+<t id="L_ANA_SHELLS" ver="9">쉘:</t>
+<t id="L_ANA_ORIENTED" ver="9">방향이 있음</t>
+<t id="L_ANA_NOT_ORIENTED" ver="9">방향이 없음</t>
+<t id="M_TOOLS" ver="9">도구</t>
+<t id="M_BELT_CALCULATOR" ver="9">벨트 계산기</t>
+<t id="M_LEADSCREW_CALCULATOR" ver="9">리드스크류 계산기</t>
+<t id="L_MOTOR_STEP_ANGLE" ver="9">모터 스텝 각도</t>
+<t id="L_DRIVER_MICROSTEPPING" ver="9">드라이버 마이크로스텦</t>
+<t id="L_BELT_PITCH" ver="9">벨트 피치</t>
+<t id="L_TOOTH_COUNT" ver="9">톱니빨 갯수</t>
+<t id="B_CALCULATE" ver="9">계산</t>
+<t id="L_STEPS_PER_MM" ver="9">mm 당 스텝 갯수</t>
+<t id="L_TOOTH_COUNT_MUST_INT" ver="9">톱니빨 갯수는 정수이어야 합니다</t>
+<t id="L_LEADSCREW_PITCH" ver="9">리드스크류 피치</t>
+<t id="L_GEAR_RATIO" ver="9">기어 비</t>
+<t id="L_SERIAL_CONNECTION" ver="9">시리얼 연결</t>
+<t id="L_VIRTUAL_CONNECTION" ver="9">가상화 프린터</t>
+<t id="L_REPETIER_SERVER_CONNECTION" ver="9">Repetier-Server</t>
+<t id="L_CONNECTOR" ver="9">연결</t>
+<t id="L_DISABLED" ver="9">비활성화</t>
+<t id="L_DTR_LOW_HIGH" ver="9">DTR high->low</t>
+<t id="L_DTR_LOW_HIGH_LOW" ver="9">DTR low->high->low</t>
+<t id="L_DTR_TOGGLE" ver="9">DTR 신호 ON/OFF</t>
+<t id="L_RESET_ON_CONNECT" ver="9">연결 시 리셋 신호</t>
+<t id="L_RESET_ON_EMERGENCY" ver="9">비상 정지에 리셋 신호</t>
+<t id="L_SEND_EMERGENCY_CMD" ver="9">비상 명령 보내기</t>
+<t id="L_SEND_EMERGENCY_CMD_DTR_TOGGLE" ver="9">비상 명령 보내기 + DTR high->low</t>
+<t id="L_SEND_EMERGENCY_CMD_RECONNECT" ver="9">비상 명령을 보내고 재접속</t>
+<t id="L_FILE_ASSOCIATIONS" ver="9">파일 연결</t>
+<t id="L_ASSOCIATE_EXTENSIONS" ver="9">연결 파일 확장자</t>
+<t id="L_CONNECTION_FAILED" ver="9">연결 오류가 발생했습니다 : $ 1 프린터가 연결되어 활성화 되어 연결 데이터가 올바른지 확인하십시오. 프린터 설정을 여시겠습니까?</t>
+<t id="L_AUTOENABLE_PARALLEL_TOPVIEW" ver="9">위에서(평면) 보기에서 병렬 모드 사용하기</t>
+<t id="L_RESET_DEFAULTS" ver="9">기본값으로 재설정</t>
+<t id="L_REMOVED_DEGENERATED" ver="9">깨진 삼각형들 삭제:</t>
+<t id="L_REMOVED_ISOLATED" ver="9">분리(독립)된 삼각형들 삭제:</t>
+<t id="L_REMOVED_DOUBLE" ver="9">겹친 삼각형들 삭제:</t>
+<t id="L_STARTING_ANALYSER" ver="9">객체 분석기 시작 ...</t>
+<t id="L_ANALYSER_FINISHED" ver="9">분석 완료.</t>
+<t id="L_LOADING_3D_FAILED" ver="9">3D 파일 $1을 로드하지 못하였습니다.</t>
+<t id="L_OBJECT_INFORMATIONS" ver="9">객체 정보들</t>
+<t id="L_MINIMUM:" ver="9">최소:</t>
+<t id="L_MAXIMUM:" ver="9">최대:</t>
+<t id="L_SIZE:" ver="9">크기:</t>
+<t id="L_VOLUME:" ver="9">볼륨:</t>
+<t id="L_SURFACE:" ver="9">표면:</t>
+<t id="L_DIMENSIONS:" ver="9">치수:</t>
+<t id="L_SPLIT_OBJECT" ver="9">객체 분리</t>
+<t id="L_FIX_NORMALS" ver="9">법선(Normals) 복구</t>
+<t id="M_FIT_PRINTER" ver="9">프린터에 맞게</t>
+<t id="M_FIT_OBJECTS" ver="9">객체들에 맞게</t>
+<t id="IMPORTING_1" ver="9">$1 가져오는 중</t>
+<t id="L_LOADING..." ver="9">로딩중 ...</t>
+<t id="L_INTERSECTION_TESTS" ver="9">교차 시험</t>
+<t id="L_FIXING_NORMALS" ver="9">법선 복구</t>
+<t id="L_ANA_FIXED_COLLINEAR_TRIANGLES" ver="9">복구된 공용 삼각형들:</t>
+<t id="L_ANA_CORRECTED_NORMAL_ORIENTATIONS" ver="9">복구된 법선 방향:</t>
+<t id="L_OBJECT_IS_MANIFOLD" ver="9">객체를 만들 수 있습니다(manifold)</t>
+<t id="L_OBJECT_IS_NON_MANIFOLD" ver="9">객체를 만들 수 없습니다(non-manifold). 슬라이싱이 잘못될 수 있습니다. 먼저 객체를 수선하여야 합니다.</t>
+<t id="L_SHOW_COMPASS" ver="9">컴파스 보이기</t>
+<t id="L_CONFIRM_DELETE_JOB" ver="10">$1 작업을 정말 삭제하길 원하시나요?</t>
+<t id="L_PRINT_STATE_SAVED_SUCCESSFULLY" ver="10">상태가 성공적으로 저장되었습니다.</t>
+<t id="M_POSPONED_JOBS" ver="10">연기된 작업들</t>
+<t id="M_RESUME_JOB" ver="10">다시 시작</t>
+<t id="M_POSTPONE_JOB" ver="10">현재 작업을 연기</t>
+<t id="W_POSTPONED_PRINT_JOBS" ver="10">연기된 프린트 작업들</t>
+<t id="M_POSTPONED_JOB_SELECT_JOB" ver="10">작업 재시작</t>
+<t id="M_POSTPONED_JOB_KILL_JOB" ver="10">작업 지우기</t>
+<t id="M_POSTPONED_JOB_RENAME_JOB" ver="10">작업 이름 바꾸기</t>
+<t id="L_POSTPONED_JOB_NAME" ver="10">작업 이름</t>
+<t id="L_NAME_POSTPONED_JOB" ver="10">작업 이름을 만들어 주세요</t>
+<t id="L_POSTPONED_JOB_DIALOG_DESCRIPTION" ver="10">현재 레이어가 끝나면 작업 상태가 저장됩니다. 바로 작업 상태를 저장하게 할 수 있거나 프린트를 다시 시작할 수 있습니다.</t>
+<t id="B_FORCE_SAVE_POSTPONED_JOB" ver="10">&amp;강제 저장</t>
+<t id="B_RESUME_PRINTING_JOB" ver="10">&amp;다시 시작</t>
+<t id="W_POSTPONED_JOB_DIALOG" ver="10">프린트 작업 연기</t>
+<t id="M_TOGGLE_PRINTER_ID" ver="10">프린트 ID 보기 ON/OFF</t>
+<t id="L_PRINTER_ID" ver="10">프린터 ID</t>
+<t id="L_BGCOLOR:" ver="10">배경 색상:</t>
+<t id="L_EDIT_INSTANCE_NAME" ver="10">프린터 ID 편집</t>
+<t id="L_ANAYLSING" ver="10">분석중</t>
+<t id="L_NOT_TESTED" ver="10">시험하지 못하였음</t>
+<t id="L_CONNECTOR:" ver="10">연결:</t>
+<t id="L_NORMAL_CORRECTION_IMPOSSIBLE" ver="10">매니 폴드가 아닌 메쉬에서는 일반 수정이 불가능합니다.</t>
+<t id="M_MED_HEIGHT_MAP" var="10">베드 높이 지도</t>
+<t id="M_CREATE_HEIGHT_MAP" var="10">높이 지도 만들기</t>
+<t id="B_MEASURE_HEIGHTS" ver="10">높이 측정</t>
+<t id="B_RESULT_TO_CLIPBOARD" ver="10">결과를 클립보드에 저장</t>
+<t id="L_SCAN_AREA" ver="10">스캔 영역</t>
+<t id="L_SCAN_RESULTS" ver="10">스캔 결과</t>
+<t id="L_X_POINTS:" ver="10">X 위치(점-points):</t>
+<t id="L_Y_POINTS:" ver="10">Y 위치(점-points):</t>
+<t id="L_Z_MIN:" ver="10">Z 최소:</t>
+<t id="L_Z_MAX:" ver="10">Z 최대:</t>
+<t id="L_Z_AVG:" ver="10">Z 평균:</t>
+<t id="L_Z_CENTER:" ver="10">Z 중앙</t>
+<t id="L_CUT_FACES" ver="10">객체 자르기</t>
+<t id="L_CUT_POSITION" ver="10">위치</t>
+<t id="L_CUT_INCLINATION" ver="10">경사</t>
+<t id="L_CUT_AZIMUTH" ver="10">방위각</t>
+<t id="UNITS_OF_IMPORTED_OBJECTS" ver="10">사용 단위</t>
+<t id="OBJECTS_ARE_IN_MILLIMETER" ver="10">밀리미터</t>
+<t id="OBJECTS_ARE_IN_INCHES" ver="10">인치</t>
+<t id="OBJECTS_ARE_IN_FOOT" ver="10">피트</t>
+<t id="OBJECTS_ARE_IN_METER" ver="10">미터</t>
+<t id="B_RESET" ver="10">초기값으로</t>
+<t id="L_SLIC3R_INFO2" ver="10">Slic3r는 분리된 외부 프로그램으로서 따로 실행할 수 있습니다. 보다 자세한 정보는 다음 웹페이지를 방문하세요: http://www.slic3r.org</t>
+<t id="L_SKEINFORGE_INFO" ver="10">는 분리된 외부 프로그램으로서 따로 실행할 수 있습니다. 보다 자세한 정보는 다음 웹페이지를 방문하세요: http://fabmetheus.crsndoo.com/</t>
+<t id="L_PRINT_SETTINGS:" ver="10">프린트 설정:</t>
+<t id="L_PRINTER_SETTINGS:" ver="10">프린터 설정:</t>
+<t id="L_OVERRIDE_SLIC3R_SETTINGS" ver="10">Slic3r 설정 덮어쓰기</t>
+<t id="B_COPY_PRINT_SETTINGS_TO_OVERRIDE" ver="10">덮어쓰기 위한 프린트 설정 복사</t>
+<t id="L_ENABLE_SUPPORT" ver="10">지지 구조물 사용하기</t>
+<t id="L_ENABLE_COOLING" ver="10">냉각 사용하기</t>
+<t id="L_LAYER_HEIGHT:" ver="10">레이어 높이:</t>
+<t id="L_INFILL_DENSITY" ver="10">공간채우기 밀도</t>
+<t id="L_INFILL_ANGLE" ver="10">공간채우기 각도</t>
+<t id="L_INFILL_PATTERN:" ver="10">공간채우기 패턴:</t>
+<t id="L_SOLID_INFILL_PATTERN:" ver="10">속이 꽉찬 공간채우기 패턴:</t>
+<t id="L_SHOW_EXTRUDER" ver="10">압출기 보기</t>
+<t id="L_SHOW_BED" ver="10">베드 보기</t>
+<t id="L_SHOW_OUTPUT" ver="10">출력 보기</t>
+<t id="L_SHOW_TARGET_TEMPERATURES" ver="10">목표 온도</t>
+<t id="L_SHOW_AVERAGE_TEMPERATURES" ver="10">평균 온도들</t>
+  <t id="L_NOT_VALID_SD_FILENAME" ver="10">파일 이름에 사용할 수 없는 글자가 들어 있거나, 파일 이름이 너무 긺니다. 26 글자 이상을 사용하지 마세요.</t>
+  <t id="B_ADD_SLICER" ver="10">슬라이서 추가</t>
+  <t id="B_DELETE" ver="10">삭제</t>
+  <t id="L_SLICER" ver="10">슬라이서</t>
+  <t id="L_CONFIGURATION:" ver="10">설정:</t>
+  <t id="L_SETUP" ver="10">설정</t>
+  <t id="L_SLICER_CONFIGURATIONS" ver="10">슬라이서 설정</t>
+  <t id="L_NAME" ver="10">이름</t>
+  <t id="L_SLICER_MANAGER" ver="10">슬라이서 관리자</t>
+  <t id="L_ASK_LOAD_GCODE" ver="10">슬라이서가 새로운 G-Code 파일을 생성하였습니다. 이것을 로드할까요?</t>
+  <t id="L_QUESTION" ver="10">질문</t>
+  <t id="L_FILE_TYPES:" ver="10">파일 유형들:</t>
+  <t id="L_WATCHDIRECTORY_INFO" ver="10">디렉토리 보기에서는 위에서 정의된 파일의 유형들을 보여 줍니다. &quot;g;gcode&quot;와 같이 세미콜론으로 여러 파일 유형들을 분리합니다. 모든 프린터는 자체 디렉토리 설정을 가지고 있고, 만약 새로운 파일이 있거나 변경되면, Repetier-Host로 돌아 갔을 때, 빠르게 가져오게 파일들을 나타내 줄 것입니다.</t>
+  <t id="B_LOAD" ver="10">로드</t>
+  <t id="L_CHANGED" ver="10">변경됨</t>
+  <t id="L_NEW" ver="10">새로 만들기</t>
+  <t id="L_DIRECTORY:" ver="10">폴더:</t>
+  <t id="L_ACTION" ver="10">동작</t>
+  <t id="L_FILE" ver="10">파일</t>
+  <t id="L_STATUS" ver="10">상태</t>
+  <t id="L_SEND_ETA_DISPLAY" ver="10">프린터 디스플레이에 ETA 보내기</t>
+  <t id="L_ETA_SHORT$1" ver="10">ETA $1</t>
+  <t id="L_ETE_SHORT$1" ver="10">ETE $1</t>
+  <t id="L_CACHING..." ver="10">캐시중 ... $1%</t>
+  <t id="M_MAKE_SCREENSHOT" ver="10">스크린샷 저장</t>
+  <t id="PNG_FILTER" ver="10">PNG-Images|*.png</t>
+  <t id="L_INVALID_FILENAME" ver="10">잘못된 파일 이름.</t>
+  <t id="L_EEPROM_IMPORT_FAILED" ver="10">EEPROM 데이터를 가져오지 못하였습니다. 잘못된 파일 형식.</t>
+  <t id="L_EXPORT_EEPROM_DATA" ver="10">EEPROM 데이터 내보내기</t>
+  <t id="L_IMPORT_EEPROM_DATA" ver="10">EEPROM 데이터 가져오기</t>
+<t id="L_TIME_H" ver="10">$1h </t>
+<t id="L_TIME_M" ver="10">$1m </t>
+<t id="L_SHOW_OUTPUT_EXTRUDER" ver="10">압출기 출력 보이기</t>
+<t id="L_SHOW_OUTPUT_BED" ver="10">베드 출력 보이기</t>
+<t id="M_SHOW_BED_POWER" ver="10">베드 전력 보이기</t>
+  <t id="L_ENABLE_ANTI_ALIAS" ver="10">앤티에일리어싱 사용하기 (시각화가 느려지며, 재시작이 필요합니다)</t>
+  <t id="L_MODEL_ERRORS_EDGE:" ver="10">모델 오류(가장자리):</t>
+  <t id="L_CUT_FACES:" ver="10">면들 자르기:</t>
+  <t id="L_NOT_MANIFOLD_INFO" ver="11">객체가 매니폴드(manifold)로 되어있지 않습니다. 본질적으로 틈새가 있다는 것을 의미하며, 일반적으로 슬라이싱하는 동안 문제를 일으켜 원치 않는 결과를 초래합니다. 파일을 복구 할 것을 강력히 권고합니다. 무료 수리 서비스 1 건: https://netfabb.azurewebsites.net </t>
+  <t id="L_EXPERT_MODE" ver="11">내보내기 모드</t>
+<t id="L_CURAENGINE_EXECUTABLE" ver="11">CuraEngine 실행 파일</t>
+<t id="L_CURAENGINE_INFO" ver="11">CuraEngine은 David Braam에 의하여 개발된 별도의 외부 프로그램으로써, 자세한 사항은 다음 웹페이지를 방문하세요:  https://www.ultimaker.com</t>
+<t id="L_CURAENGINE_NOT_FOUND" ver="11">CuraEngine이 없습니다.</t>
+  <t id="L_ANY_EXTRUDER" ver="11">Any Extruder</t>
+  <t id="L_PUSH_MESSAGES" ver="11">메시지 전송</t>
+  <t id="L_INFORMER_ACTIVE" ver="11">메시지 전송 사용</t>
+  <t id="L_INFORMER_GROUP" ver="11">Informer-Group:</t>
+  <t id="L_PUSH_PRINT_FINISHED" ver="11">프린트 완료됨</t>
+  <t id="L_PUSH_PRINT_PAUSED" ver="11">프린트 일시 정지됨</t>
+  <t id="L_PUSH_PRINT_STARTED" ver="11">프린트 시작됨</t>
+  <t id="L_PUSH_PRINT_STOPPED" ver="11">프린트 멈춤</t>
+  <t id="L_PUSH_SLICING_FINISHED" ver="11">슬라이스 작업 완료</t>
+  <t id="L_PUSH_FATAL_ERRORS" ver="11">치명적 오류들</t>
+  <t id="L_PUSH_SEND_FOR" ver="11">이러한 이벤트일 경우 메시지 전송:</t>
+  <t id="L_TEST" ver="11">시험</t>
+  <t id="L_INFORMER_INSTRUCTIONS" ver="11">Repetier-Informer는 전송된 알림 메시지를 받을 수 있는 스마트폰 앱입니다. 이 앱에서 새로운 그룹들 혹은 공유 그룹들을 사용할 수 있습니다. 여기에 호스트가 메시지를 보낼 그룹을 넣어 주세요. 그룹의 모든 멤버들이 보낸 메시지를 받을 것입니다.</t>
+  <t id="L_VISIT_INFORMER" ver="11">Repetier-Informer 웹사이트 방문</t>
+  <t id="L_HOST_NAME:" ver="11">호스트 이름:</t>
+  <t id="L_PUSH_HEAD_STARTED" ver="11">프린트 시작됨</t>
+  <t id="L_PUSH_MSG_STARTED" ver="11">프린터 $1에서 프린트가 시작됨. 프린트 작업은 $2 가까이 완료 예정입니다.</t>
+  <t id="L_PUSH_HEAD_PAUSED" ver="11">프린트가 일지 정지됨</t>
+  <t id="L_PUSH_MSG_PAUSED" ver="11">프린터 $1에서 프린트가 일시 멈췄습니다. 메시지: $2</t>
+  <t id="L_PUSH_HEAD_FINISHED" ver="11">프린트 완료됨</t>
+  <t id="L_PUSH_MSG_FINISHED" ver="11">프린터 $1의 프린트 작업이 끝났습니다. 프린트 시간: $2. 프린터로 보낸 줄들: $3</t>
+  <t id="L_PUSH_HEAD_KILLED" ver="11">프린트 중단</t>
+  <t id="L_PUSH_MSG_KILLED" ver="11">프린터 $1의 프린트가 완료되기 전에 중단되었습니다.</t>
+  <t id="L_PUSH_HEAD_SLICING" ver="11">슬라이스 작업 완료</t>
+  <t id="L_PUSH_MSG_SLICING" ver="11">프린터 $1의 슬라이스 작업이 지금 완료되었습니다.</t>
+  <t id="L_PUSH_HEAD_FATAL" ver="11">치명적인 오류</t>
+  <t id="L_PUSH_MSG_FATAL" ver="11">프린터 $1에서 치명적인 오류가 발생하였습니다. 메시지: $2</t>
+  <t id="L_CURA_EXTRUDER_INFO" ver="11">CuraEngine는 모두 동일한 압출기를 사용한다는 가정하에서 한 압출기의 직경과 유량율 값을 지원합니다. 각기 다른 값들로 압출기들을 설정하였다면, 첫 번째 압출기의 값들이 모든 것들에 사용될 것입니다. 프린트 온도는 G-코드 시작에 설정되어 있어 각기 다른 재료에 다른 온도가 사용되어 문제가 없습니다. 냉각에 있어서 모든 압출기의 가장 높은 값이 사용됩니다.</t>
+  <t id="L_TCPIP_CONNECTION" ver="11">TCP/IP 연결</t>
+  <t id="L_IP_ADDRESS:" ver="11">IP 주소:</t>
+  <t id="L_INFORMER_GROUP_INFO" ver="11">앱에서 보낼 그룹 id.</t>
+  <t id="L_INFORMER_HOST_NAME_INFO" ver="11">선택 사항. 보낼 메시지 제목.</t>
+  <t id="L_INFORMER_TEST_FAILED" ver="11">알림 서버를 호출할 수 없습니다.</t>
+  <t id="L_OBJECT_GROUP_%" ver="11">객체 그룹 $1</t>
+  <t id="L_NOT_COMPUTED" ver="11">계산되지 않았음</t>
+  <t id="L_ANALYSE" ver="11">분석</t>
+  <t id="L_ANALYSIS" ver="11">분석</t>
+  <t id="L_SETTINGS" ver="11">설정</t>
+  <t id="L_FILENAME:" ver="11">파일 이름:</t>
+  <t id="L_ASSIGNED_EXTRUDER:" ver="11">할당된 압출기:</t>
+  <t id="L_ASSIGNED_OBJECT:" ver="11">할당된 객체:</t>
+  <t id="L_EXTRACT_FROM_GROUP" ver="11">그룹에서 추출</t>
+  <t id="L_SHOW_PLATER" ver="11">Slic3r에 Plater 표시</t>
+  <t id="L_PRINT" ver="11">프린트</t>
+  <t id="L_SPEED_AND_QUALITY" ver="11">속도와 품질</t>
+  <t id="L_EXTRUSION" ver="11">압출</t>
+  <t id="L_STRUCTURES" ver="11">구조</t>
+  <t id="L_G-CODES" ver="11">G-코드</t>
+  <t id="L_COOLING" ver="11">냉각</t>
+  <t id="L_GENERAL_EXTRUDER_SETTINGS" ver="11">압출기 일반 설정</t>
+  <t id="L_INFILL" ver="11">공간채우기</t>
+  <t id="L_MESH_ERRORS" ver="11">메쉬(Mesh) 오류</t>
+  <t id="L_MULTI_EXTRUDER_SETTINGS" ver="11">복수 압출기 설정</t>
+  <t id="L_QUALITY" ver="11">품질</t>
+  <t id="L_RAFT" ver="11">부대(Raft)</t>
+  <t id="L_SELECTED_QUALITY_SETTING" ver="11">선택된 품질 설정</t>
+  <t id="L_SKIRT_AND_BRIM" ver="11">스커트(Skirt)와 테둘이(Brim)</t>
+  <t id="L_SPEED" ver="11">속도</t>
+  <t id="L_SUPPORT" ver="11">지지 구조물</t>
+  <t id="L_BED_TEMPERATURE:" ver="11">베드 온도:</t>
+  <t id="L_BRIM_WIDTH:" ver="11">테둘이 폭:</t>
+  <t id="L_INFILL_DENSITY:" ver="11">공간채우기 밀도:</t>
+  <t id="L_INFILL_OVERLAP:" ver="11">공간채우기 겹침:</t>
+  <t id="L_INFILL_TYPE:" ver="11">공간채우기 패턴:</t>
+  <t id="L_MAX_FAN_SPEED:" ver="11">팬 최대 속도:</t>
+  <t id="L_MIN_FAN_SPEED:" ver="11">팬 최소 속도:</t>
+  <t id="L_MIN_EXTR_BEFORE_RETRACT:" ver="11">되감기 전 최소 압출:</t>
+  <t id="L_MIN_LAYER_TIME:" ver="11">최소 레이어 시간:</t>
+  <t id="L_MIN_SKIRT_LENGTH:" ver="11">최소 스커트 길이:</t>
+  <t id="L_MIN_TRAVEL_BEFORE_RETRACT:" ver="11">되감기 전 최소 이동:</t>
+  <t id="L_OVERHANG_ANGLE:" ver="11">돌출 각도:</t>
+  <t id="L_PRINT_SPEED:" ver="11">프린트 속도:</t>
+  <t id="L_PRINT_TEMPERATURE:" ver="11">프린트 온도:</t>
+  <t id="L_NAME:" ver="11">이름:</t>
+  <t id="L_EXTRA_MARGIN:" ver="11">추가 마진:</t>
+  <t id="L_BASE_LINE_WIDTH:" ver="11">기본 선 넓이:</t>
+  <t id="L_LINE_SPACING:" ver="11">선 공간:</t>
+  <t id="L_BASE_LINE_THICKNESS:" ver="11">기본 선 두께:</t>
+  <t id="L_INTERFACE_LINE_WIDTH:" ver="11">인터페이스 선 넓이:</t>
+  <t id="L_INTERFACE_THICKNESS:" ver="11">인터페이스 두께:</t>
+  <t id="L_RETRACTION_DISTANCE:" ver="11">되감기 거리:</t>
+  <t id="L_RETRACTION_ON_EXTRUDER_SWITCH:" ver="11">압출기 스위치에서 되감기:</t>
+  <t id="L_RETRACTION_SPEED:" ver="11">되감기 속도:</t>
+  <t id="L_SKIRT_DISTANCE:" ver="11">스커트 거리:</t>
+  <t id="L_SKIRT_LINE_COUNT:" ver="11">스커트 선 갯수:</t>
+  <t id="L_FAST" ver="11">빠르게</t>
+  <t id="L_SLOW" ver="11">느리게</t>
+  <t id="L_INNER_PERIMETER:" ver="11">내부 경계</t>
+  <t id="L_OUTER_PERIMETER:" ver="11">외부 경계</t>
+  <t id="L_SUPPORT_EXTRUDER:" ver="11">지지 구조물 압출기:</t>
+  <t id="L_SUPPORT_TYPE:" ver="11">지지 구조물 유형:</t>
+  <t id="L_TOP/BOTTOM_THICKNESS:" ver="11">위/아래 두께:</t>
+  <t id="L_VOLUME_OVERLAP:" ver="11">볼륨 중복:</t>
+  <t id="L_WIPE_AND_PRIME_VOLUME:" ver="11">닦기와 준비 볼륨:</t>
+  <t id="L_Z_HOP:" ver="11">Z 올리기:</t>
+  <t id="L_SHELL_THICKNESS:" ver="11">쉘(외피) 두께:</t>
+  <t id="L_DISTANCE_XY:" ver="11">XY 거리:</t>
+  <t id="L_DISTANCE_Z:" ver="11">Z 거리:</t>
+  <t id="L_GCODE_FLAVOUR:" ver="11">G-코드 선택:</t>
+  <t id="L_FLOW:" ver="11">유량:</t>
+  <t id="L_DEFAULT_QUALITY:" ver="11">기본 품질:</t>
+  <t id="L_FIRST_LAYER_HEIGHT:" ver="11">첫 레이어 높이:</t>
+  <t id="L_COMBINE_EVERYTHING_A" ver="11">모든 것 합치기 (타입 A)</t>
+  <t id="L_COMBINE_EVERYTHING_B" ver="11">모든 것 합치기 (타입 B)</t>
+  <t id="L_MINIMIZE_CROSSING_PERIMETERS" ver="11">경계 횡단 최소화</t>
+  <t id="L_ENABLE_RETRACTION" ver="11">되감기 사용하기</t>
+  <t id="L_EXTENSIVE_STITCHING" ver="11">광범위한 스티칭 사용</t>
+  <t id="L_KEEP_OPEN_FACES" ver="11">오픈 페이스 유지</t>
+  <t id="L_CREATE_OOZE_SHIELD" ver="11">색 섞임 방지 벽 생성</t>
+  <t id="L_CREATE_WIPE_PRIME" ver="11">닦고 준비하는 탑 생성</t>
+  <t id="L_SPIRALIZE_CONTOUR" ver="11">외형 나선화</t>
+  <t id="L_SOLID_TOP_INFILL" ver="11">위 꽉차게 채우기</t>
+  <t id="L_SOLID_BOTTOM_INFILL" ver="11">밑 꽉차게 채우기</t>
+  <t id="L_COOL_HEAD_LIFT" ver="11">헤드 냉각 들어올림</t>
+  <t id="L_FILL_AMOUNT:" ver="11">채우기 양:</t>
+  <t id="L_CURAENGINE_SETTINGS" ver="11">CuraEngine 설정</t>
+  <t id="L_PRINT_CONFIGURATION:" ver="11">프린트 설정:</t>
+  <t id="L_ADHESION_TYPE:" ver="11">붙임 유형:</t>
+  <t id="L_SPEED:" ver="11">속도:</t>
+  <t id="B_SAVE_AS" ver="11">다른 이름으로 저장 ...</t>
+  <t id="L_AIR_GAP:" ver="11">공기 틈새:</t>
+  <t id="L_NUM_SURFACE_LAYER:" ver="11">표면 층 수:</t>
+  <t id="L_NONE" ver="11">사용하지 않음</t>
+  <t id="L_BRIM" ver="11">테두리(Brim)</t>
+  <t id="L_GRID" ver="11">그리드</t>
+  <t id="L_LINES" ver="11">선</t>
+  <t id="L_TOUCHING_BED" ver="11">베드 닿는 곳</t>
+  <t id="L_EVERYWHERE" ver="11">모든 곳</t>
+  <t id="L_AUTOMATIC" ver="11">자동</t>
+  <t id="L_CONCENTRIC_LINES" ver="11">동심 선</t>
+  <t id="L_CURACODEHINTS" ver="11">
+슬라이싱하는 동안 바뀌는 동적 값을 추가할 수 있습니다.
+
+온도:
+{TEMP0}, {TEMP1}
+{BED}
+
+속도:
+{Z_TRAVEL_SPEED}
+{TRAVEL_SPEED}
+
+또한 하나의 압출기 혹은 베드가 사용된다면 한 줄로 추가할 수 있습니다. 따라서 줄 시작 부분에 다음 코드의 하나를 추가하세요:
+{IF_BED}
+{IF_EXT0}
+
+"기본 생성"를 사용하여 필요에 맞게 조정할 수 있는 좋은 시작 스크립트를 얻을 수 있습니다.
+  </t>
+  <t id="H_RETRACTION_SPEED" ver="11">
+    이 속도로 필라멘트가 되감아 집니다. 더 높은
+    되감기 속도가 더 잘 작동하지만 너무 빠르면
+    필라멘트를 많이 갈가 먹을 수 있습니다.
+  </t>
+  <t id="H_RETRACTION_DISTANCE" ver="11">
+    되감기 거리. 되감기를 하지 않으려면 0으로
+    설정하세요. 일반적인 값은 직접 압출기엔 2mm
+    보우 덴 압출기느 7 mm를 사용합니다.
+  </t>
+  <t id="H_FIRST_LAYER_HEIGHT" ver="11">
+    밑 층의 레이어 높이입니다. 두꺼운 첫 번째
+    레이어는 프린터 베드의 울퉁불퉁함 보다 좋게
+    보정합니다.
+  </t>
+  <t id="H_CUT_OFF_OBJECT_BOTTOM" ver="11">
+    객체를 플랫폼 아래로 가라앉게 합니다. 이것은
+    객체의 밑면이 평평하지 않아 너무 적은 첫 층이
+    만들어지는 객체에 사용할 수 있습니다.
+  </t>
+  <t id="H_VOLUME_OVERLAP" ver="11">
+    이 길이로 서로 다른 색상 혹은 재료가 다중
+    압출로 겹치게 되어, 보다 더 잘 같이 연결
+    됩니다.
+  </t>
+  <t id="H_TRAVEL_SPEED" ver="11">
+    이 속도로 이동이 진행됩니다. 이것을 꽤 빠르게
+    할 수는 있지만, 만약 값이 너무 높으면 일부
+    프린터는 스텝을 잃어 버릴 수 있습니다.
+  </t>
+  <t id="H_FIRST_LAYER_SPEED" ver="11">
+    첫 번째 층의 출력 속도. 프린터 베드에 보다
+    잘 붙게 하기 위하여 보다 느리게 하여야 합니다.
+  </t>
+  <t id="H_INFILL_SPEED" ver="11">
+    이 속도로 내부 채우기가 진행됩니다. 보다 빨리
+    움직이면 출력 시간을 줄일 수 있지만, 출력 품질을
+    떨어 뜨립니다.
+  </t>
+  <t id="H_OUTER_PERIMETER_SPEED" ver="11">
+    이 속도로 바깥 경계가 출력됩니다. 낮은 속도로
+    출력하면 표면 품질을 좋게 할 수 있습니다. 내부와
+    외부 경계면 출력 속도 차이가 너무 크면, 품질이
+    떨어질 수 있습니다.
+
+  </t>
+  <t id="H_INNER_PERIMETER_SPEED" ver="11">
+    이 속도로 내부 둘레(경계)가 출력됩니다.
+    바깥 둘레보다 빠른 출력은 출력 시간을 줄일 수
+    있습니다. 속도는 내부 채우기 속도와 바깥 둘레
+    속도 사이 값이어야 합니다.
+  </t>
+  <t id="H_MINIMUM_LAYER_TIME_COOLING" ver="11">
+    한 층 출력 최소 시간. 층의 온도를 식히는데
+    시간이 충분히 높아야 합니다. 만약 출력 시간이
+    너무 빠르면, 이 시간을 이용하여 늦춰 층을
+    식히게 됩니다.
+  </t>
+  <t id="H_ENABLE_COOLING" ver="11">
+    출력하는 동안 냉각 팬을 동작시킵니다. 이것은
+    특히 PLA, 연결 그리고 돌출부들의 출력 품질을
+    뛰어나게 향상시킬 수 있습니다,
+  </t>
+  <t id="H_LAYER_HEIGHT" ver="11">
+    층의 높이를 밀리미터 단위로 z-방향의 출력 해상도
+    (정밀도)를 설정합니다. 낮은 값은 출력 품질이
+    높아지지만 출력하는데 시간이 더 많이 필요로
+    합니다. 일반적인 값들은 0.1mm ~ 0.4mm 입니다.
+  </t>
+  <t id="H_SHELL_THICKNESS" ver="11">
+    수평 방향으로 바깥 쪽의 외피 두께를 결정합니다.
+    노즐의 크기와 결합하여 둘레(경계)선의 수가
+    결정됩니다.
+  </t>
+  <t id="H_ENABLE_RETRACTION" ver="11">
+    노즐이 프린트 하지 않는 영역 위를 지나갈 때,
+    필라멘트를 되감습니다. 이렇게 하면, 실이 매달리는
+    것과 같은 현상을 줄이거나 멈추게 할 수 있습니다.
+  </t>
+  <t id="H_TOP_BOTTOM_THICKNESS" ver="11">
+    이 값은 밑과 위의 꽉차게 출력하는 층의 두께 값을
+    설정합니다. 내부 채우기 밀도에 따라, 두께를
+    증가시켜 내부 채우기에 의하여 빛이 투과되지 않고
+    출력 품질을 향상시킬 수있습니다. 1 mm는 일반적으로
+    좋은 값입니다.
+  </t>
+  <t id="H_INFILL_DENSITY" ver="11">
+    이것은 내부 채우기 밀도를 설정합니다. 꽉찬 물체는
+    100 %, 빈 물체는 0 %입니다. 내부 채우기가 높을수록
+    물체가 보다 안정적입니다. 낮은 채우기는 많은 출력
+    시간과 필라멘트를 절약 할 수 있습니다. 높은 안정성을
+    요구하지 않는다면, 통상적인 값은 20% ~ 30% 입니다.
+
+  </t>
+  <t id="H_PRINT_SPEED" ver="11">
+    별도의 프린트 속도 설정이 없는 모든 부분의
+    프린트 속도.
+  </t>
+  <t id="H_PRINT_TEMPERATURE" ver="11">
+    온도는 사용되는 필라멘트와 프린터에 따라 결정됩니다.
+    대부분의 필라멘트 제조사들은 최적의 프린트 온도 범위를
+    지정하여 놓습니다.
+  </t>
+  <t id="H_SUPPORT_TYPE" ver="11">
+    출력 지지(받침)대 구조.
+
+    "사용하지 않음" 지지대 사용하지 않음.
+
+    "베드 닿는 곳" 가장 일반적인 설정.
+    출력 베드에서 닿는 곳에만 지지대 구조를 생성하기
+    위한 설정으로 베드에 떠 있는 곳에만 지지대를 생성.
+
+    "모든 곳" 모델의 윗 부분에서도 지지대를 만들 때
+     사용하는 설정.
+  </t>
+  <t id="H_ADHESION_TYPE" ver="11">
+    객체가 프린터 베드에 보다 잘 붙게 도와줍니다.
+
+    "사용하지 않음" 이 기능을 사용하지 않게 비활성화 합니다.
+
+    "테두리(Brim)"는 한 층 높이로 객체 둘레에
+    출력하여 후에 쉽게 잘라낼 수 있습니다.
+
+    객체가 모서리 부분에서 붙지 않고공중으로 떠,
+    뒤틀린다면 테두리가 필요합니다.
+
+    "부대(Raft)"는 객체 아래에 두꺼운 주사선 층을 넣고
+    이것과 객체 사이에 얇은 연결을 넣어 출력 후에 제거
+    할 수 있게 합니다. 베드가 울퉁불퉁하거나 객체가
+    작아 출력 중에 잘 붙지 않을 때 필요합니다.
+  </t>
+  <t id="H_FILAMENT_DIAMETER" ver="11">
+    필라멘트의 직경을 가능한한 정확하게 설정하여야
+    합니다.
+  </t>
+  <t id="H_FLOW" ver="11">
+    압출되는 필라멘트의 양은 이 값과 곱하여 얻습니다.
+    일반적으로 이 값은 100%입니다.
+  </t>
+  <t id="L_OUTER_PERIMETER_SPEED:" ver="11">외부 둘레 속도:</t>
+  <t id="L_INFILL_SPEED:" ver="11">내부 공간 채우기 속도:</t>
+  <t id="L_PRINT:" ver="11">프린트:</t>
+  <t id="L_SUPPORT_PATTERN:" ver="11">지원 패턴:</t>
+  <t id="L_TRAVEL:" ver="11">이동:</t>
+  <t id="L_CUTOFF_BOTTOM" ver="11">객체 아래 잘라내기:</t>
+  <t id="L_ESTIMATED_PRINTING_TIME:" ver="11">추정 프린트 시간:</t>
+  <t id="L_LAYER_COUNT:" ver="11">층 수:</t>
+  <t id="L_FILAMENT_NEEDED:" ver="11">필요 필라멘트:</t>
+  <t id="L_FAN_FULL_AT_HEIGHT:" ver="11">팬 최고 속도 높이:</t>
+  <t id="L_MINIMUM_SPEED:" ver="11">최소 속도:</t>
+  <t id="H_MINIMUM_TRAVEL_BEFORE_RETRACT" ver="11">Retraction 활성화를 위한 최소 이동 거리.</t>
+  <t id="L_PREVIEW" ver="11">미리 보기</t>
+  <t id="L_SCALE_OBJECT" ver="11">객체 확대/축소</t>
+  <t id="L_ROTATE_OBJECT" ver="11">객체 회전</t>
+  <t id="H_MINIMIZE_CROSSING_PERIMETERS" ver="11">
+    현재 출력물을 떠나지 않고 헤드를 목표 지점으로
+    이동 시킬 수 있는 방법이 있으면 해당 경로가 사용
+    됩니다. 이 기능을 사용하지 않으면 항상 목표 지점까지
+    직선이 사용되어 실들이 생길 수 있습니다.
+
+  </t>
+  <t id="H_MINIMUM_EXTRUSION_BEFORE_RETRACT" ver="11">
+    다음 되감기 전 최소 압출 량. 이 최소값에 도달하기
+    전에 되감기가 필요한 경우 되감기가 무시됩니다. 같은
+    장소에서 너무 자주 되감기를 하면 필라멘트가 납작해져
+    압출기가 동작하지 않게 될 수 있습니다.
+
+  </t>
+  <t id="H_Z_HOP" ver="11">
+    필라멘트를 되감기 하는 동안 이 길이만큼 헤드를
+    들어 올립니다. 델타 프린터와 같이 빠른 z 축을 가진
+    프린터의 경우 몇 가지 긍정적인 효과가 있습니다.
+  </t>
+  <t id="H_SKIRT_LINE_COUNT" ver="11">
+    스커트는 출력물 주위에 그려진 첫 번째 층의 선입니다.
+    이것은 압출기를 준비(prime)하는데 도움이 되며, 출력물이
+    베드에 닿는 지 확인할 수 있습니다. 스커트를 사용하지
+    않으려면 0으로 설정하세요.
+  </t>
+  <t id="H_SKIRT_DISTANCE" ver="11">스커트 선과 출력 모델과의 거리.</t>
+  <t id="H_MINIMUM_SKIRT_LENGTH" ver="11">
+    스커트 선의 최소 길이. 길이에 도달하지 않으면
+    추가 스커트 선이 추가됩니다. 치마 선의 수를 0으로
+    설정하면 무시됩니다.
+
+  </t>
+  <t id="H_FAN_FULL_ON_AT_HEIGHT" ver="11">
+    팬이 완전히 켜지는 높이. 높이 아래의
+    층들의 경우, 팬 속도가 선형적으로 줄어
+    첫 번째 층에선 꺼집니다.
+
+  </t>
+  <t id="H_MIN_FAN_SPEED" ver="11">
+    냉각을위한 최소 팬 속도입니다. 만약 층 출력 시간이
+    최소 층 출력 시간보다 짧다면, 출력 속도가 늦춰지고,
+    팬 속도는 출력 속도의 감속에 따라 팬 최소 속도와
+    최대 속도 사이에서 보간됩니다.</t>
+  <t id="H_MAX_FAN_SPEED" ver="11">
+    냉각을 위한 최대 팬 속도. 층 출력 시간이 속도를
+    50% 이상 감소 시키는 경우, 도달합니다.
+
+  </t>
+  <t id="H_COOL_HEAD_LIFT" ver="11">
+    층(layer)을 출력한 후 최소 속도가
+    최소 층(layer) 속도보다 빠르면
+    헤드를 들어 올립니다.
+  </t>
+  <t id="H_MINIMUM_COOLING_SPEED" ver="11">
+    최소 층 출력 시간은 출력 속도가 느려져 출력 된
+    필라멘트가 흐르거나 스며들 수 있습니다. 이 최소 냉각
+    속도는 이를 방지합니다. 프린터가 느려지더라도 이
+    속도보다 느려질 수는 없습니다.</t>
+  <t id="H_SOLID_TOP_INFILL" ver="11">
+    꽉차고 매끄러운 상단 표면을 만듭니다. 만약 비활성화하면,
+    내부 채우기가 사용됩니다. 꽉찬 매끄러운 볼륨으로
+    정의된 화병에 유용합니다.
+  </t>
+  <t id="H_SOLID_BOTTOM_INFILL" ver="11">
+    꽉차고 매끄러운 하단 표면을 만듭니다. 만약 비활성화하면,
+    내부 채우기가 사용됩니다. 꽉찬 매끄러운 볼륨으로
+    정의된 건물에 유용합니다.
+  </t>
+  <t id="H_INFILL_OVERLAP" ver="11">
+    이것은 내부 채우기와 벽의 중첩을 정의
+    합니다 벽이 내부 채우기와 단단하게
+    연결되도록 약간 겹쳐져야 합니다.
+  </t>
+  <t id="H_SUPPORT_PATTERN" ver="11">
+    지지대 패턴 선택:
+
+    "격자(그리드, grid)"는 매우 강하고 한 조각으로
+    떨어질 수 있습니다. 때로는 너무 강합니다.
+
+    "선들"은 한 번에 하나씩 분리되는 하나의 벽으로
+    둘러싸인 선들입니다. 이 작업은 없애야 할 작업이
+    많지만 강도가 약하며 까다로운 출력물에서 좋습니다.
+  </t>
+  <t id="H_OVERHANG_ANGLE" ver="11">
+    돌출부에 지지대를 대기 위한 최소 각도를 설정합니다.
+    0°는 수평이며, 90°는 수직입니다.
+  </t>
+  <t id="H_SUPPORT_FILL_AMOUNT" ver="11">
+    지지대 구조의 밀도. 재료가 적으면
+    제거가 쉬운 약한 지지대가 만들어
+    집니다. 15 %는 좋은 평균입니다.
+  </t>
+  <t id="H_DISTANCE_XY" ver="11">
+    x/y 방향으로 지지대 물체와 출력물의 거리.
+    지지대가 출력물에 달라 붙지 않도록 0.8mm가
+    좋은 거리입니다.
+  </t>
+  <t id="H_DISTANCE_Z" ver="11">
+    지지대의 위/아래에서 출력물까지의
+    거리. 작은 간격은 지지대를 쉽게 제거
+    할 수 있습니다.
+  </t>
+  <t id="H_SPIRALIZE_CONTOUR" ver="11">
+    이렇게 하면 꽉차고 매끄러운 물체가 하나의 벽으로 된
+    물체로 바뀌게 됩니다. 여기서 z는 계속하 증가하여
+    매끄러운 표면을 만듭니다. 꽃병에 이상적입니다.
+  </t>
+  <t id="H_BRIM_WIDTH" ver="11">
+    테두리 두께. 보다 넓은 테두리는 물체를 프린트 베드에
+    보다 더 잘 붙게 하지만, 실제 사용할 수 있는 프린트 영역을
+    줄어들게 합니다.
+  </t>
+  <t id="H_RAFT_EXTRA_MARGIN" ver="11">
+    부대(raft)가 활성화되었을 때 출력물 주위의 여분의
+    부대 지역입니다. 더 큰 부대 지역은 보다 강력한 부대를
+    만들지 만 실질적인 출력 영역이 줄어듭니다.
+
+  </t>
+  <t id="H_RAFT_LINE_SPACING" ver="11">부대(Raft) 중앙선들 간의 거리입니다.</t>
+  <t id="H_RAFT_BASE_LINE_THICKNESS" ver="11">기본 층의 두께입니다.</t>
+  <t id="H_RAFT_BASE_LINE_WIDTH" ver="11">기본 층의 선 폭입니다.</t>
+  <t id="H_RAFT_INTERFACE_THICKNESS" ver="11">인터페이스 층의 두께입니다.</t>
+  <t id="H_RAFT_INTERFACE_LINE_WIDTH" ver="11">인터페이스 선의 폭입니다.</t>
+  <t id="H_RAFT_AIG_GAP" ver="11">
+    이것은 부대(Raft)와 객체 사이의 간격입니다.
+    간격이 클수록 더 쉽게 객체을 분리 할 수 있지만
+    출력하는 동안 객체를 고정 할 수 있을 정도의
+    거리가 필요합니다.
+
+  </t>
+  <t id="H_RAFT_NUM_SURFACE_LAYER" ver="11">
+    표면층은 부대(raft)의 최상 층입니다. 출력물의
+    매끄러운 평평한 표면을 위하여 100% 채우기로
+    출력합니다.
+  </t>
+  <t id="H_COMBINE_EVERYTING_TYPE_A" ver="11">
+    이 고급 옵션은 모델의 모든 부분을 함께 추가합니다.
+    그 결과 일반적으로 내부 구멍들이 사라집니다. 모델에
+    따라 이것은 의도적이거나 비 의도적 일 수 있습니다.
+    이 선택 사항을 설정하는 것은 전적으로 자신의
+    자신의 책임하에 사용하세요. Type-A는 모델 법선
+    (Normals)에 의존하며 내부 구멍을 손상시키지 않으려고
+    합니다. Type-B는 모든 내부 구멍을 무시하며, 단지 층 당
+    외부 모양을 유지합니다.
+  </t>
+  <t id="H_COMBINE_EVERYTING_TYPE_B" ver="11">
+    이 고급 옵션은 모델의 모든 부분을 함께 추가합니다.
+    그 결과 일반적으로 내부 구멍들이 사라집니다. 모델에
+    따라 이것은 의도적이거나 비 의도적 일 수 있습니다.
+    이 선택 사항을 설정하는 것은 전적으로 자신의
+    자신의 책임하에 사용하세요. Type-A는 모델 법선
+    (Normals)에 의존하며 내부 구멍을 손상시키지 않으려고
+    합니다. Type-B는 모든 내부 구멍을 무시하며, 단지 층 당
+    외부 모양을 유지합니다.
+  </t>
+  <t id="H_KEEP_OPEN_FACES" ver="11">
+    이 고급 옵션은 모델의 모든 열린 비트를 그대로
+    유지합니다. 일반적으로 Cura는 작은 구멍을 꿰매고
+    큰 구멍으로 모든 것을 제거하려고 하지만 이 옵션은
+    옳바르지 않은 부분들인 비트들를 유지합니다. 남은
+    남은 것은 무엇이든지 함께 가져 갑니다. 이 옵션은
+    대개 원하는 것은 아니지만 적절한 경로를 생성하지
+    못하는 모델을 슬라이스 할 수 있습니다. 모든 고급
+    옵션과 같이 결과가 다를 수 있습니다. 자신의 책임하에
+    사용하세요.
+
+  </t>
+  <t id="H_EXTENSIVE_STITCHING" ver="11">
+    광범위한 스티칭은 다각형을 다루면서 구멍을 닫음으로써
+    모델의 열린 구멍을 고치려고 시도합니다. 이 알고리즘은
+    계산 집약적이며 슬라이싱 시간을 증가시킵니다. 모든 고급
+    옵션과 마찬가지로 결과가 다를 수 있습니다. 자신의 책임하에
+    사용하세요.
+
+  </t>
+  <t id="L_CREATE_DEFAULT" ver="11">기본 생성</t>
+
+  <t id="H_NAME_SELECTED_QUALITY_SETTING" ver="11">저장할 설명 이름을 선택하세요.</t>
+  <t id="H_INFILL_PATTERN" ver="11">
+    "자동"은 밀도에 따라 선이나 격자를 선택합니다.
+
+    "격자(Grid)"는 안정된 구조를 제공합니다.
+
+    "선(Line)"들은 평행하고 더 가깝습니다.
+
+    "동심 선(Concentric Line)"들은 윤곽선이 축소 된 선을 제공합니다.
+  </t>
+  <t id="H_CREATE_WIPE_AND_PRIME_TOWER" ver="11">
+    닦기 탑은 노즐을 바꿀 때 모든 층을 출력한 탑입니다.
+    새 노즐을 사용하여 두 번째 색상을 출력하기 전에 옛
+    노즐을 탑에서 닦아냅니다. 새로운 필라멘트가 출력물에
+    올바르게 출력되도록 새 노즐을 타워에서 준비합니다.
+
+
+  </t>
+  <t id="H_OOZE_SHIELD" ver="11">
+    색 섞임 방지벽은 출력물에서 수 mm 떨어져 있고
+    출력물 주위로 1 줄 두께의 껍질입니다. 이 방지벽은
+    이중 압출시 사용하지 않는 노즐에서 흘러 나오는
+    모든 것을 잡습니다. 색 흐름 방지
+  </t>
+  <t id="H_RETRACTION_ON_EXTRUDER_SWITCH" ver="11">
+    노즐을 바꿀 때 되감기 거리. 되감기를 사용하지
+    않으려면 0으로 설정하세요.
+  </t>
+  <t id="H_WIPE_AND_PRIME_VOLUME" ver="11">
+    닦고 준비하는 탑에 사용되는 필라멘트 소재의 양.
+    이것은 일반적으로 층 높이와 관련없이 특정 양을
+    압출하고 싶기 때문에 볼륨(양)으로 수행됩니다.
+    보다 얇은 층의 탑이 보다 크게됩니다.
+
+
+  </t>
+  <t id="L_AIR_GAP_LAYER0:" ver="11">공기 틈새 층 0:</t>
+
+  <t id="H_AIR_GAP_OTHER_LAYERS" ver="11">
+    부대(raft)와 출력물의 두번 째 층 사이의 추정 공기 틈새.
+    이상적으로 이 값은 0입니다. 출력물의 첫 번째 층이 부대에
+    붙어 있고, 공기 틈새가 닫혀졌다고 보기 때문입니다.
+
+
+  </t>
+  <t id="H_SLIC3R_OVERRIDE_SLIC3R_SETTINGS" ver="11">
+    아래에 있는 값들을 위에서 선택한 Slic3r 설정 값들로
+    덮어 씁니다.
+  </t>
+    <t id="H_SLIC3R_COPY_PRINT_SETTINGS_TO_OVERRIDE" ver="11">
+    아래에 목록 값들을 위에서 선택한 설정에서
+    정의된 값들로 바꿉니다.
+
+  </t>
+    <t id="H_SLIC3R_ENABLE_SUPPORT" ver="11">
+    출력할 때 필요로 되는 지지 구조물을
+    추가합니다.
+  </t>
+  <t id="H_SLIC3R_ENABLE_COOLING" ver="11">
+    출력 중에 냉각 팬을 활성화합니다. 이렇게 하면
+    특히 PLA, 다리 연결 및 돌출부의 출력 품질을 크게
+    향상시킬 수 있습니다.
+  </t>
+  <t id="H_SLIC3R_LAYER_HEIGHT" ver="11">
+    mm 단위의 층 높이로 z 방향의 출력 해상도를 설정
+    합니다. 값을 낮추면 출력 품질이 향상되지만 출력
+    시간은 더 오래 걸립니다. 보통 값은 0.1mm 에서
+    0.4mm 사이입니다.
+  </t>
+  <t id="H_SLIC3R_INFILL_DENSITY" ver="11">
+    이것은 내부 채우기 밀도를 설정합니다. 꽉찬 물체는
+    100 %, 빈 물체는 0 %입니다. 내부 채우기가 높을수록
+    물체가 보다 안정적입니다. 낮은 채우기는 많은 출력
+    시간과 필라멘트를 절약 할 수 있습니다. 높은 안정성을
+    요구하지 않는다면, 통상적인 값은 20% ~ 30% 입니다.
+
+  </t>
+  <t id="H_SLIC3R_INFILL_PATTERN" ver="11">
+    이 항목은 내부 채우기의 채우기 패턴을
+    선택합니다.
+  </t>
+  <t id="H_SLIC3R_SOLID_INFILL_PATTERN" ver="11">
+    이 항목은 출력물의 껍질 채우기 패턴을 선택합니다.
+  </t>
+  <t id="B_CONFIGURE" ver="11">구성</t>
+  <t id="B_CURA_FAST" ver="11">빠름</t> 
+  <t id="B_CURA_SLOW" ver="11">느림</t> 
+<t id="L_SCALE_TO_MAX" ver="11">최대로 확대</t>
+<t id="L_RESET_ROTATION" ver="11">회전 원위치</t>
+<t id="L_LAY_FLAT" ver="11">편평하게 눕히기</t>
+  <t id="L_PREFERENCES" ver="11">환경 설정</t>
+  <t id="L_BASIC_SETTINGS" ver="11">기본 설정</t>
+  <t id="L_3D_VISUALIZATION" ver="11">3D 시각화</t>
+  <t id="L_SHOW_HELP_BUBBLES" ver="11">풍선 도움말 보이기 (다시 시작하여야 합니다)</t>
+  <t id="L_MAX_EXTRUDER_TEMP:" ver="11">압출기 최고 온도:</t>
+  <t id="L_MAX_BED_TEMP:" ver="11">베드 최고 온도:</t>
+  <t id="L_HAS_MIXING_EXTRUDER" ver="11">혼합 압출기 탑재(한 노즐에서 모든 색상 출력)</t>
+  <t id="L_MANUAL_EXTRUSION_SPEED:" ver="11">수동 압출 속도:</t>
+  <t id="L_MANUAL_RETRACTION_SPEED:" ver="11">수동 되감기 속도:</t>
+  <t id="L_INVERT_MOVEMENT_DIRECTION_FOR_MANUAL_CONTROL" ver="11">수동 조작에서 이동 방향 반대로 바꾸기:</t>
+  <t id="L_X_AXIS" ver="11">X-축</t>
+  <t id="L_Y_AXIS" ver="11">Y-축</t>
+  <t id="L_Z_AXIS" ver="11">Z-축</t>
+  <t id="H_CONTROL_POWER" ver="11">
+    일부 프린터는 켜고 끌 수 있는 전원 공급
+    장치를 사용하여, 이 기능으로 켜고 끌 수
+    있습니다.
+  </t>
+
+  <t id="H_CONTROL_MOTOR" ver="11">
+    모든 모터의 작동 전류를 차단합니다.
+    이것은 압출기의 위치를 ​​변경 시킬 수
+    있습니다. 작동이 시작되면 해당 모터의
+    전류가 켜집니다.
+  </t>
+
+  <t id="H_CONTROL_PARKING" ver="11">
+    압출기를 정지(보관) 위치로 이동시킵니다.
+  </t>
+
+  <t id="H_CONTROL_SCRIPTX" ver="11">
+    스크립트 $1를 프린터로 전송합니다. 미리 보기
+    → G 코드 편집기의 드롭 다운 목록에서 스크립트를
+    보고 수정할 수 있습니다.
+  </t>
+
+  <t id="H_CONTROL_SPEED" ver="11">
+    이것은 현재 인쇄 속도를 변경합니다. 모든 속도에
+    이 값이 곱해집니다. 필라멘트의 압출량은 변경되지
+    않습니다. 인쇄 속도가 빠르면 인쇄 품질이 떨어질
+    수 있습니다.
+  </t>
+
+  <t id="H_CONTROL_FLOW" ver="11">
+    압출 필라멘트의 양을 변경할 수 있습니다.
+    높은 값은 보다 두껍게 출력되는 선들을
+    얻을 수 있습니다. 유속 비율(flow rate)
+  </t>
+
+  <t id="H_CONTROL_FAN" ver="11">
+    팬의 속도를 제어합니다. 효율적인 냉각은
+    출력 품질을 향상시킵니다, 특히 다리 연결
+    및 돌출부 등.
+  </t>
+
+  <t id="H_CONTROL_BED" ver="11">
+    이것은 가열 베드 온도를 조절합니다.
+    PLA의 일반적인 온도는 50°C ~ 60°C이며,
+    ABS는 100°C ~ 120°C이며 베드 코팅에
+    따라 다릅니다.
+  </t>
+
+  <t id="H_CONTROL_EXTRUDER" ver="11">
+    이것은 압출기 온도를 조절합니다.
+    PLA의 일반적인 온도는 180°C ~ 220°C이며,
+    ABS는 240°C ~ 260°C이며 필라멘트와
+    압출기에 따라 다릅니다.
+  </t>
+
+
+
+
+
+
+
+  <t id="H_PS_CONNECTOR" ver="11">
+    프린터 연결 방식. 대부분의 프린터들은
+    시리얼 연결을 사용하고 있습니다. 시험을
+    위하여 가상 연결로 가상 프린터를 제공
+    합니다.
+  </t>
+
+  <t id="H_PS_PORT" ver="11">
+    프린터에 연결된 포트를 선택하세요. 포트를
+    모를 경우 프린터에 연결된 USB 케이블을 제거하고
+    "포트 새로 고침"을 클릭하세요. 드롭 다운 메뉴에
+    나타난 목록을 기억하세요. 이제 프린터를 컴퓨터에
+    연결하고 목록을 다시 업데이트 하십시오. 프린터가
+    새로 추가 된 포트에서 작동합니다. 새 포트가 나타
+    나지 않았다면 올바른 프린터 드라이버가 설치 되지
+    않은 것입니다.
+  </t>
+
+  <t id="H_PS_BAUD_RATE" ver="11">
+    프린터와 통신하는 속도. 가장 일적인 속도는
+    115200과 250000입니다. 잘못된 값으로 연결하면,
+    통신이 않될 것이며 프린터는 명령을 받지 못할
+    것입니다. 프린터의 연결 문제에 있어서 가장
+    일반적인 원인입니다.
+
+
+  </t>
+
+  <t id="H_PS_TRANSFER_PROTOCOL" ver="11">
+    호스트와 프린터 간 데이터를 교환하기 위한 전송
+    프로토콜. 바이너리 프로토콜이 가장 좋고 빠르지만,
+    Repetier 펌웨어서만 동작합니다. "자동 감지"를
+    선택하여 자동으로 최적의 방법을 선택하세요.
+
+  </t>
+
+  <t id="L_AUTODETECT" ver="11">
+	자동 감지
+  </t>
+
+  <t id="L_REPETIER_PROTOCOL" ver="11">
+    Repetier 프로토콜
+  </t>
+
+  <t id="H_PS_RESET_ON_CONNECT" ver="11">
+    많은 보드들이 DTR 또는 RTS 핀의 신호를 변경하여
+    보드를 초기화 할 수 있습니다. 기본적으로 연결하는
+    동안 발생할 수있는 문제를 제거 할 수 있으므로
+    새 연결로 프린터를 다시 시작하게 하는 것이 좋습니다.
+    일부 프린터는이 기능을 지원하지 않으므로이 기능을
+    비 활성화 해야 합니다.
+
+  </t>
+
+  <t id="H_PS_RESET_ON_EMERGENCY" ver="11">
+    이것은 비상 정지가 눌러 졌을 때 일어날 일을
+    결정합니다. 비상 정지 명령이 수신 될 때까지
+    시간이 걸리므로 비상 정지와 초기화를 같이
+    결합해야 합니다.
+  </t>
+
+  <t id="H_PS_RECEIVE_CACHE_SIZE" ver="11">
+    인쇄 중 작은 멈춤이라도 방지하기 위해 호스트는
+    동시에 여러 명령을 전송합니다. 문자 수를 입력해야
+    프린터가 확실하게 기억하므로 프린터에 과부하가
+    걸리지 않습니다. 대부분의 프린터는 127 바이트를
+    제공하지만 일부 프린터는 63 바이트만 제공합니다.
+    도중에 많은 통신 오류가 발생하면 이 값이 너무 큰
+    것입니다.
+
+  </t>
+
+  <t id="H_PS_USE_PING_PONG_COMMUNICATION" ver="11">
+    핑퐁(주고 받은 것을 확인하기 위한) 통신을 위해서는
+    프린터로 연결된 길에 항시 하나의 명령만 있습니다.
+    이 통신은 훨씬 느려, 가능한 경우, 이 선택 사항은
+    비 활성화해야 합니다.
+  </t>
+
+  <t id="H_PS_IP_ADDRESS" ver="11">
+    이 IP 주소로 프린터와 연결할 수 있습니다.
+  </t>
+
+  <t id="H_PS_IP_PORT" ver="11">
+    이 포트로 프린터와 연결할 수 있습니다.
+  </t>
+
+  <t id="H_PS_VIRTUAL_BAUD_RATE" ver="11">
+    시뮬레이션된 프린터 연결 속도. 250000 부터
+    대기 시간이 설치되지 않아, 조그만 값들을 위하여
+    적절한 멈춤들이 삽입됩니다. ???
+  </t>
+
+  <t id="H_PS_TRAVEL_FEED_RATE" ver="11">
+    이 속도로 압출기를 X와 Y 방향으로 수동 조작으로
+    이동합니다.
+  </t>
+
+  <t id="H_PS_Z_AXIS_FEED_RATE" ver="11">
+    이 속도로 압출기를 Z 방향으로 수동 조작으로
+    이동합니다.
+  </t>
+
+  <t id="H_PS_MANUAL_EXTRUSION_SPEED" ver="11">
+    이 속도로 필라멘트를 수동 조작으로 압출
+    합니다.
+  </t>
+
+  <t id="H_PS_MANUAL_RETRACTION_SPEED" ver="11">
+    이 속도로 필라멘트를 수동 조작으로 되감기
+    합니다.
+  </t>
+
+  <t id="H_PS_DEFAULT_EXTRUDER_TEMPERATURE" ver="11">
+    이 압출기 온도는 프린터를 연결할 때 제안
+    됩니다.
+  </t>
+
+  <t id="H_PS_DEFAULT_HEAT_BED_TEMPERATURE" ver="11">
+    이 가열 베드 온도는 프린터를 연결할 때 제안
+    됩니다.
+  </t>
+
+  <t id="H_PS_CHECK_EXTRUDER_AND_BED_TEMPERATURE" ver="11">
+    이것은 온도 제어를 위하여 필요하며, 활성화
+    하여야 합니다.
+  </t>
+
+  <t id="H_PS_REMOVE_TEMPERATURE_REQUEST_FROM_LOG" ver="11">
+    온도 요청에 대한 로그 항목을 제거하여 로그 파일을
+    보다 깨끗하게 만듭니다.
+  </t>
+
+  <t id="H_PS_CHECK_EVERY" ver="11">
+    이곳에서 압출기와 가열 베드 온도 조회 빈도를
+    지정할 수 있습니다.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_X" ver="11">
+    정지(보관)할 때, 압출기가 이 X 위치로
+    이동합니다.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_Y" ver="11">
+    정지(보관)할 때, 압출기가 이 Y 위치로
+    이동합니다.
+  </t>
+
+  <t id="H_PS_PARK_POSITION_Z_MIN" ver="11">
+   정지(보관)할 때, 압출기가 이 거리로
+   들여 올려 집니다.
+  </t>
+
+  <t id="H_PS_SEND_ETA_TO_PRINTER_DISPLAY" ver="11">
+    남아있는 프린프 시간 혹은 프린트 작업의 완료
+    예상 시간을 보냅니다. 이것은 호스트의 상태 줄에
+    표시되며 남은 시간과 끝나는 시간을 클릭하여
+    바꿀 수 있습니다.
+
+  </t>
+
+  <t id="H_PS_DISABLE_EXTRUDER_AFTER_JOB_KILL" ver="11">
+    프린트 작업의 완료 후와 비상 멈춤을 눌렀을 때
+    압출기를 끕니다.
+  </t>
+
+  <t id="H_PS_DISABLE_MOTORS_AFTER_JOB_KILL" ver="11">
+    출력 작업이 완료된 후와 비상 정지를 놀렀을 때
+    모터들을 끕니다.
+  </t>
+
+  <t id="H_PS_DISABLE_HEATED_BED_AFTER_JOB_KILL" ver="11">
+    출력 작업이 완료된 후와 비상 정지를 놀렀을 때
+    예열 베드를 끕니다.
+
+  </t>
+
+  <t id="H_PS_ADD_TO_COMP_PRINTING_TIME" ver="11">
+    이것은 계산된 인쇄 시간을 이만큼 증가시킵니다.
+    프린터가 모서리와 멈춤을 위하여 속도를 적절하게
+    유지할 수 없기 때문에 필요합니다. 이런 방식으로
+    인쇄 시간을 보다 정확하게 예측할 수는 있지만,
+    항상 출력물과 슬라이서 설정에 따라 변하게 됩니다.
+
+  </t>
+
+  <t id="H_PS_GO_TO_PARK_POSITION_AFTER_JOB_KILL" ver="11">
+    출력 작업이 완료되거나 비상 정지를 눌렀을 때,
+    압출기를 정지(보관) 위치로 이동합니다.
+
+  </t>
+
+  <t id="H_PS_INVERT_MOVEMENT_DIRECTION" ver="11">
+    이것은 수동 조작에서 선택된 축의 이동을
+    반대 방향으로 만듭니다.
+  </t>
+
+  <t id="H_PS_NUMBER_OF_EXTRUDERS" ver="11">
+    여기에서 프린터 압출기 수를 지정합니다.
+
+  </t>
+
+  <t id="H_PS_MAX_EXTRUDER_TEMPERATURE" ver="11">
+    수동 조작으로 지정할 수있는 최대 압출기 온도를
+    이곳에 입력합니다. 그래서 우발적인 압출기 과열을
+    피할 수 있습니다.
+  </t>
+
+  <t id="H_PS_MAX_BED_TEMPERATURE" ver="11">
+    수동 조작으로 지정할 수있는 최대 예열 베드 온도를
+    이곳에 입력합니다. 그래서 우발적인 예열 베드 과열을
+    피할 수 있습니다.
+  </t>
+
+  <t id="H_PS_PRINTER_HAS_MIXING_EXTRUDER" ver="11">
+    모든 색상이 같은 한 노즐에서 출력되는 혼합 압출기를
+    사용하는 경우, 이 선택 사항을 활성화하세요.
+
+  </t>
+
+  <t id="H_PS_NAME" ver="11">
+    출력물(객체) 배치에 사용되는 자체 선택
+    이름입니다.
+  </t>
+
+  <t id="H_PS_DIAMETER" ver="11">
+   노즐 지름(직경).
+  </t>
+
+  <t id="H_PS_TEMPERATURE_OFFSET" ver="11">
+    이 오프셋은 필라멘트 온도에 더해집니다.
+    이것은 동일한 필라멘트 설정을 가진 다른
+    압출기를 사용할 수 있도록합니다.
+  </t>
+
+  <t id="H_PS_OFFSET_X" ver="11">
+    펌웨어 내에서 구성되지 않았을 경우,
+    여러 압출기들에 대한 압출기의 X 방향
+    오프셋
+  </t>
+
+  <t id="H_PS_OFFSET_Y" ver="11">
+    펌웨어 내에서 구성되지 않았을 경우,
+    여러 압출기들에 대한 압출기의 Y 방향
+    오프셋
+  </t>
+
+  <t id="H_PS_COLOR" ver="11">
+    미리 보기에 사용되는 필라멘트 색
+  </t>
+
+  <t id="H_PS_PRINTER_TYPE" ver="11">
+    여기에서 프린터 유형을 설정할 수 있습니다.
+  </t>
+
+  <t id="H_PS_HOME" ver="11">
+    이곳에서 프린터 헤드를 홈에 오게 한 후에
+    압출기의 위치를 설정할 수 있습니다.
+  </t>
+  <t id="L_PRINT_BED" ver="11">프린트 베드</t>
+  <t id="L_DUMP_AREA" ver="11">Dump 영역</t>
+  <t id="L_PRINTER_TYPE:" ver="11">프린터 유형:</t>
+  <t id="L_START_GCODE" ver="11">시작 G-코드</t>
+  <t id="L_END_GCODE" ver="11">끝 G-코드</t>
+  <t id="L_BEFORE_EXTRUDER_SWITCH" ver="11">압출기를 바꾸기 전</t>
+  <t id="L_AFTER_EXTRUDER_SWITCH" ver="11">압출기를 바꾼 후</t>
+<t id="L_INVERT_DIRECTION_FOR" ver="11">제어에서 이동 방향을 반대로 바꿈</t>
+<t id="L_EXPORTING_MODEL_FOR_SLICING" ver="11">슬라이스를 위하여 모델을 내보내는 중 ...</t>
+  <t id="L_MAX_VOLUME_PER_SECOND" ver="11">초당 최대 볼륨</t>
+  <t id="H_PS_MAX_VOLUME_PER_SECOND" ver="11">
+    이 값은 필요한 필라멘트 볼륨 출력 성능에 따라
+    출력 속도를 제한하기 위해 슬라이서에서 사용할
+    수 있습니다. 일반적으로 약 12mm³/s 출력 할 수
+    있습니다. 속도가 높아질수록 필라멘트를 노즐로
+    통과시키기 위해 더 많은 가열과 힘이 필요합니다.
+  </t>
+  <t id="L_SHOW_TRAVEL_MOVES" ver="11">이동 경로 보기</t>
+  <t id="L_PRINTING_STATISTICS" ver="11">프린트 통계</t>
+  <t id="L_POSTPROCESSING..." ver="11">후 처리중 ...</t>
+  <t id="L_PRINTER_HAS_SD_CARD" ver="11">프린터에 SD 카드가 있습니다</t>
+  <t id="L_IMPORT" ver="11">가져오기</t>
+  <t id="L_EXPORT" ver="11">내보내기</t>
+  <t id="L_PRINT_SETTINGS_ALREADY_EXIST" ver="11">같은 이름의 프린트 설정이 이미 있습니다. 저장되지 않았습니다.</t>
+  <t id="L_SAVE_PRINT_SETTINGS_AS" ver="11">다른 이름으로 프린트 설정 저장</t>
+  <t id="L_SELECT_SETTING_NAME" ver="11">설정 이름 선택</t>
+  <t id="L_REALLY_DELETE_FILAMENT_SETTING" ver="11">필라멘트 설정을 정말 지울 것인가요?</t>
+  <t id="L_SAVE_FILAMENT_SETTINGS_AS" ver="11">필라멘트 설정 다른 이름으로 저장</t>
+  <t id="L_FILAMENT_SETTINGS_ALREADY_EXIST" ver="11">같은 이름의 필라멘트 설정이 이미 있습니다. 저장되지 않았습니다.</t>
+  <t id="L_PRINTING..ETE" ver="11">프린트 중...ETE $1</t>
+  <t id="L_DIAMETER:" ver="12">직경:</t>
+  <t id="L_TEMP_OFFSET:" ver="12">온도 오프셋:</t>
+  <t id="L_OFFSET_X:" ver="12">오프셋 X:</t>
+  <t id="L_OFFSET_Y:" ver="12">오프셋 Y:</t>
+  <t id="L_NOZZLE_DIAMETER:" ver="12">노즐 직경:</t>
+  <t id="L_0_OR_PRINTERSETTINGS:" ver="12">[mm 혹은 0 = "프린터 설정" 값을 이용]</t>
+  <t id="L_SEE_ALSO_PRINTERSETTINGS" ver="12">슬라이서 또한 "프린터 설정"->"압출기"에 설정된 값들을 이용합니다!</t>
+  <t id="L_SHOW_QUICKSETTINGS" ver="12">빠른 설정 보기</t>
+  <t id="L_INFORMER_URL" ver="12">URL:</t>
+  <t id="L_INFORMER_URL_INFO" ver="12">모든 메시지에 위의 링크를 추가합니다. 예: 웹을 지원하는 웹캠 URL.</t>
+  <t id="L_PUSH_SD_STARTED" ver="12">프린터 $1의 SD 카드를 통한 출력이 시작되었습니다.</t>
+  <t id="L_PUSH_SD_FINISHED" ver="12">프린터 $1의 SD 카드를 통한 출력이 종료되었습니다.</t>
+  <t id="L_FIRST_LAYER_EXTRUSION_WIDTH:" ver="12">첫 번째 층의 압출 폭:</t>
+  <t id="H_FIRST_LAYER_EXTRUSION_WIDTH" ver="12">
+    프린터 베드에 보다 잘 붙게 하기 위하여, 첫 번째 층에
+    더 많은 필라멘트를 압출하여 넓어지게 하는 것이 종종
+    유리할 수 있습니다. 여기에서 기존 압출에 비해 기준선을
+    보다 더 넓게 설정할 수 있습니다. 이에 따라 선밀도가 조정됩니다.</t>
+  <t id="L_MIRROR_OBJECT" ver="12">미러 객체</t>
+  <t id="L_X_HOURS" ver="12">$1 시간</t>
+  <t id="L_PUSH_MSG_PROGRESS" ver="12">$1의 프린트는 $2에 완료될 예정입니다.</t>
+  <t id="L_PUSH_MSG_PROGRESS_SD" ver="12">$1의 프린트는 $2% 완료되었습니다.</t>
+  <t id="L_PUSH_HEAD_PROGRESS" ver="12">진행 상황 업데이트</t>
+  <t id="L_PROGRESS_EVERY" ver="12">진행 매</t>
+  <t id="L_POSITION_OBJECT" ver="12">객체 위치 정하기</t>
+  <t id="L_OBJECTS_CHANGED" ver="12">전 슬라이스와 객체의 배치가 변경되었습니다. 실제 이 작업을 시작할까요?</t>
+  <t id="H_SKIN_SPEED" ver="13">바깥 쪽을 모두 꽉 채우는 속도. 외부 표면 품질을 떨어 뜨리지 않고 더 빠르게 내부를 채울 수 있습니다.</t>
+  <t id="L_SKIN_INFILL:" ver="13">표면 채우기:</t>
+  <t id="L_NEVER" ver="13">사용하지 않음</t>
+  <t id="L_ALWAYS" ver="13">항시 사용</t>
+  <t id="L_ONLY_SKIN" ver="13">표면을 제외하고 항시 사용</t>
+  <t id="L_API_KEY:" ver="13">Api 키:</t>
+  <t id="H_PS_RS_APIKEY" ver="13">전역 Api 키 혹은 출력 허가를 지닌 사용자 Api 키</t>
+  <t id="L_RS_CONNECTION_INFO" ver="13">이 커넥터를 사용하면이 장치 또는 원격으로 연결할 수 있는 장치에서 실행중인 Repetier-Server에 직접 연결할 수 있습니다. 연결하려면 서버의 ip/hostname 과 port 그리고 Api 키를 입력하세요. 전역 Api 키 또는 출력 허가를 지닌 기존 사용자의 Api 키를 사용할 수 있습니다. 그러면 Connect가 프린터 대신 직접 서버에 연결됩니다. 출력 중에도 언제든지 연결을 끊었다가 다시 연결할 수 있습니다!</t>
+  <t id="TAB_PRINT" ver="13">프린트</t>
+  <t id="L_PERIMETER_BEFORE_INFILL" ver="13">빈 공간채우기 전 둘레</t>
+  <t id="H_PS_PERIMETER_BEFORE_INFILL" ver="13">경계선 혹은 공간 채우기를 먼저 출력할 것인지를 결정합니다,</t>
+  <t id="L_OFFLINE" ver="13">오프라인</t>
+  <t id="L_NO_PORT_ONLINE" ver="13">자동 선택을 위한 가용 포트가 없습니다. 먼저 프린터를 연결하세요!</t>
+  <t id="L_TEMPERATURE_REACHED" ver="14">온도가 가열됨</t>
+  <t id="L_RS_MINVERSION" ver="14">연결을 위하여 Repetier-Server 최소 버전 $1 이 필요합니다</t>
+  <t id="L_NO_PRINTER_SELECTED" ver="14">--- 선택된 프린터 없음 ---</t>
+  <t id="L_OTHER_PRINTER_CONNECTED" ver="14">다른 프린터로 연결되었습니다.
+  계속하려면 먼저 연결을 끊어 주세요.</t>
+  <t id="L_RS_NOAUTH" ver="14">서버 권한 획득에 실패했습니다. Api Key를 확인하십시오.</t>
+  <t id="L_RS_WRONG_IP" ver="14">서버에 연결할 수 없습니다.
+  IP 주소와 포트 번호를 확인하고
+  서버가 활성화되었는지 확인하세요.</t>
+  <t id="TAB_SERVER" ver="14">서버</t>
+  <t id="L_RS_COPY_INFO" ver="14">대부분의 설정은 서버에서 가져 와 저장되었습니다.
+  일부 설정은 사용할 수 없으며 변경되지 않았습니다.</t>
+  <t id="L_RS_COPY_CONFIG" ver="14">서버 구성 설정 정보 복사</t>
+  <t id="L_SERVER_DISCONNECTED" ver="14">서버 접속 해제</t>
+  <t id="L_PRINTER_OFFLINE" ver="14">프린터 오프라인</t>
+  <t id="L_PRINTER_DEACTIVATED" ver="14">프린터가 비활성화되었습니다</t>
+  <t id="L_SAVE_TO_SERVER" ver="14">서버에 저장</t>
+  <t id="L_WILL_OVERWRITE_EXISTING" ver="14">기존 파일에 덮어쓸 것입니다!</t>
+  <t id="L_RS_NO_UPLOAD_PERMISSION" ver="14">업로드 권한이 없습니다!</t>
+  <t id="L_RS_NO_PRINT_PERMISSION" ver="14">프린트 권한이 없습니다!</t>
+  <t id="L_RS_NOPRINTERS" ver="14">서버가 정의된 프린터를 가지고 있지 않습니다.
+  연결할 수 없습니다. 먼저 적어도 한 프린터를
+정의한 다음 다시 시도하세요.</t>
+  <t id="L_INFO" ver="14">정보</t>
+  <t id="T_WAITING_PRINTS">프린트 대기</t>
+  <t id="T_STORED_PRINTS">저장된 프린트</t>
+  <t id="L_TIMES">times</t>
+  <t id="L_LENGTH">길이</t>
+  <t id="L_WEIGHT">무게</t>
+  <t id="L_COST">가격</t>
+  <t id="L_FILAMENT">필라멘트</t>
+  <t id="L_PRINTED">출력된</t>
+  <t id="L_UPLOADED">업로드된</t>
+  <t id="L_FILE_SIZE">파일 크기</t>
+  <t id="L_VOLUMETRIC_EXTRUSION">볼륨 압출</t>
+  <t id="L_PER_EXTRUDER_VALUES" ver="14">압출기 당 값</t>
+  <t id="L_TOTAL_VALUES" ver="14">총합 값</t>
+  <t id="L_EXTR" ver="14">Extr.</t>
+  <t id="L_TOTAL_PRICE:" ver="14">총 가격:</t>
+  <t id="L_SCRIPTS" ver="14">스크립트들</t>
+  <t id="L_SCRIPT" ver="14">스크립트</t>
+  <t id="B_SAVE_FOR_SD_PRINT" ver="14">SD 카드 프린트용으로 저장</t>
+  <t id="L_PRINT_PREVIEW" ver="14">프린트 미리보기</t>
+  <t id="TAB_SEARCH" ver="14">찾기</t>
+  <t id="L_SEARCHTERM" ver="14">찾기:</t>
+  <t id="L_REPLACETERM" ver="14">바꾸기:</t>
+  <t id="B_SEARCH" ver="14">찾기</t>
+  <t id="B_REPLACE_SEARCH" ver="14">바꾸기 &amp;&amp; 찾기</t>
+  <t id="B_REPLACE" ver="14">바꾸기</t>
+  <t id="L_SAVE_TO_FILE" ver="14">파일에 저장</t>
+  <t id="L_EDIT_GCODE" ver="14">G-Code 편집</t>
+  <t id="TAB_GCODE_SYNTAX" ver="14">G-Code 문법</t>
+  <t id="M_USING_REPETIER_SERVER" ver="14">Repetier-Server 사용하기</t>
+  <t id="M_REPETIER_SERVER_MANUAL" ver="14">Repetier-Server 사용자 설명서</t>
+  <t id="M_START_SERVER" ver="14">로컬 서버 시작</t>
+  <t id="M_STOP_SERVER" ver="14">로컬 서버 멈춤</t>
+  <t id="M_OPEN_SERVER_FRONTEND" ver="14">서버 열기</t>
+  <t id="L_VIEW_CROSS_SECTION" ver="14">횡단면 보기</t>
+  <t id="M_SERVER" ver="14">서버</t>
+  <t id="L_AUTO_ZOOM_OBJECTS" ver="14">객체 자동 확대</t>
+  <t id="L_AUTO_POSITION_OBJECTS" ver="14">새로운 객체 추가 시 자동 객체 배치</t>
+  <t id="L_TRAVEL_ACCELERATION" ver="14">이동 가속</t>
+  <t id="L_CONNECT_TO_CONTINUE" ver="14">계속 연결</t>
+  <t id="L_ZOOM_SPEED_FACTOR" ver="14">확대 속도 계수</t>
+  <t id="L_WARN_JOB_RUNNING_CLOSE" ver="14">작업을 처리하고 있습니다. 연결을 닫으면 프린트가 중단됩니다. 어쨌든 닫을 건가요?</t>
+  <t id="M_SAVE_GCODE_SERVER" ver="14">서버에 G-Code 저장</t>
+  <t id="L_SAVE_GCODE_AS" ver="14">다른 이름으로 G-Code 저장</t>
+  <t id="L_WILL_OVERWRITE_EXISTING_FILE" ver="14">있는 파일에 덮어 씁니다!</t>
+  <t id="L_FLIP_X_Y" ver="15">X와 Y 바꾸기</t>
+  <t id="H_FLIP_X_Y" ver="15">수동 조작에서 x 및 y 이동을 위해 버튼을 바꿉니다.</t>
+  <t id="L_SHOW" ver="15">보이기</t>
+  <t id="L_COLOR" ver="16">색상</t>
+  <t id="L_MANAGER" ver="16">관리자</t>
+  <t id="L_PROGRESS" ver="16">진행</t>
+  <t id="L_COMMUNICATION_TIMEOUT" ver="16">통신 시간종료</t>
+  <t id="L_EASY_MODE" ver="16">쉬운 모드</t>
+  <t id="L_FATAL_ERROR" ver="16">치명적 오류</t>
+  <t id="L_FATAL_ERROR_INFO" ver="16">프린터 측의 치명적인 오류가 해결될 때까지 프린터가 중단되었습니다. 프린터 메시지:</t>
+  <t id="E_SENSOR_DEFECT" ver="17">온도 센서 결함</t>
+  <t id="E_DECOUPLED" ver="17">온도 센서와 히터가 분리되어 있습니다</t>
+  <t id="E_SLIPPING" ver="17">필라멘트가 미끄러지고 있습니다</t>
+  <t id="E_JAMMED" ver="17">압출기가 막혔습니다</t>
+  <t id="E_JAMMED_OR_NO_FILAMENT" ver="17">압출기가 막혀있거나 필라멘트가 떨어졌습니다</t>
+  <t id="E_OUT_OF_FILAMENT" ver="17">필라멘트 없음</t>
+  <t id="E_UNKNOWN_ERROR" ver="17">알 수 없는 오류</t>
+  <t id="L_SERVER_CONNECTOR_HINT" ver="17">안내: Repetier-Server가 설치되어 있습니다. Repetier-Server 연결을 사용하는 것이 좋습니다. 자세한 내용은 "도움말"을 클릭하십시오.</t>
+  <t id="L_PRINTER_ERRORS" ver="17">프린터 오류</t>
+  <t id="L_PRINT_TIME" ver="18">프린트 시간</t>
+  <t id="L_GROUP" ver="18">그룹</t>
+  <t id="L_ADD_GROUP" ver="18">그룹 추가</t>
+  <t id="L_DELETE_GROUP_X" ver="18">그룹 $1 삭제</t>
+  <t id="L_DELETE_GROUP" ver="18">그룹 삭제</t>
+  <t id="L_DEL_GROUP_MOVE" ver="18">그룹을 삭제하고, 파일들을 기본으로 옮깁니다</t>
+  <t id="L_DEL_GROUP_DEL" ver="18">그룹과 포함된 파일들을 삭제</t>
+  <t id="L_REPAIR_IN_PROGRESS" ver="18">수리 작업이 아직 작동 중입니다. 끝났을 때 재 시도하여 주세요.</t>
+  <t id="L_NOT_MANIFOLD_INFO_LR" ver="18">개체가 매니폴드가 아닙니다. 이것은 본질적으로 틈새가 있다는 의미이며, 일반적으로 슬라이싱을 하는 동안 문제가 발생하여 원치않는 결과를 초래합니다. 모델 수리를 강력히 권고합니다.</t>
+  <t id="L_REPAIRING..." ver="18">수리중 ...</t>
+  <t id="L_WEBCAM" ver="18">웹캠</t>
+  <t id="L_FILAMENT_EXTR_X" ver="18">필라멘트 압출기.$1:</t>
+  <t id="L_WIPE_NOZZLE_PRIME" ver="18">준비 타워에서 노즐을 닦습니다</t>
+  <t id="L_PRIME_POS_X" ver="18">준비 타워 X 위치:</t>
+  <t id="L_PRIME_POS_Y" ver="18">준비 타워 Y 위:</t>
+  <t id="L_SHOW_PRINTER_MODEL" ver="18">프린터 모델 보여 주기</t>
+  <t id="L_HIDE_PRINTERMODEL_BOTTOM" ver="18">밑에서 볼 때 감추기</t>
+  <t id="L_SHUTDOWN_QUESTION" ver="18">프린트가 완료된 후 5 분 후에 윈도우를 종료합니다. 다른 소프트웨어가 윈도우 종료를 막을 수도 있습니다! 다음 시작에 이 기능은 사용되지 않게 됩니다.</t>
+  <t id="M_SHUTDOWN_WINDOWS" ver="18">프린트 후 윈도우 종료</t>
+  <t id="L_ENABLE_LAYERHEIGHT_EDITOR" ver="18">가변 층 높이 편집창 활성화</t>
+  <t id="L_USE_VARIABLE_LAYER_HEIGHTS" ver="18">가변 층 높이 사용</t>
+  <t id="L_MIN_LAYER_HEIGHT" ver="18">최소 층 높이:</t>
+  <t id="L_MAX_LAYER_HEIGHT" ver="18">최대 층 높이:</t>
+  <t id="L_CURRENT_Z" ver="18">현재 Z:</t>
+  <t id="L_LAYER_HEIGHT_SET" ver="18">층 높이 설정:</t>
+  <t id="L_LAYER_HEIGHT_MOUSE" ver="18">마우스의 층 높이:</t>
+  <t id="L_LAYER_INFLUENCE_HEIGHT" ver="18">영향 높이:</t>
+  <t id="L_RESET_LAYER_HEIGHTS" ver="18">높이 초기화</t>
+  <t id="L_PRESERVE_LAYERHEIGHT" ver="18">모델 위치 기억 시도</t>
+  <t id="L_PRESERVE_LAYERHEIGHT_A" ver="18">가변 층 높이와 객체 당 슬라이스일 때, 사용할 수 없읍니다!</t>
+  <t id="L_PRESERVE_LAYERHEIGHT_B" ver="18">객체 당 슬라이스일 때 사용할 수 없읍니다!</t>
+  <t id="L_SLIC3R_LAYER_INFO" ver="18">가변 층을 사용하기 위해선 '모델 위치 기억 시도' 체크 박스를 비 활성화하세요. 한 객체의 위치를 기억하려 할 것입니다만, 여러 객체들일 경우 Slic3r가 다시 위치를 잡을 것입니다.</t>
+  <t id="L_REPAIR_FAILED" ver="18">수리 실패. 옛 복사본을 보관합니다.</t>
+  <t id="L_NUM_FANS" ver="18">냉각 팬 수:</t>
+  <t id="L_SAVING___" ver="18">저장중...</t>
+  <t id="L_AUTOCONNECT_ON_STARTUP">가능하면 시작 시 자동 연결</t>
+  <t id="L_FILAMENTCHANGE_REQUIRED">필라멘트 교환이 필요합니다.</t>
+  <t id="L_VELOCITY_PAINTING" ver="18">속도(Velocity) 페인팅</t>
+  <t id="L_LOAD_IMAGE" ver="18">이미지 가져오기</t>
+  <t id="L_INVERT_IMAGE" ver="18">이미지 반전</t>
+  <t id="L_ROTATE_IMAGE" ver="18">이미지 회전</t>
+  <t id="L_TRIGGER_SPEED:" ver="18">트리거 속도:</t>
+  <t id="L_LOW_SPEED:" ver="18">낮은 속도:</t>
+  <t id="L_HIGH_SPEED:" ver="18">빠른 속도:</t>
+  <t id="L_VEL_SPEED_INFO" ver="18">투영 영역에서만 압출기들의 속도를 '트리거 속도'로 바꿉니다. 검은 이미지 부분들은 낮은 속도로 하얀 이미지 부분들은 삐른 속도로 출력합니다.</t>
+  <t id="L_IMAGE_SCALING" ver="18">이미지 확대</t>
+  <t id="L_VEL_SCALING_INFO" ver="18">투영에 사용되는 이미지 크기.</t>
+  <t id="L_WIDTH:" ver="18">폭:</t>
+  <t id="L_HEIGHT:" ver="18">높이:</t>
+  <t id="L_PROJECTION" ver="18">투영</t>
+  <t id="L_PROJECTION_METHOD" ver="18">투영 방식:</t>
+  <t id="L_XCENTER:" ver="18">X 중앙:</t>
+  <t id="L_YCENTER:" ver="18">Y 중앙:</t>
+  <t id="L_ZCENTER:" ver="18">Z 중앙:</t>
+  <t id="L_VEL_PROJECTION_INFO" ver="18">중심은 투영 원점을 정의합니다. 평면 투영의 경우 2 개의 값만 사용됩니다. 원통 및 구형 투영은 각각 원통과 구체의 중심을 나타냅니다.</t>
+  <t id="L_GUESS_FROM_PROJECTION" ver="18">투영법으로부터 추측</t>
+  <t id="L_GENERATE_VELOCITY" ver="18">벨로서티 페인팅 생성</t>
+  <t id="L_TUTORIAL" ver="18">자습서</t>
+  <t id="L_IMAGE_PREVIEW" ver="18">이미지 미리보기</t>
+  <t id="L_VEL_PROJ0" ver="18">원통형 투영</t>
+  <t id="L_VEL_PROJ1" ver="18">X-Z 평면에서 투영</t>
+  <t id="L_VEL_PROJ2" ver="18">Y-Z 평면에서 투영</t>
+  <t id="L_VEL_PROJ3" ver="18">X-Y 평면에서 투영</t>
+  <t id="L_VEL_PROJ4" ver="18">구형 투영</t>
+  <t id="L_PRINT_SPEEDS" ver="18">출력 속도</t>
+  <t id="L_PROVIDE_IMAGE_FIRST" ver="18">먼저 이미지를 제공하여야 합니다!</t>
+  <t id="L_SLICE_FIRST" var="18">슬라이스된 출력물이 있어야 합니다!</t>
+  <t id="L_SUGGESTIONS_BASED_ON" ver="18">제안은 슬라이스 된 결과가 동일한 위치에 있다고 가정 할 때 베드에 놓인 한 모델을 기반으로합니다. 베드에 출력물이 하나 있어야 합니다!</t>
+  <t id="L_FILAMENTJAM_DETECTED" ver="18">필라멘트 잼이 감지되었습니다. 프린터를 확인하여 보세요.</t>
+</translation>

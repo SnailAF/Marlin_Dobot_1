@@ -3377,6 +3377,7 @@ inline void gcode_G0_G1(
   if (IsRunning() && G0_G1_CONDITION) {
     gcode_get_destination(); //获取命令中XYZE字符后面的值保存在destination[4]和feedrate_mm_s变量
 
+   /*
     #if ENABLED(FWRETRACT)
       if (MIN_AUTORETRACT <= MAX_AUTORETRACT) {
         // When M209 Autoretract is enabled, convert E-only moves to firmware retract/recover moves
@@ -3393,13 +3394,15 @@ inline void gcode_G0_G1(
         }
       }
     #endif // FWRETRACT
-
-    #if IS_SCARA
+    */
+    
+    //#if IS_SCARA 
       fast_move ? prepare_uninterpolated_move_to_destination() : prepare_move_to_destination();
-    #else
-      prepare_move_to_destination();
-    #endif
-
+    //#else af 
+    //  prepare_move_to_destination();
+  	//#endif af
+  	
+	/*af
     #if ENABLED(NANODLP_Z_SYNC)
       #if ENABLED(NANODLP_ALL_AXIS)
         #define _MOVE_SYNC true                 // For any move wait and output sync message
@@ -3411,6 +3414,7 @@ inline void gcode_G0_G1(
         SERIAL_ECHOLNPGM(MSG_Z_MOVE_COMP);
       }
     #endif
+    */
   }
 }
 
@@ -6304,7 +6308,7 @@ void gcode_G93()
 		}
 	}
 	SERIAL_PROTOCOLLNPGM("gcode_G93");
-    forward_kinematics_DOBOT(delta[A_AXIS], delta[Y_AXIS], delta[Z_AXIS]);
+    forward_kinematics_DOBOT(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS]);
 	DEBUG_POS("G93delta", delta);
 	DEBUG_POS("G93cartes", cartes);
 	LOOP_XYZ(i)
@@ -13238,34 +13242,40 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
     const float _feedrate_mm_s = MMS_SCALED(feedrate_mm_s);
 
     const float xdiff = rtarget[X_AXIS] - current_position[X_AXIS],
-                ydiff = rtarget[Y_AXIS] - current_position[Y_AXIS];
+                ydiff = rtarget[Y_AXIS] - current_position[Y_AXIS],
+    			zdiff = rtarget[Z_AXIS] - current_position[Z_AXIS],
+                ediff = rtarget[E_AXIS] - current_position[E_AXIS];
 
-
-	SERIAL_ECHOPAIR(" rtarget[X]=", rtarget[X_AXIS]);
-	SERIAL_ECHOPAIR(" rtarget[Y]=", rtarget[Y_AXIS]);
+	SERIAL_PROTOCOLLN("--------------------------------");
+	SERIAL_PROTOCOLLN("                                ");
+	SERIAL_ECHOLNPAIR(" rtarget[X]=", rtarget[X_AXIS]);
+	SERIAL_ECHOLNPAIR(" rtarget[Y]=", rtarget[Y_AXIS]);
 	SERIAL_ECHOLNPAIR(" rtarget[Z]=", rtarget[Z_AXIS]);
-	SERIAL_ECHOPAIR(" current_position[X]=", current_position[X_AXIS]);
-	SERIAL_ECHOPAIR(" current_position[Y]=", current_position[Y_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[X]=", current_position[X_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[Y]=", current_position[Y_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[Z]=", current_position[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" position_degrees[A] =",stepper.get_axis_position_degrees(A_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[B] =",stepper.get_axis_position_degrees(B_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[C] =",stepper.get_axis_position_degrees(C_AXIS));
 	SERIAL_ECHOPAIR(" xdiff=", xdiff);
 	SERIAL_ECHOPAIR(" ydiff=", ydiff);
+	SERIAL_ECHOPAIR(" zdiff=", ydiff);
 	SERIAL_ECHOLNPAIR(" _feeftate_mm_s=", _feedrate_mm_s);
-				
-
+	SERIAL_PROTOCOLLN("                                ");			
+	SERIAL_PROTOCOLLN("--------------------------------");
     // If the move is only in Z/E don't split up the move
     //如果移动只在Z/E中，不要分开移动
+    /*
     if (!xdiff && !ydiff) {
       planner.buffer_line_kinematic(rtarget, _feedrate_mm_s, active_extruder);
       return false; // 调用者将更新current_position
     }
-
+	*/
     // Fail if attempting move outside printable radius
     //如果尝试在打印半径外移动，就会失败
-    if (!position_is_reachable(rtarget[X_AXIS], rtarget[Y_AXIS])) return true;
+    //if (!position_is_reachable(rtarget[X_AXIS], rtarget[Y_AXIS])) return true;
 
-    // 剩余的笛卡尔的距离
-    const float zdiff = rtarget[Z_AXIS] - current_position[Z_AXIS],
-                ediff = rtarget[E_AXIS] - current_position[E_AXIS];
+
 
     // Get the linear distance in XYZ
     // If the move is very short, check the E move distance
@@ -13320,6 +13330,7 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
                   inverse_secs = inv_segment_length * _feedrate_mm_s;			  // 每段执行时间
       float oldA = stepper.get_axis_position_degrees(A_AXIS),
             oldB = stepper.get_axis_position_degrees(B_AXIS);
+	        oldC = stepper.get_axis_position_degrees(C_AXIS);
     #endif
 
     // Get the current position as starting point
@@ -13340,20 +13351,20 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
       }
 
       LOOP_XYZE(i) raw[i] += segment_distance[i];
-      #if ENABLED(DELTA)
-        DELTA_IK(raw); // Delta可以内联它的运动学
-      #else
+      //#if ENABLED(DELTA)
+        //DELTA_IK(raw); // Delta可以内联它的运动学
+      //#else
         inverse_kinematics(raw);
-      #endif
+      //#endif
 
-      ADJUST_DELTA(raw); //调整Z，如果启用了床平
+      //ADJUST_DELTA(raw); //调整Z，如果启用了床平
 
       #if ENABLED(SCARA_FEEDRATE_SCALING)
         // For SCARA scale the feed rate from mm/s to degrees/s
         // i.e., Complete the angular vector in the given time.
         // SCARA需要将进给速率从mm/s 转为 角度/s
         // 即，在给定的时间内完成角向量。
-        planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], raw[Z_AXIS], raw[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
+        planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], raw[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
         oldA = delta[A_AXIS]; oldB = delta[B_AXIS];
       #else
         planner.buffer_line(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], raw[E_AXIS], _feedrate_mm_s, active_extruder);
@@ -13365,11 +13376,17 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
     #if ENABLED(SCARA_FEEDRATE_SCALING)
       inverse_kinematics(rtarget);
       ADJUST_DELTA(rtarget);
-      planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], rtarget[Z_AXIS], rtarget[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
+      planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], rtarget[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
     #else
       planner.buffer_line_kinematic(rtarget, _feedrate_mm_s, active_extruder);
     #endif
 	
+	SERIAL_ECHOLNPAIR(" current_position[X]=", current_position[X_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[Y]=", current_position[Y_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[Z]=", current_position[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" position_degrees[A] =",stepper.get_axis_position_degrees(A_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[B] =",stepper.get_axis_position_degrees(B_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[C] =",stepper.get_axis_position_degrees(C_AXIS));
 	SERIAL_PROTOCOLLN("out prepare_kinematic_move_to");
 
     return false; // 调用者将更新current_position
@@ -13528,6 +13545,7 @@ void prepare_move_to_destination() {
 	SERIAL_ECHOLNPAIR(" d2=", destination[2]);
 
 	//低于设定温度，防止挤压                     ||防止单个挤压的时间超过挤压的长度
+	/*af	
   #if ENABLED(PREVENT_COLD_EXTRUSION) || ENABLED(PREVENT_LENGTHY_EXTRUDE)
 
     if (!DEBUGGING(DRYRUN)) {
@@ -13549,21 +13567,22 @@ void prepare_move_to_destination() {
       }
     }
 
-  #endif
+  #endif*/
 
 	//双X头打印机
+	/*
   #if ENABLED(DUAL_X_CARRIAGE)
     if (dual_x_carriage_unpark()) return;
   #endif
-  
+  */
   if (
-    #if UBL_SEGMENTED
-      ubl.prepare_segmented_line_to(destination, MMS_SCALED(feedrate_mm_s))
-    #elif IS_KINEMATIC  //运动学解，机械臂需要用这个
+    //#if UBL_SEGMENTED //统一的基床整平
+    //  ubl.prepare_segmented_line_to(destination, MMS_SCALED(feedrate_mm_s))
+   // #elif IS_KINEMATIC  //运动学解，机械臂需要用这个
       prepare_kinematic_move_to(destination)
-    #else
-      prepare_move_to_destination_cartesian()
-    #endif
+   // #else
+   //   prepare_move_to_destination_cartesian()
+   // #endif
   ) return;
 SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
 
@@ -13812,8 +13831,8 @@ SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
     * 程序： https://github.com/maxosprojects/open-dobot中的DobotKinematics.py得到
 	*/
 // Dimentions in mm
-#define lengthRearArm		SCARA_LINKAGE_1			
-#define lengthFrontArm		SCARA_LINKAGE_2
+#define lengthRearArm		SCARA_LINKAGE_1			//135
+#define lengthFrontArm		SCARA_LINKAGE_2			//160
 // Horizontal distance from Joint3 to the center of the tool mounted on the end effector.
 #define distanceTool		MIDDLE_DEAD_ZONE_R //50.9
 // Joint1 height.
@@ -13830,27 +13849,22 @@ SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
 #define piHalf				M_PI / 2.0
 //#define piTwo				M_PI * 2.0
 //#define piThreeFourths	M_PI * 3.0 / 4.0	
+void forward_kinematics_DOBOT0(const float &a, const float &b, const float &c)
+{
+	float a_sin = sin(RADIANS(a)) * lengthRearArm,
+		  a_cos = cos(RADIANS(a)) * lengthRearArm,
+		  b_sin = sin(RADIANS(b)) * lengthFrontArm,
+		  b_cos = cos(RADIANS(b)) * lengthFrontArm,
+		  sin_c = sin(RADIANS(c)),
+		  cos_c = cos(RADIANS(c)),
+	      r     = a_cos + b_cos;
+	cartes[X_AXIS] = r*sin_c;
+	cartes[Y_AXIS] = r*cos_c;
+	cartes[Z_AXIS] = a_sin - b_sin + heightFromGround;
+}
+
 void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
 {
-	/*
-	if(useAngle == true) //使能角度模式
-	{
-		cartes[X_AXIS] = a;
-		cartes[Y_AXIS] = b;
-		cartes[Z_AXIS] = c;
-		return;
-	}
-	*/
-	/*
-	float rearArmAngle = RADIANS(a),
-		  frontArmAngle = RADIANS(b),
-		  baseAngle = RADIANS(c);
-	float radius = lengthRearArm * cos(rearArmAngle) + lengthFrontArm * cos(frontArmAngle) + distanceTool;
-	
-	cartes[X_AXIS] = radius * cos(baseAngle);
-	cartes[Y_AXIS] = radius * sin(baseAngle);
-	cartes[Z_AXIS] = heightFromGround - lengthFrontArm * sin(frontArmAngle) + lengthRearArm * sin(rearArmAngle);
-	*/
 	float a_sin = sin(RADIANS(a)) * lengthRearArm,
 		  a_cos = cos(RADIANS(a)) * lengthRearArm,
 		  b_sin = sin(RADIANS(b)) * lengthFrontArm,
@@ -13916,12 +13930,12 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
  	delta[B_AXIS] = DEGREES(frontAngle);
  	delta[C_AXIS] = DEGREES(baseAngle);
 
-	  DEBUG_POS("DOBOT IK", raw);
-      DEBUG_POS("DOBOT IK", delta);
-      SERIAL_ECHOPAIR("  SCARA (x,y) ", actualZ);
-      SERIAL_ECHOPAIR(" , ", sy);
-	  SERIAL_ECHOLNPAIR(" sz",actualZ);
-	  SERIAL_PROTOCOLLNPGM("inverse_kinematics");
+	 // DEBUG_POS("DOBOT IK", raw);
+      //DEBUG_POS("DOBOT IK", delta);
+      //SERIAL_ECHOPAIR("  SCARA (x,y) ", actualZ);
+      //SERIAL_ECHOPAIR(" , ", sy);
+	  //SERIAL_ECHOLNPAIR(" sz",actualZ);
+	  SERIAL_PROTOCOLLNPGM("--inverse_kinematics");
 }
 
 // end DOBOT_ARM

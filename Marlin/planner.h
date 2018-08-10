@@ -479,6 +479,7 @@ class Planner {
       #endif
       #if IS_KINEMATIC
         inverse_kinematics(raw);
+	  	SERIAL_PROTOCOLLNPGM("----------------------------buffer_line_kinematic");
         buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], cart[E_AXIS], fr_mm_s, extruder);
       #else
         buffer_segment(raw[X_AXIS], raw[Y_AXIS], raw[Z_AXIS], cart[E_AXIS], fr_mm_s, extruder);

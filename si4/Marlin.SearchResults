@@ -1,9 +1,4 @@
----- ATAN2 Matches (9 in 0 files) ----
-plan_arc in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) :     // CCW angle of rotation between position and target from the circle center. Only one atan2() trig computation required.
-plan_arc in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) :     float angular_travel = ATAN2(r_P * rt_Y - r_Q * rt_X, r_P * rt_X + r_Q * rt_Y);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) : 	baseAngle = ATAN2(sy,sx);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) : 	q1 = ATAN2(actualZ, radius);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) : 	baseAngle = ATAN2(sy,sx);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) : 	q1 = ATAN2(actualZ,radius);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) :     THETA = ATAN2(SK1, SK2) - ATAN2(sx, sy);
-inverse_kinematics in Marlin_main.cpp (K:\project\Dobot\Marlin-1.1.x _arduino\Marlin) :     PSI = ATAN2(S2, C2);
+---- Free Memory Matches (3 in 0 files) ----
+Marlin_main.cpp line 117 :  * M100 - Watch Free Memory (for debugging) (Requires M100_FREE_MEMORY_WATCHER)
+Marlin_main.cpp line 403 :   char command_queue[BUFSIZE][MAX_CMD_SIZE];  // Necessary so M100 Free Memory Dumper can show us the commands and any corruption
+process_parsed_command in Marlin_main.cpp :         case 100: // M100: Free Memory Report
