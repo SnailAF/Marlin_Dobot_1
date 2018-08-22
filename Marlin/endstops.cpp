@@ -335,13 +335,13 @@ void Endstops::update() {
   /**
    * Define conditions for checking endstops
    */
-
+/*
   #if IS_CORE
     #define S_(N) stepper.current_block->steps[CORE_AXIS_##N]
     #define D_(N) stepper.motor_direction(CORE_AXIS_##N)
   #endif
-
-  #if CORE_IS_XY || CORE_IS_XZ
+*/
+  //#if CORE_IS_XY || CORE_IS_XZ
     /**
      * Head direction in -X axis for CoreXY and CoreXZ bots.
      *
@@ -349,6 +349,7 @@ void Endstops::update() {
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Y or Z, handled below)
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X)
      */
+     /*
     #if ENABLED(COREXY) || ENABLED(COREXZ)
       #define X_CMP ==
     #else
@@ -360,8 +361,8 @@ void Endstops::update() {
     #define X_MOVE_TEST stepper.current_block->steps[X_AXIS] > 0
     #define X_AXIS_HEAD X_AXIS
   #endif
-
-  #if CORE_IS_XY || CORE_IS_YZ
+*/
+  //#if CORE_IS_XY || CORE_IS_YZ
     /**
      * Head direction in -Y axis for CoreXY / CoreYZ bots.
      *
@@ -369,6 +370,7 @@ void Endstops::update() {
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X or Y)
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Y or Z)
      */
+     /*
     #if ENABLED(COREYX) || ENABLED(COREYZ)
       #define Y_CMP ==
     #else
@@ -380,8 +382,8 @@ void Endstops::update() {
     #define Y_MOVE_TEST stepper.current_block->steps[Y_AXIS] > 0
     #define Y_AXIS_HEAD Y_AXIS
   #endif
-
-  #if CORE_IS_XZ || CORE_IS_YZ
+*/
+  //#if CORE_IS_XZ || CORE_IS_YZ
     /**
      * Head direction in -Z axis for CoreXZ or CoreYZ bots.
      *
@@ -389,6 +391,7 @@ void Endstops::update() {
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X or Y, already handled above)
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Z)
      */
+     /*
     #if ENABLED(COREZX) || ENABLED(COREZY)
       #define Z_CMP ==
     #else
@@ -410,13 +413,14 @@ void Endstops::update() {
     #define X_MIN_TEST true
     #define X_MAX_TEST true
   #endif
-
+*/
   /**
    * Check and update endstops according to conditions
    */
   if (X_MOVE_TEST) {
     if (stepper.motor_direction(X_AXIS_HEAD)) { // -direction
       #if HAS_X_MIN
+	  /*
         #if ENABLED(X_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(X, MIN);
           #if HAS_X2_MIN
@@ -426,12 +430,14 @@ void Endstops::update() {
           #endif
           test_dual_x_endstops(X_MIN, X2_MIN);
         #else
+		*/
           if (X_MIN_TEST) UPDATE_ENDSTOP(X, MIN);
-        #endif
+       // #endif
       #endif
     }
     else { // +direction
       #if HAS_X_MAX
+	  /*
         #if ENABLED(X_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(X, MAX);
           #if HAS_X2_MAX
@@ -440,10 +446,9 @@ void Endstops::update() {
             COPY_BIT(current_endstop_bits, X_MAX, X2_MAX);
           #endif
           test_dual_x_endstops(X_MAX, X2_MAX);
-        #else
+        #else*/
           if (X_MIN_TEST) UPDATE_ENDSTOP(X, MAX);
-        #endif
-
+       // #endif
       #endif
     }
   }
@@ -451,6 +456,7 @@ void Endstops::update() {
   if (Y_MOVE_TEST) {
     if (stepper.motor_direction(Y_AXIS_HEAD)) { // -direction
       #if HAS_Y_MIN
+	  /*
         #if ENABLED(Y_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(Y, MIN);
           #if HAS_Y2_MIN
@@ -460,12 +466,14 @@ void Endstops::update() {
           #endif
           test_dual_y_endstops(Y_MIN, Y2_MIN);
         #else
+		*/
           UPDATE_ENDSTOP(Y, MIN);
-        #endif
+        //#endif
       #endif
     }
     else { // +direction
       #if HAS_Y_MAX
+	  /*
         #if ENABLED(Y_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(Y, MAX);
           #if HAS_Y2_MAX
@@ -475,8 +483,9 @@ void Endstops::update() {
           #endif
           test_dual_y_endstops(Y_MAX, Y2_MAX);
         #else
+		*/
           UPDATE_ENDSTOP(Y, MAX);
-        #endif
+       // #endif
       #endif
     }
   }
@@ -495,7 +504,7 @@ void Endstops::update() {
         #else
           #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
             if (z_probe_enabled) UPDATE_ENDSTOP(Z, MIN);
-          #else
+          #else		  
             UPDATE_ENDSTOP(Z, MIN);
           #endif
         #endif
