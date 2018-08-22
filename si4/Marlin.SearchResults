@@ -1,4 +1,3 @@
----- Free Memory Matches (3 in 0 files) ----
-Marlin_main.cpp line 117 :  * M100 - Watch Free Memory (for debugging) (Requires M100_FREE_MEMORY_WATCHER)
-Marlin_main.cpp line 403 :   char command_queue[BUFSIZE][MAX_CMD_SIZE];  // Necessary so M100 Free Memory Dumper can show us the commands and any corruption
-process_parsed_command in Marlin_main.cpp :         case 100: // M100: Free Memory Report
+---- MSG_ENDSTOPS_HIT Matches (2 in 2 files) ----
+Endstops::report_state in endstops.cpp :     SERIAL_ECHOPGM(MSG_ENDSTOPS_HIT);
+language.h line 205 : #define MSG_ENDSTOPS_HIT                    "endstops hit: "

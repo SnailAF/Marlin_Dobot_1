@@ -1251,6 +1251,7 @@ long Stepper::position(const AxisEnum axis) {
  */
 float Stepper::get_axis_position_mm(const AxisEnum axis) {
   float axis_steps;
+  /*
   #if IS_CORE
     // Requesting one of the "core" axes?
     if (axis == CORE_AXIS_1 || axis == CORE_AXIS_2) {
@@ -1266,8 +1267,9 @@ float Stepper::get_axis_position_mm(const AxisEnum axis) {
     else
       axis_steps = position(axis);
   #else
+  */
     axis_steps = position(axis);
-  #endif
+  //#endif
   return axis_steps * planner.steps_to_mm[axis];
 }
 

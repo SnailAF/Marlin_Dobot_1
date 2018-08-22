@@ -3270,16 +3270,23 @@ void gcode_get_destination() {
 	    	else
 	      		buf[i] = current_position[i];
 		}
+		if (parser.seen(axis_codes[E_AXIS])) {
+      		destination[E_AXIS] = parser.value_axis_units(E_AXIS) + (axis_relative_modes[E_AXIS] || relative_mode ? current_position[E_AXIS] : 0);
+     	}
+    	else{
+  	    	destination[E_AXIS] = current_position[E_AXIS];
+  		}
 			SERIAL_ECHOPAIR(" A_AXIS =", buf[A_AXIS]); 
 			SERIAL_ECHOPAIR(" B_AXIS =", buf[B_AXIS]);
 			SERIAL_ECHOLNPAIR(" C_AXIS =", buf[C_AXIS]);
+			SERIAL_ECHOLNPAIR(" E_AXIS =", destination[E_AXIS]);
 		if(relative_mode)
 		{
 			buf[A_AXIS] += stepper.get_axis_position_degrees(A_AXIS);
 			buf[B_AXIS] += stepper.get_axis_position_degrees(B_AXIS);
 			buf[C_AXIS] += stepper.get_axis_position_degrees(C_AXIS);
 		}
-		destination[E_AXIS] = parser.value_axis_units((AxisEnum)E_AXIS) + (axis_relative_modes[E_AXIS] || relative_mode ? current_position[E_AXIS] : 0);
+		
 		    SERIAL_ECHOPAIR(" A_AXIS+ =", buf[A_AXIS]); 
 			SERIAL_ECHOPAIR(" B_AXIS+ =", buf[B_AXIS]);
 			SERIAL_ECHOLNPAIR(" C_AXIS+ =", buf[C_AXIS]);
@@ -3308,9 +3315,10 @@ void gcode_get_destination() {
    * 运动学正解，然后重新计算destination
    */
 
-  if (parser.linearval('F') > 0.0)
+  if (parser.linearval('F') > 0.0){
     feedrate_mm_s = MMM_TO_MMS(parser.value_feedrate());
-
+	SERIAL_ECHOLNPAIR(" feedrate_mm_s=", feedrate_mm_s);
+  	}
   #if ENABLED(PRINTCOUNTER)
     if (!DEBUGGING(DRYRUN))
       print_job_timer.incFilamentUsed(destination[E_AXIS] - current_position[E_AXIS]);
@@ -13251,15 +13259,19 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
 	SERIAL_ECHOLNPAIR(" rtarget[X]=", rtarget[X_AXIS]);
 	SERIAL_ECHOLNPAIR(" rtarget[Y]=", rtarget[Y_AXIS]);
 	SERIAL_ECHOLNPAIR(" rtarget[Z]=", rtarget[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" rtarget[E]=", rtarget[E_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[X]=", current_position[X_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[Y]=", current_position[Y_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[Z]=", current_position[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[E]=", current_position[E_AXIS]);
 	SERIAL_ECHOLNPAIR(" position_degrees[A] =",stepper.get_axis_position_degrees(A_AXIS));
 	SERIAL_ECHOLNPAIR(" position_degrees[B] =",stepper.get_axis_position_degrees(B_AXIS));
 	SERIAL_ECHOLNPAIR(" position_degrees[C] =",stepper.get_axis_position_degrees(C_AXIS));
 	SERIAL_ECHOPAIR(" xdiff=", xdiff);
 	SERIAL_ECHOPAIR(" ydiff=", ydiff);
 	SERIAL_ECHOPAIR(" zdiff=", ydiff);
+	SERIAL_ECHOPAIR(" ediff=", ediff);
+	SERIAL_ECHOLNPAIR(" feeftate_mm_s=", feedrate_mm_s);
 	SERIAL_ECHOLNPAIR(" _feeftate_mm_s=", _feedrate_mm_s);
 	SERIAL_PROTOCOLLN("                                ");			
 	SERIAL_PROTOCOLLN("--------------------------------");
@@ -13329,7 +13341,7 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
       const float inv_segment_length = min(10.0, float(segments) / cartesian_mm), // 1/mm/segs 每mm分几段
                   inverse_secs = inv_segment_length * _feedrate_mm_s;			  // 每段执行时间
       float oldA = stepper.get_axis_position_degrees(A_AXIS),
-            oldB = stepper.get_axis_position_degrees(B_AXIS);
+            oldB = stepper.get_axis_position_degrees(B_AXIS),
 	        oldC = stepper.get_axis_position_degrees(C_AXIS);
     #endif
 
@@ -13376,14 +13388,18 @@ void set_current_from_steppers_for_axis(const AxisEnum axis) {
     #if ENABLED(SCARA_FEEDRATE_SCALING)
       inverse_kinematics(rtarget);
       ADJUST_DELTA(rtarget);
-      planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], rtarget[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
+      planner.buffer_segment(delta[A_AXIS], delta[B_AXIS], delta[C_AXIS], raw[E_AXIS], HYPOT(delta[A_AXIS] - oldA, delta[B_AXIS] - oldB) * inverse_secs, active_extruder);
     #else
       planner.buffer_line_kinematic(rtarget, _feedrate_mm_s, active_extruder);
     #endif
-	
+
+	SERIAL_ECHOLNPAIR(" active_extruder=", active_extruder);
 	SERIAL_ECHOLNPAIR(" current_position[X]=", current_position[X_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[Y]=", current_position[Y_AXIS]);
 	SERIAL_ECHOLNPAIR(" current_position[Z]=", current_position[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" stepper.position[X]=", stepper.position(X_AXIS));
+	SERIAL_ECHOLNPAIR(" stepper.position[Y]=", stepper.position(Y_AXIS));
+	SERIAL_ECHOLNPAIR(" stepper.position[Z]=", stepper.position(Z_AXIS));
 	SERIAL_ECHOLNPAIR(" position_degrees[A] =",stepper.get_axis_position_degrees(A_AXIS));
 	SERIAL_ECHOLNPAIR(" position_degrees[B] =",stepper.get_axis_position_degrees(B_AXIS));
 	SERIAL_ECHOLNPAIR(" position_degrees[C] =",stepper.get_axis_position_degrees(C_AXIS));
@@ -13587,6 +13603,13 @@ void prepare_move_to_destination() {
 SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
 
   set_current_from_destination();
+  	SERIAL_PROTOCOLLN("===================================================");
+  	SERIAL_ECHOLNPAIR(" current_position[X]=", current_position[X_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[Y]=", current_position[Y_AXIS]);
+	SERIAL_ECHOLNPAIR(" current_position[Z]=", current_position[Z_AXIS]);
+	SERIAL_ECHOLNPAIR(" position_degrees[A] =",stepper.get_axis_position_degrees(A_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[B] =",stepper.get_axis_position_degrees(B_AXIS));
+	SERIAL_ECHOLNPAIR(" position_degrees[C] =",stepper.get_axis_position_degrees(C_AXIS));
 }
 
 #if ENABLED(ARC_SUPPORT)
@@ -13865,16 +13888,16 @@ void forward_kinematics_DOBOT0(const float &a, const float &b, const float &c)
 
 void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
 {
-	float a_sin = sin(RADIANS(a)) * lengthRearArm,
-		  a_cos = cos(RADIANS(a)) * lengthRearArm,
-		  b_sin = sin(RADIANS(b)) * lengthFrontArm,
-		  b_cos = cos(RADIANS(b)) * lengthFrontArm,
+	float a_sin = sin(RADIANS(a)) * lengthFrontArm,
+		  a_cos = cos(RADIANS(a)) * lengthFrontArm,
+		  b_sin = sin(RADIANS(b)) * lengthRearArm,
+		  b_cos = cos(RADIANS(b)) * lengthRearArm,
 		  sin_c = sin(RADIANS(c)),
 		  cos_c = cos(RADIANS(c)),
 	      r     = a_cos + b_cos;
-	cartes[X_AXIS] = r*sin_c;
-	cartes[Y_AXIS] = r*cos_c;
-	cartes[Z_AXIS] = a_sin - b_sin + heightFromGround;
+	cartes[X_AXIS] = r*cos_c;
+	cartes[Y_AXIS] = r*sin_c;
+	cartes[Z_AXIS] = a_sin + b_sin + heightFromGround;
 }
 
   /**
@@ -13893,22 +13916,23 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
     float sx = raw[X_AXIS] - SCARA_OFFSET_X,  // 将SCARA翻译成标准X Y  Translate SCARA to standard X Y
           sy = raw[Y_AXIS] - SCARA_OFFSET_Y,  // 与比例因子。  With scaling factor.
 		  sz = raw[Z_AXIS] - heightFromGround;
-	/*
+	//*
 	baseAngle = ATAN2(sy,sx);
-	actualZ = raw[Z_AXIS] - heightFromGround;
+	//actualZ = raw[Z_AXIS] - heightFromGround;
 	radiusTool = sqrt(sq(sx) + sq(sy));
 	radius = radiusTool - distanceTool;
 	jointX = radius*cos(baseAngle);
 	jointY = radius*sin(baseAngle);
 
-	hypotenuseSquared = SQ(actualZ) + SQ(radius);
+	hypotenuseSquared = SQ(sz) + SQ(radius);
 	hypotenuse = sqrt(hypotenuseSquared);
-	q1 = ATAN2(actualZ, radius);
+	q1 = ATAN2(sz, radius);
 	q2 = ACOS((lengthRearSquared - lengthFrontSquared + hypotenuseSquared) / (2.0 * lengthRearArm * hypotenuse));
 	
-	rearAngle = piHalf - (q1 + q2);
-	frontAngle = piHalf - acos(((SQ(lengthRearArm) + SQ(lengthFrontArm)) - hypotenuseSquared) / armDoubledConst) - rearAngle;
-	*/
+	rearAngle = (q1 + q2);
+	frontAngle = M_PI - acos((armSquaredConst - hypotenuseSquared) / armDoubledConst) - rearAngle;
+	//*/
+	/*
 	baseAngle = ATAN2(sx,sy);
 	actualZ = raw[Z_AXIS] - heightFromGround;
 	radiusTool = sqrt(sq(sx) + sq(sy));
@@ -13922,19 +13946,17 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
 	q2 = ACOS((lengthRearSquared - lengthFrontSquared + hypotenuseSquared) / (2.0 * lengthRearArm * hypotenuse));
 	
 	rearAngle = q1 + q2;
-	
-
 	frontAngle = M_PI - ACOS((armSquaredConst - hypotenuseSquared) / armDoubledConst)  - rearAngle;
-
- 	delta[A_AXIS] = DEGREES(rearAngle);
- 	delta[B_AXIS] = DEGREES(frontAngle);
+	*/
+ 	delta[A_AXIS] = DEGREES(frontAngle);
+ 	delta[B_AXIS] = DEGREES(rearAngle);
  	delta[C_AXIS] = DEGREES(baseAngle);
 
-	 // DEBUG_POS("DOBOT IK", raw);
-      //DEBUG_POS("DOBOT IK", delta);
-      //SERIAL_ECHOPAIR("  SCARA (x,y) ", actualZ);
-      //SERIAL_ECHOPAIR(" , ", sy);
-	  //SERIAL_ECHOLNPAIR(" sz",actualZ);
+	  DEBUG_POS("DOBOT IK", raw);
+      DEBUG_POS("DOBOT IK", delta);
+      SERIAL_ECHOPAIR("  SCARA (x,y) ", actualZ);
+      SERIAL_ECHOPAIR(" , ", sy);
+	  SERIAL_ECHOLNPAIR(" sz",actualZ);
 	  SERIAL_PROTOCOLLNPGM("--inverse_kinematics");
 }
 
