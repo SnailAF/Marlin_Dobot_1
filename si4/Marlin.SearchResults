@@ -1,11 +1,8 @@
-<<<<<<< Updated upstream
----- MSG_ENDSTOPS_HIT Matches (2 in 2 files) ----
-Endstops::report_state in endstops.cpp :     SERIAL_ECHOPGM(MSG_ENDSTOPS_HIT);
-language.h line 205 : #define MSG_ENDSTOPS_HIT                    "endstops hit: "
-=======
----- X_APPLY_STEP Matches (4 in 1 files) ----
-stepper.cpp line 186 :     #define X_APPLY_STEP(v,ALWAYS) \
-stepper.cpp line 195 :     #define X_APPLY_STEP(v,Q) DUAL_ENDSTOP_APPLY_STEP(X,v)
-stepper.cpp line 197 :     #define X_APPLY_STEP(v,Q) do{ X_STEP_WRITE(v); X2_STEP_WRITE(v); }while(0)
-stepper.cpp line 201 :   #define X_APPLY_STEP(v,Q) X_STEP_WRITE(v)
->>>>>>> Stashed changes
+---- SWITCH_ENABLED_ Matches (7 in 1 files) ----
+macros.h line 132 : #define SWITCH_ENABLED_false 0
+macros.h line 133 : #define SWITCH_ENABLED_true  1
+macros.h line 134 : #define SWITCH_ENABLED_0     0
+macros.h line 135 : #define SWITCH_ENABLED_1     1
+macros.h line 136 : #define SWITCH_ENABLED_      1
+macros.h line 137 : #define ENABLED(b) _CAT(SWITCH_ENABLED_, b)
+macros.h line 138 : #define DISABLED(b) (!_CAT(SWITCH_ENABLED_, b))

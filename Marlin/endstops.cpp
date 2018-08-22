@@ -300,6 +300,7 @@ void Endstops::M119() {
 
 // Check endstops - Called from ISR!
 void Endstops::update() {
+return;
 
   #define _ENDSTOP(AXIS, MINMAX) AXIS ##_## MINMAX
   #define _ENDSTOP_PIN(AXIS, MINMAX) AXIS ##_## MINMAX ##_PIN
@@ -341,7 +342,7 @@ void Endstops::update() {
     #define D_(N) stepper.motor_direction(CORE_AXIS_##N)
   #endif
 */
-  //#if CORE_IS_XY || CORE_IS_XZ
+  #if CORE_IS_XY || CORE_IS_XZ
     /**
      * Head direction in -X axis for CoreXY and CoreXZ bots.
      *
@@ -349,7 +350,7 @@ void Endstops::update() {
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Y or Z, handled below)
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X)
      */
-     /*
+     
     #if ENABLED(COREXY) || ENABLED(COREXZ)
       #define X_CMP ==
     #else
@@ -361,8 +362,8 @@ void Endstops::update() {
     #define X_MOVE_TEST stepper.current_block->steps[X_AXIS] > 0
     #define X_AXIS_HEAD X_AXIS
   #endif
-*/
-  //#if CORE_IS_XY || CORE_IS_YZ
+
+  #if CORE_IS_XY || CORE_IS_YZ
     /**
      * Head direction in -Y axis for CoreXY / CoreYZ bots.
      *
@@ -370,7 +371,7 @@ void Endstops::update() {
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X or Y)
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Y or Z)
      */
-     /*
+     
     #if ENABLED(COREYX) || ENABLED(COREYZ)
       #define Y_CMP ==
     #else
@@ -382,8 +383,8 @@ void Endstops::update() {
     #define Y_MOVE_TEST stepper.current_block->steps[Y_AXIS] > 0
     #define Y_AXIS_HEAD Y_AXIS
   #endif
-*/
-  //#if CORE_IS_XZ || CORE_IS_YZ
+
+  #if CORE_IS_XZ || CORE_IS_YZ
     /**
      * Head direction in -Z axis for CoreXZ or CoreYZ bots.
      *
@@ -391,7 +392,7 @@ void Endstops::update() {
      * If DeltaA ==  DeltaB, the movement is only in the 1st axis (X or Y, already handled above)
      * If DeltaA == -DeltaB, the movement is only in the 2nd axis (Z)
      */
-     /*
+     
     #if ENABLED(COREZX) || ENABLED(COREZY)
       #define Z_CMP ==
     #else
@@ -413,7 +414,7 @@ void Endstops::update() {
     #define X_MIN_TEST true
     #define X_MAX_TEST true
   #endif
-*/
+
   /**
    * Check and update endstops according to conditions
    */
@@ -493,7 +494,7 @@ void Endstops::update() {
   if (Z_MOVE_TEST) {
     if (stepper.motor_direction(Z_AXIS_HEAD)) { // Z -direction. Gantry down, bed up.
       #if HAS_Z_MIN
-        #if ENABLED(Z_DUAL_ENDSTOPS)
+       /* #if ENABLED(Z_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(Z, MIN);
           #if HAS_Z2_MIN
             UPDATE_ENDSTOP_BIT(Z2, MIN);
@@ -504,24 +505,25 @@ void Endstops::update() {
         #else
           #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
             if (z_probe_enabled) UPDATE_ENDSTOP(Z, MIN);
-          #else		  
+          #else	*/	  
             UPDATE_ENDSTOP(Z, MIN);
-          #endif
-        #endif
-      #endif
+          //#endif
+        //#endif
+      //#endif
 
       // When closing the gap check the enabled probe
-      #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+      /*#if ENABLED(Z_MIN_PROBE_ENDSTOP)
         if (z_probe_enabled) {
           UPDATE_ENDSTOP(Z, MIN_PROBE);
           if (TEST_ENDSTOP(Z_MIN_PROBE)) SBI(endstop_hit_bits, Z_MIN_PROBE);
         }
+		*/
       #endif
     }
     else { // Z +direction. Gantry up, bed down.
       #if HAS_Z_MAX
         // Check both Z dual endstops
-        #if ENABLED(Z_DUAL_ENDSTOPS)
+       /* #if ENABLED(Z_DUAL_ENDSTOPS)
           UPDATE_ENDSTOP_BIT(Z, MAX);
           #if HAS_Z2_MAX
             UPDATE_ENDSTOP_BIT(Z2, MAX);
@@ -532,8 +534,8 @@ void Endstops::update() {
         // If this pin is not hijacked for the bed probe
         // then it belongs to the Z endstop
         #elif DISABLED(Z_MIN_PROBE_ENDSTOP) || Z_MAX_PIN != Z_MIN_PROBE_PIN
-          UPDATE_ENDSTOP(Z, MAX);
-        #endif
+          */UPDATE_ENDSTOP(Z, MAX);
+        //#endif
       #endif
     }
   }

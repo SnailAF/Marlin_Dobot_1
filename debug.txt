@@ -1,0 +1,1 @@
+endstop::updata 出问题，Z轴总总被触发。 
