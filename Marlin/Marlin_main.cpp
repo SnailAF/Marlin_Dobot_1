@@ -13951,13 +13951,14 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
  	delta[A_AXIS] = DEGREES(frontAngle);
  	delta[B_AXIS] = DEGREES(rearAngle);
  	delta[C_AXIS] = DEGREES(baseAngle);
-
+/*
 	  DEBUG_POS("DOBOT IK", raw);
       DEBUG_POS("DOBOT IK", delta);
       SERIAL_ECHOPAIR("  SCARA (x,y) ", actualZ);
       SERIAL_ECHOPAIR(" , ", sy);
 	  SERIAL_ECHOLNPAIR(" sz",actualZ);
 	  SERIAL_PROTOCOLLNPGM("--inverse_kinematics");
+	  */
 }
 
 // end DOBOT_ARM

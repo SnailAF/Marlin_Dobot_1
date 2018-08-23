@@ -1,8 +1,165 @@
----- SWITCH_ENABLED_ Matches (7 in 1 files) ----
-macros.h line 132 : #define SWITCH_ENABLED_false 0
-macros.h line 133 : #define SWITCH_ENABLED_true  1
-macros.h line 134 : #define SWITCH_ENABLED_0     0
-macros.h line 135 : #define SWITCH_ENABLED_1     1
-macros.h line 136 : #define SWITCH_ENABLED_      1
-macros.h line 137 : #define ENABLED(b) _CAT(SWITCH_ENABLED_, b)
-macros.h line 138 : #define DISABLED(b) (!_CAT(SWITCH_ENABLED_, b))
+---- Z_MIN Matches (208 in 16 files) ----
+Conditionals_LCD.h line 444 :     #undef Z_MIN_PROBE_ENDSTOP_INVERTING
+Conditionals_LCD.h line 445 :     #define Z_MIN_PROBE_ENDSTOP_INVERTING false
+Conditionals_LCD.h line 447 :     #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+Conditionals_LCD.h line 448 :       #undef Z_MIN_ENDSTOP_INVERTING
+Conditionals_LCD.h line 449 :       #define Z_MIN_ENDSTOP_INVERTING false
+Conditionals_LCD.h line 450 :       #define TEST_BLTOUCH() _TEST_BLTOUCH(Z_MIN)
+Conditionals_LCD.h line 452 :       #define TEST_BLTOUCH() _TEST_BLTOUCH(Z_MIN_PROBE)
+Conditionals_LCD.h line 470 :     #undef Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+Conditionals_LCD.h line 471 :     #undef Z_MIN_PROBE_ENDSTOP
+Conditionals_post.h line 40 :   #define Z_MAX_LENGTH (Z_MAX_POS - (Z_MIN_POS))
+Conditionals_post.h line 63 :   #define Z_CENTER ((Z_MIN_POS + Z_MAX_POS) / 2)
+Conditionals_post.h line 152 :     #define Z_HOME_POS (Z_HOME_DIR < 0 ? Z_MIN_POS : Z_MAX_POS)
+Conditionals_post.h line 165 :   #define HOMING_Z_WITH_PROBE (HAS_BED_PROBE && Z_HOME_DIR < 0 && ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN))
+Conditionals_post.h line 399 :         #define X2_MAX_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 400 :         #define X2_MAX_PIN Z_MIN_PIN
+Conditionals_post.h line 422 :         #define X2_MIN_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 423 :         #define X2_MIN_PIN Z_MIN_PIN
+Conditionals_post.h line 455 :         #define Y2_MAX_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 456 :         #define Y2_MAX_PIN Z_MIN_PIN
+Conditionals_post.h line 478 :         #define Y2_MIN_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 479 :         #define Y2_MIN_PIN Z_MIN_PIN
+Conditionals_post.h line 511 :         #define Z2_MAX_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 512 :         #define Z2_MAX_PIN Z_MIN_PIN
+Conditionals_post.h line 534 :         #define Z2_MIN_ENDSTOP_INVERTING Z_MIN_ENDSTOP_INVERTING
+Conditionals_post.h line 535 :         #define Z2_MIN_PIN Z_MIN_PIN
+IS_Z2_OR_PROBE in Conditionals_post.h :     || (ENABLED(Z_MIN_PROBE_ENDSTOP) && Z_MIN_PROBE_PIN == A##_##M##_PIN ) )
+Conditionals_post.h line 643 :   #define HAS_Z_MIN (PIN_EXISTS(Z_MIN) && !IS_X2_ENDSTOP(Z,MIN) && !IS_Y2_ENDSTOP(Z,MIN) && !IS_Z2_OR_PROBE(Z,MIN))
+Conditionals_post.h line 651 :   #define HAS_Z_MIN_PROBE_PIN (PIN_EXISTS(Z_MIN_PROBE))
+Conditionals_post.h line 817 :     #if ENABLED(ENDSTOPPULLUPS) && HAS_Z_MIN_PROBE_PIN
+Conditionals_post.h line 945 :   #define HAS_PROBING_PROCEDURE (HAS_ABL || ENABLED(Z_MIN_PROBE_REPEATABILITY_TEST))
+Configuration.h line 510 : #define Z_MIN_ENDSTOP_INVERTING true  // set to true to invert the logic of the endstop.
+Configuration.h line 514 : #define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the probe.
+Configuration.h line 597 :  * Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+Configuration.h line 601 : //#define Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+Configuration.h line 604 :  * Z_MIN_PROBE_ENDSTOP
+Configuration.h line 608 :  * To use a custom Z Probe pin, set Z_MIN_PROBE_PIN below.
+Configuration.h line 622 : //#define Z_MIN_PROBE_ENDSTOP
+Configuration.h line 739 : //#define Z_MIN_PROBE_REPEATABILITY_TEST
+Configuration.h line 802 : #define Z_MIN_POS MANUAL_Z_HOME_POS
+Configuration.h line 1002 :   //#define MESH_G28_REST_ORIGIN // After homing all axes ('G28' or 'G28 XYZ') rest Z at Z_MIN_POS
+Configuration.h line 1014 :   #define LCD_PROBE_Z_RANGE 4 // Z Range centered on Z_MIN_POS for LCD Z adjustment
+Configuration.h line 1237 :   #define NOZZLE_CLEAN_START_POINT { 30, 30, (Z_MIN_POS + 1)}
+Configuration.h line 1238 :   #define NOZZLE_CLEAN_END_POINT   {100, 60, (Z_MIN_POS + 1)}
+endstops.cpp line 42 : volatile char Endstops::endstop_hit_bits; // use X_MIN, Y_MIN, Z_MIN and Z_MIN_PROBE as BIT value
+Endstops::init in endstops.cpp :   #if HAS_Z_MIN
+Endstops::init in endstops.cpp :       SET_INPUT_PULLUP(Z_MIN_PIN);
+Endstops::init in endstops.cpp :       SET_INPUT(Z_MIN_PIN);
+Endstops::init in endstops.cpp :   #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+Endstops::init in endstops.cpp :       SET_INPUT_PULLUP(Z_MIN_PROBE_PIN);
+Endstops::init in endstops.cpp :       SET_INPUT(Z_MIN_PROBE_PIN);
+Endstops::report_state in endstops.cpp :     #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+Endstops::report_state in endstops.cpp :       if (TEST(endstop_hit_bits, Z_MIN_PROBE)) _ENDSTOP_HIT_ECHO(P, 'P');
+endstops.cpp line 248 :   #if HAS_Z_MIN
+endstops.cpp line 249 :     ES_REPORT(Z_MIN);
+endstops.cpp line 260 :   #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+endstops.cpp line 262 :     SERIAL_PROTOCOLLN(((READ(Z_MIN_PROBE_PIN)^Z_MIN_PROBE_ENDSTOP_INVERTING) ? MSG_ENDSTOP_HIT : MSG_ENDSTOP_OPEN));
+Endstops::test_dual_z_endstops in endstops.cpp :       SBI(endstop_hit_bits, Z_MIN);
+endstops.cpp line 328 :   #if ENABLED(G38_PROBE_TARGET) && PIN_EXISTS(Z_MIN_PROBE) && !(CORE_IS_XY || CORE_IS_XZ)
+endstops.cpp line 329 :     // If G38 command is active check Z_MIN_PROBE for ALL movement
+endstops.cpp line 501 :       #if HAS_Z_MIN
+endstops.cpp line 507 :             COPY_BIT(current_endstop_bits, Z_MIN, Z2_MIN);
+endstops.cpp line 509 :           test_dual_z_endstops(Z_MIN, Z2_MIN);
+endstops.cpp line 511 :           #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+endstops.cpp line 520 :       /*#if ENABLED(Z_MIN_PROBE_ENDSTOP)
+endstops.cpp line 523 :           if (TEST_ENDSTOP(Z_MIN_PROBE)) SBI(endstop_hit_bits, Z_MIN_PROBE);
+endstops.cpp line 541 :         #elif DISABLED(Z_MIN_PROBE_ENDSTOP) || Z_MAX_PIN != Z_MIN_PROBE_PIN
+Endstops in endstops.h :     static volatile char endstop_hit_bits; // use X_MIN, Y_MIN, Z_MIN and Z_MIN_PROBE as BIT value
+setup_endstop_interrupts in endstop_interrupts.h :   #if HAS_Z_MIN
+setup_endstop_interrupts in endstop_interrupts.h :     #if digitalPinToInterrupt(Z_MIN_PIN) != NOT_AN_INTERRUPT
+setup_endstop_interrupts in endstop_interrupts.h :       attachInterrupt(digitalPinToInterrupt(Z_MIN_PIN), endstop_ISR, CHANGE);
+setup_endstop_interrupts in endstop_interrupts.h :       static_assert(digitalPinToPCICR(Z_MIN_PIN) != NULL, "Z_MIN_PIN is not interrupt-capable");
+setup_endstop_interrupts in endstop_interrupts.h :       pciSetup(Z_MIN_PIN);
+setup_endstop_interrupts in endstop_interrupts.h :   #if HAS_Z_MIN_PROBE_PIN
+setup_endstop_interrupts in endstop_interrupts.h :     #if digitalPinToInterrupt(Z_MIN_PROBE_PIN) != NOT_AN_INTERRUPT
+setup_endstop_interrupts in endstop_interrupts.h :       attachInterrupt(digitalPinToInterrupt(Z_MIN_PROBE_PIN), endstop_ISR, CHANGE);
+setup_endstop_interrupts in endstop_interrupts.h :       static_assert(digitalPinToPCICR(Z_MIN_PROBE_PIN) != NULL, "Z_MIN_PROBE_PIN is not interrupt-capable");
+setup_endstop_interrupts in endstop_interrupts.h :       pciSetup(Z_MIN_PROBE_PIN);
+EndstopEnum in enum.h :   Z_MIN,
+EndstopEnum in enum.h :   Z_MIN_PROBE,
+language.h line 159 : #define MSG_Z_MIN                           "z_min: "
+Marlin_main.cpp line 70 :  * G38  - Probe in any direction using the Z_MIN_PROBE (Requires G38_PROBE_TARGET)
+Marlin_main.cpp line 104 :  * M48  - Measure Z Probe repeatability: M48 P<points> X<pos> Y<pos> V<level> E<engage> L<legs>. (Requires Z_MIN_PROBE_REPEATABILITY_TEST)
+Marlin_main.cpp line 457 : float soft_endstop_min[XYZ] = { X_MIN_BED, Y_MIN_BED, Z_MIN_POS },
+set_axis_is_at_home in Marlin_main.cpp :             SERIAL_ECHOLNPGM("*** Z HOMED WITH PROBE (Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN) ***");
+set_axis_is_at_home in Marlin_main.cpp :         if (DEBUGGING(LEVELING)) SERIAL_ECHOLNPGM("*** Z HOMED TO ENDSTOP (Z_MIN_PROBE_ENDSTOP) ***");
+Marlin_main.cpp line 1999 :     #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+Marlin_main.cpp line 2000 :       #define _TRIGGERED_WHEN_STOWED_TEST (READ(Z_MIN_PROBE_PIN) != Z_MIN_PROBE_ENDSTOP_INVERTING)
+Marlin_main.cpp line 2002 :       #define _TRIGGERED_WHEN_STOWED_TEST (READ(Z_MIN_PIN) != Z_MIN_ENDSTOP_INVERTING)
+do_probe_move in Marlin_main.cpp :       #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+do_probe_move in Marlin_main.cpp :         Z_MIN
+do_probe_move in Marlin_main.cpp :         Z_MIN_PROBE
+gcode_G29 in Marlin_main.cpp :           current_position[Z_AXIS] = Z_MIN_POS + MANUAL_PROBE_HEIGHT;
+gcode_G29 in Marlin_main.cpp :             current_position[Z_AXIS] = Z_MIN_POS;
+servo_probe_test in Marlin_main.cpp :       #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+servo_probe_test in Marlin_main.cpp :         #define PROBE_TEST_PIN Z_MIN_PIN
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLLNPAIR(". probe uses Z_MIN pin: ", PROBE_TEST_PIN);
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLLNPGM(". uses Z_MIN_ENDSTOP_INVERTING (ignores Z_MIN_PROBE_ENDSTOP_INVERTING)");
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLPGM(". Z_MIN_ENDSTOP_INVERTING: ");
+servo_probe_test in Marlin_main.cpp :         #if Z_MIN_ENDSTOP_INVERTING
+servo_probe_test in Marlin_main.cpp :         probe_inverting = Z_MIN_ENDSTOP_INVERTING;
+servo_probe_test in Marlin_main.cpp :       #elif ENABLED(Z_MIN_PROBE_ENDSTOP)
+servo_probe_test in Marlin_main.cpp :         #define PROBE_TEST_PIN Z_MIN_PROBE_PIN
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLLNPAIR(". probe uses Z_MIN_PROBE_PIN: ", PROBE_TEST_PIN);
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLLNPGM(". uses Z_MIN_PROBE_ENDSTOP_INVERTING (ignores Z_MIN_ENDSTOP_INVERTING)");
+servo_probe_test in Marlin_main.cpp :         SERIAL_PROTOCOLPGM(". Z_MIN_PROBE_ENDSTOP_INVERTING: ");
+servo_probe_test in Marlin_main.cpp :         #if Z_MIN_PROBE_ENDSTOP_INVERTING
+servo_probe_test in Marlin_main.cpp :         probe_inverting = Z_MIN_PROBE_ENDSTOP_INVERTING;
+Marlin_main.cpp line 7363 : #if ENABLED(Z_MIN_PROBE_REPEATABILITY_TEST)
+Marlin_main.cpp line 7614 : #endif // Z_MIN_PROBE_REPEATABILITY_TEST
+gcode_M851 in Marlin_main.cpp :         SERIAL_ECHOLNPGM(" " MSG_Z_MIN " " STRINGIFY(Z_PROBE_OFFSET_RANGE_MIN) " " MSG_Z_MAX " " STRINGIFY(Z_PROBE_OFFSET_RANGE_MAX));
+process_parsed_command in Marlin_main.cpp :       #if ENABLED(Z_MIN_PROBE_REPEATABILITY_TEST)
+process_parsed_command in Marlin_main.cpp :       #endif // Z_MIN_PROBE_REPEATABILITY_TEST
+pins.h line 541 :     #define Z_MIN_PIN Z_STOP_PIN
+pins.h line 544 :     #define Z_MIN_PIN -1
+pins.h line 552 : #if DISABLED(Z_MIN_PROBE_ENDSTOP)
+pins.h line 553 :   #undef Z_MIN_PROBE_PIN
+pins.h line 554 :   #define Z_MIN_PROBE_PIN    -1
+pins.h line 583 :   #undef Z_MIN_PIN
+pins.h line 584 :   #define Z_MIN_PIN          -1
+pins.h line 662 :     Z_STEP_PIN, Z_DIR_PIN, Z_ENABLE_PIN, Z_MIN_PIN, Z_MAX_PIN, Z_MIN_PROBE_PIN, \
+pinsDebug_list.h line 752 : #if PIN_EXISTS(Z_MIN)
+pinsDebug_list.h line 753 :   REPORT_NAME_DIGITAL(Z_MIN_PIN, __LINE__ )
+pinsDebug_list.h line 755 : #if PIN_EXISTS(Z_MIN_PROBE)
+pinsDebug_list.h line 756 :   REPORT_NAME_DIGITAL(Z_MIN_PROBE_PIN, __LINE__ )
+pins_RAMPS.h line 78 : #define Z_MIN_PIN          18
+pins_RAMPS.h line 82 : // Z Probe (when not Z_MIN_PIN)
+pins_RAMPS.h line 84 : #ifndef Z_MIN_PROBE_PIN
+pins_RAMPS.h line 85 :   #define Z_MIN_PROBE_PIN  32
+pins_RAMPS_OLD.h line 43 : #define Z_MIN_PIN          18
+pins_RAMPS_OLD.h line 47 : // Z Probe (when not Z_MIN_PIN)
+pins_RAMPS_OLD.h line 49 : #ifndef Z_MIN_PROBE_PIN
+pins_RAMPS_OLD.h line 50 :   #define Z_MIN_PROBE_PIN  19
+SanityCheck.h line 614 :   #if HAS_BED_PROBE && ENABLED(Z_MIN_PROBE_ENDSTOP)
+SanityCheck.h line 615 :     #error "Delta probably shouldn't use Z_MIN_PROBE_ENDSTOP. Comment out this line to continue."
+SanityCheck.h line 697 :   #if ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+SanityCheck.h line 698 :     #if ENABLED(Z_MIN_PROBE_ENDSTOP)
+SanityCheck.h line 699 :       #error "Enable only one option: Z_MIN_PROBE_ENDSTOP or Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN."
+SanityCheck.h line 701 :       #error "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN requires USE_ZMIN_PLUG to be enabled."
+SanityCheck.h line 702 :     #elif !HAS_Z_MIN
+SanityCheck.h line 703 :       #error "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN requires the Z_MIN_PIN to be defined."
+SanityCheck.h line 704 :     #elif ENABLED(Z_MIN_PROBE_ENDSTOP_INVERTING) != ENABLED(Z_MIN_ENDSTOP_INVERTING)
+SanityCheck.h line 705 :       #error "Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN requires Z_MIN_ENDSTOP_INVERTING to match Z_MIN_PROBE_ENDSTOP_INVERTING."
+SanityCheck.h line 707 :   #elif ENABLED(Z_MIN_PROBE_ENDSTOP)
+SanityCheck.h line 708 :     #if !HAS_Z_MIN_PROBE_PIN
+SanityCheck.h line 709 :       #error "Z_MIN_PROBE_ENDSTOP requires the Z_MIN_PROBE_PIN to be defined."
+SanityCheck.h line 712 :     #error "You must enable either Z_MIN_PROBE_ENDSTOP or Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN to use a probe."
+SanityCheck.h line 741 :   #if ENABLED(Z_MIN_PROBE_REPEATABILITY_TEST)
+SanityCheck.h line 742 :     #error "Z_MIN_PROBE_REPEATABILITY_TEST requires a probe: FIX_MOUNTED_PROBE, BLTOUCH, SOLENOID_PROBE, Z_PROBE_ALLEN_KEY, Z_PROBE_SLED, or Z Servo."
+SanityCheck.h line 948 : #if ENABLED(Z_PROBE_ALLEN_KEY) && (Z_HOME_DIR < 0) && ENABLED(Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN)
+SanityCheck.h line 1179 :   #elif X2_USE_ENDSTOP == _Z_MIN_ && DISABLED(USE_ZMIN_PLUG)
+static_assert in SanityCheck.h :     #error "USE_ZMIN_PLUG is required when X2_USE_ENDSTOP is _Z_MIN_."
+SanityCheck.h line 1200 :   #elif Y2_USE_ENDSTOP == _Z_MIN_ && DISABLED(USE_ZMIN_PLUG)
+static_assert in SanityCheck.h :     #error "USE_ZMIN_PLUG is required when Y2_USE_ENDSTOP is _Z_MIN_."
+SanityCheck.h line 1221 :   #elif Z2_USE_ENDSTOP == _Z_MIN_ && DISABLED(USE_ZMIN_PLUG)
+static_assert in SanityCheck.h :     #error "USE_ZMIN_PLUG is required when Z2_USE_ENDSTOP is _Z_MIN_."
+endstop_monitor in temperature.cpp :     #if HAS_Z_MIN
+endstop_monitor in temperature.cpp :       if (READ(Z_MIN_PIN)) SBI(current_endstop_bits_local, Z_MIN);
+endstop_monitor in temperature.cpp :     #if HAS_Z_MIN_PROBE_PIN
+endstop_monitor in temperature.cpp :       if (READ(Z_MIN_PROBE_PIN)) SBI(current_endstop_bits_local, Z_MIN_PROBE);
+endstop_monitor in temperature.cpp :       #if HAS_Z_MIN
+endstop_monitor in temperature.cpp :         if (TEST(endstop_change, Z_MIN)) SERIAL_PROTOCOLPAIR("  Z_MIN:", !!TEST(current_endstop_bits_local, Z_MIN));
+endstop_monitor in temperature.cpp :       #if HAS_Z_MIN_PROBE_PIN
+endstop_monitor in temperature.cpp :         if (TEST(endstop_change, Z_MIN_PROBE)) SERIAL_PROTOCOLPAIR("  PROBE:", !!TEST(current_endstop_bits_local, Z_MIN_PROBE));
+_lcd_level_bed_done in ultralcd.cpp :           line_to_z(Z_MIN_POS + MANUAL_PROBE_HEIGHT);

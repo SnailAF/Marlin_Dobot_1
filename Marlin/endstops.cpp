@@ -300,7 +300,7 @@ void Endstops::M119() {
 
 // Check endstops - Called from ISR!
 void Endstops::update() {
-return;
+//return;
 
   #define _ENDSTOP(AXIS, MINMAX) AXIS ##_## MINMAX
   #define _ENDSTOP_PIN(AXIS, MINMAX) AXIS ##_## MINMAX ##_PIN
@@ -316,6 +316,11 @@ return;
       UPDATE_ENDSTOP_BIT(AXIS, MINMAX); \
       if (TEST_ENDSTOP(_ENDSTOP(AXIS, MINMAX)) && stepper.current_block->steps[_AXIS(AXIS)] > 0) { \
         _ENDSTOP_HIT(AXIS, MINMAX); \
+		SERIAL_ECHOLNPAIR(" cb = ",current_endstop_bits); \
+		SERIAL_ECHOLNPAIR(" ob = ",old_endstop_bits); \
+		SERIAL_ECHOLNPAIR(" bv = ",_BV(_ENDSTOP(AXIS, MINMAX))); \
+		SERIAL_ECHOLNPAIR(" pin = ",READ(_ENDSTOP_PIN(AXIS, MINMAX))); \
+		SERIAL_ECHOLNPAIR(" ei = ",_ENDSTOP_INVERTING(AXIS, MINMAX)); \
         stepper.endstop_triggered(_AXIS(AXIS)); \
       } \
     }while(0)

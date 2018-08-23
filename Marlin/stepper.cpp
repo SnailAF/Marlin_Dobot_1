@@ -1290,6 +1290,8 @@ void Stepper::quick_stop() {
 }
 
 void Stepper::endstop_triggered(AxisEnum axis) {
+	SERIAL_PROTOCOLLNPGM("--endstop_triggered");
+	SERIAL_ECHOLNPAIR(" axis=",axis);
 
   #if IS_CORE
 

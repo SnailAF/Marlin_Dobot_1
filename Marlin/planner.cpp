@@ -738,7 +738,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
 				
   int32_t de = target[E_AXIS] - position[E_AXIS];
   //int32_t de  = 0;
-  //* <-- add a slash to enable
+  /* <-- add a slash to enable
     SERIAL_ECHOPAIR("  _buffer_steps FR:", fr_mm_s);
     SERIAL_ECHOPAIR(" A:", target[A_AXIS]);
     SERIAL_ECHOPAIR(" (", da);
@@ -749,7 +749,7 @@ void Planner::_buffer_steps(const int32_t (&target)[XYZE], float fr_mm_s, const 
     SERIAL_ECHOPAIR(" steps) E:", target[E_AXIS]);
     SERIAL_ECHOPAIR(" (", de);
     SERIAL_ECHOLNPGM(" steps)");
-  //*/
+  */
 
   // If LIN_ADVANCE is disabled then do E move prevention with integers
   // Otherwise it's done in _buffer_segment.
