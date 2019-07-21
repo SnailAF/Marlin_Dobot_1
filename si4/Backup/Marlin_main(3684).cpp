@@ -13856,9 +13856,6 @@ SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
 // Dimentions in mm
 #define lengthRearArm		SCARA_LINKAGE_1			//135
 #define lengthFrontArm		SCARA_LINKAGE_2			//160
-
-#define CencerOffset       0
-#define HeadOffset         0
 // Horizontal distance from Joint3 to the center of the tool mounted on the end effector.
 #define distanceTool		MIDDLE_DEAD_ZONE_R //50.9
 // Joint1 height.
@@ -13875,6 +13872,19 @@ SERIAL_PROTOCOLLN("prepare_move_to_destination end af");
 #define piHalf				M_PI / 2.0
 //#define piTwo				M_PI * 2.0
 //#define piThreeFourths	M_PI * 3.0 / 4.0	
+void forward_kinematics_DOBOT0(const float &a, const float &b, const float &c)
+{
+	float a_sin = sin(RADIANS(a)) * lengthRearArm,
+		  a_cos = cos(RADIANS(a)) * lengthRearArm,
+		  b_sin = sin(RADIANS(b)) * lengthFrontArm,
+		  b_cos = cos(RADIANS(b)) * lengthFrontArm,
+		  sin_c = sin(RADIANS(c)),
+		  cos_c = cos(RADIANS(c)),
+	      r     = a_cos + b_cos;
+	cartes[X_AXIS] = r*sin_c;
+	cartes[Y_AXIS] = r*cos_c;
+	cartes[Z_AXIS] = a_sin - b_sin + heightFromGround;
+}
 
 void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
 {
@@ -13884,10 +13894,10 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
 		  b_cos = cos(RADIANS(b)) * lengthRearArm,
 		  sin_c = sin(RADIANS(c)),
 		  cos_c = cos(RADIANS(c)),
-	      r     = a_cos + b_cos + CencerOffset + HeadOffset;
-	cartes[X_AXIS] = r*cos_c - SCARA_OFFSET_X;
-	cartes[Y_AXIS] = r*sin_c - SCARA_OFFSET_Y;
-	cartes[Z_AXIS] = a_sin - b_sin + heightFromGround;
+	      r     = a_cos + b_cos;
+	cartes[X_AXIS] = r*cos_c;
+	cartes[Y_AXIS] = r*sin_c;
+	cartes[Z_AXIS] = a_sin + b_sin + heightFromGround;
 }
 
   /**
@@ -13897,7 +13907,6 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
    * cosA = (b^2 + c^2 - a^2)/2bc 余弦定理  
    * (cosa)^2 + (sina)^2 = 1
    * DOBOT
-   * 固件里还有一个不一样的算法
    */
  void inverse_kinematics(const float raw[XYZ])
 {	
@@ -13907,22 +13916,38 @@ void forward_kinematics_DOBOT(const float &a, const float &b, const float &c)
     float sx = raw[X_AXIS] - SCARA_OFFSET_X,  // 将SCARA翻译成标准X Y  Translate SCARA to standard X Y
           sy = raw[Y_AXIS] - SCARA_OFFSET_Y,  // 与比例因子。  With scaling factor.
 		  sz = raw[Z_AXIS] - heightFromGround;
-  
+	//*
 	baseAngle = ATAN2(sy,sx);
 	//actualZ = raw[Z_AXIS] - heightFromGround;
 	radiusTool = sqrt(sq(sx) + sq(sy));
 	radius = radiusTool - distanceTool;
-	//jointX = radius*cos(baseAngle);
-	//jointY = radius*sin(baseAngle);
+	jointX = radius*cos(baseAngle);
+	jointY = radius*sin(baseAngle);
 
 	hypotenuseSquared = SQ(sz) + SQ(radius);
 	hypotenuse = sqrt(hypotenuseSquared);
 	q1 = ATAN2(sz, radius);
-	q2 = ACOS((lengthRearSquared + hypotenuseSquared - lengthFrontSquared ) / (2.0 * lengthRearArm * hypotenuse));
+	q2 = ACOS((lengthRearSquared - lengthFrontSquared + hypotenuseSquared) / (2.0 * lengthRearArm * hypotenuse));
 	
 	rearAngle = (q1 + q2);
 	frontAngle = M_PI - acos((armSquaredConst - hypotenuseSquared) / armDoubledConst) - rearAngle;
+	//*/
+	/*
+	baseAngle = ATAN2(sx,sy);
+	actualZ = raw[Z_AXIS] - heightFromGround;
+	radiusTool = sqrt(sq(sx) + sq(sy));
+	radius = radiusTool - distanceTool;
+	jointX = radius*sin(baseAngle);
+	jointY = radius*cos(baseAngle);
 
+	hypotenuseSquared = SQ(actualZ) + SQ(radius);
+	hypotenuse = sqrt(hypotenuseSquared);
+	q1 = ATAN2(actualZ,radius);
+	q2 = ACOS((lengthRearSquared - lengthFrontSquared + hypotenuseSquared) / (2.0 * lengthRearArm * hypotenuse));
+	
+	rearAngle = q1 + q2;
+	frontAngle = M_PI - ACOS((armSquaredConst - hypotenuseSquared) / armDoubledConst)  - rearAngle;
+	*/
  	delta[A_AXIS] = DEGREES(frontAngle);
  	delta[B_AXIS] = DEGREES(rearAngle);
  	delta[C_AXIS] = DEGREES(baseAngle);
